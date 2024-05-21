@@ -1,0 +1,14 @@
+[
+    {
+        "dbcode": "zb",
+        "name": "指标"
+    },
+    {
+        "dbcode": "reg",
+        "name": "地区"
+    },
+    {
+        "dbcode": "sj",
+        "name": "时间"
+    }
+]

@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS population;
+CREATE TABLE population (
+    id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT '唯一标识',
+    year INT NOT NULL COMMENT '年份',
+    zb_code VARCHAR(255) NOT NULL COMMENT'分类编码',
+    zb_name VARCHAR(255) NOT NULL COMMENT '分类名称',
+    value FLOAT NOT NULL COMMENT '人口数',
+    unit VARCHAR(255) NOT NULL COMMENT '单位：万人'
+);

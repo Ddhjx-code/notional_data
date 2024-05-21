@@ -1,0 +1,226 @@
+[
+    {
+        "dbcode": "hgnd",
+        "id": "A01",
+        "isParent": true,
+        "name": "综合",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A02",
+        "isParent": true,
+        "name": "国民经济核算",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A03",
+        "isParent": true,
+        "name": "人口",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A04",
+        "isParent": true,
+        "name": "就业人员和工资",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A05",
+        "isParent": true,
+        "name": "固定资产投资和房地产",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A06",
+        "isParent": true,
+        "name": "对外经济贸易",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A07",
+        "isParent": true,
+        "name": "能源",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A08",
+        "isParent": true,
+        "name": "财政",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A09",
+        "isParent": true,
+        "name": "价格指数",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0A",
+        "isParent": true,
+        "name": "人民生活",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0B",
+        "isParent": true,
+        "name": "城市概况",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0C",
+        "isParent": true,
+        "name": "资源和环境",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0D",
+        "isParent": true,
+        "name": "农业",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0E",
+        "isParent": true,
+        "name": "工业",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0F",
+        "isParent": true,
+        "name": "建筑业",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0G",
+        "isParent": true,
+        "name": "运输和邮电",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0H",
+        "isParent": false,
+        "name": "社会消费品零售总额",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0I",
+        "isParent": true,
+        "name": "批发和零售业",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0J",
+        "isParent": true,
+        "name": "住宿和餐饮业",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0K",
+        "isParent": true,
+        "name": "旅游业",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0L",
+        "isParent": true,
+        "name": "金融业",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0M",
+        "isParent": true,
+        "name": "教育",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0N",
+        "isParent": true,
+        "name": "科技",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0O",
+        "isParent": true,
+        "name": "卫生",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0P",
+        "isParent": true,
+        "name": "社会服务",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0Q",
+        "isParent": true,
+        "name": "文化",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0R",
+        "isParent": true,
+        "name": "体育",
+        "pid": "",
+        "wdcode": "zb"
+    },
+    {
+        "dbcode": "hgnd",
+        "id": "A0S",
+        "isParent": true,
+        "name": "公共管理、社会保障及其他",
+        "pid": "",
+        "wdcode": "zb"
+    }
+]

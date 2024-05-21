@@ -1,0 +1,42 @@
+[
+    {
+        "dbcode": "hgyd",
+        "name": "月度数据"
+    },
+    {
+        "dbcode": "hgjd",
+        "name": "季度数据"
+    },
+    {
+        "dbcode": "hgnd",
+        "name": "年度数据"
+    },
+    {
+        "dbcode": "fsyd",
+        "name": "分省月度数据"
+    },
+    {
+        "dbcode": "fsjd",
+        "name": "分省季度数据"
+    },
+    {
+        "dbcode": "fsnd",
+        "name": "分省年度数据"
+    },
+    {
+        "dbcode": "csyd",
+        "name": "城市月度数据"
+    },
+    {
+        "dbcode": "csnd",
+        "name": "城市年度数据"
+    },
+    {
+        "dbcode": "gatyd",
+        "name": "港澳台月度数据"
+    },
+    {
+        "dbcode": "gatnd",
+        "name": "港澳台年度数据"
+    }
+]
