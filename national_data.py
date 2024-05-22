@@ -27,12 +27,12 @@ def population():
     response_data = json.loads(response.text)
     return response_data
 
-def get_national_category(id, db):
+def set_category(id, dbcode,wdcode,db):
     url = endpoint()
     params = {
         "id": f"{id}",
-        "dbcode": "fsnd",
-        "wdcode": "reg",
+        "dbcode": f"{dbcode}",
+        "wdcode": f"{wdcode}",
         "m": "getTree"
     }
     response = requests.post(url, params=params)
@@ -44,7 +44,7 @@ def get_national_category(id, db):
         '''
         db.execute_query(insert_query, (row['id'], row['name'], row['isParent']))
         if row['isParent']:
-            get_national_category(row["id"], db)
+            set_category(row["id"], db)
     print(response.text)
 
 def get_national_data(valuecode_zb,valuecode_sj):
@@ -150,7 +150,7 @@ def insert_query(data, table_name, db):
     db.execute_query(insert_query)
 
 def set_national_data(db):
-    select_query = '''SELECT code FROM `category` WHERE `isParent` = 0 AND `id` > 933'''
+    select_query = '''SELECT code FROM `category` WHERE `isParent` = 0'''
     result = db.fetch_all(select_query)
     for code in result:
         response_data = get_national_data(code[0],"LAST30")
@@ -161,15 +161,16 @@ def set_national_data(db):
 def main():
     #将分类数据插入到对应表中
     db = MySQLConnector(config)
-    get_national_category("100000", db)
-    """
+    
     try:
-        get_national_category("zb", db)
+        set_category("zb", db)
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
         db.close()
-    """
+    
+    #获取每个分类的数据并存入数据库
+    db = MySQLConnector(config)
     try:
         set_national_data(db)
     except Exception as e:
