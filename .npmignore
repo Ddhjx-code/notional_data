@@ -1,0 +1,18 @@
+# 开发文件
+src/
+__pycache__/
+*.pyc
+
+# 本地配置
+.claude/
+
+# 测试文件
+test-client.js
+
+# 大文件/文档
+res/
+api_introduce.md
+
+# 其他
+*.map
+tsconfig.json

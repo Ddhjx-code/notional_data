@@ -263,24 +263,20 @@ export class StatsApiClient {
     const wds = JSON.stringify([{ "wdcode": "zb", "valuecode": zb }]);
     const dfwds = JSON.stringify([{ "wdcode": "sj", "valuecode": sj }]);
 
+    // 使用axios的params选项，让axios自动处理参数编码（避免双重编码问题）
     const params = {
       m: 'QueryData',
       dbcode,
       rowcode: 'zb',
       colcode: 'sj',
-      // 编码数组形式的参数
-      wds: encodeURIComponent(wds),
-      dfwds: encodeURIComponent(dfwds),
+      wds, // 不进行手动URL编码，交给axios处理
+      dfwds, // 不进行手动URL编码，交给axios处理
       k1: Date.now(), // 添加时间戳防止缓存
       h: 1
     };
 
-    const paramStr = Object.entries(params)
-      .map(([k, v]) => `${k}=${v}`)
-      .join('&');
-
     try {
-      const response = await axios.get<StatsApiResponse>(`${this.baseUrl}/easyquery.htm?${paramStr}`);
+      const response = await axios.get<StatsApiResponse>(`${this.baseUrl}/easyquery.htm`, { params });
       return response.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {

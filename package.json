@@ -1,6 +1,6 @@
 {
   "name": "national-stats-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for accessing National Bureau of Statistics data",
   "main": "dist/index.js",
   "scripts": {
