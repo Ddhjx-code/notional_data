@@ -95,16 +95,18 @@ export class StatsApiClient {
    * 搜索指标
    */
   async search(keyword: string, db: string = '', page: number = 0): Promise<StatsSearchResult> {
-    const params = new URLSearchParams({
-      s: encodeURIComponent(keyword),
+    // 使用 axios 的 params 选项来避免编码问题
+    const params = {
+      s: keyword,      // 让 axios 正确处理编码
       m: 'searchdata',
-      db: encodeURIComponent(db),
+      db,
       p: page.toString(),
-    });
+    };
 
-    const searchUrl = `${this.baseUrl}/search.htm?${params}`;
+    console.error(`GET Request URL (base): ${this.baseUrl}/search.htm with params:`, JSON.stringify(params));
+
     try {
-      const response = await axios.get<StatsSearchResult>(searchUrl);
+      const response = await axios.get<StatsSearchResult>(`${this.baseUrl}/search.htm`, { params });
       return response.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {
@@ -155,6 +157,9 @@ export class StatsApiClient {
       wdcode
     };
 
+    console.error(`POST Request URL: ${this.baseUrl}/easyquery.htm`);
+    console.error(`POST Request Body:`, JSON.stringify(params));
+
     try {
       const response = await axios.post<CategoryResponse>(`${this.baseUrl}/easyquery.htm`, new URLSearchParams(params));
       return response.data;
@@ -193,7 +198,7 @@ export class StatsApiClient {
           return;
         } catch (error) {
           retries++;
-          console.log(`Category request failed for node ${nodeId}, attempt ${retries}/${maxRetries}.`);
+          console.error(`Category request failed for node ${nodeId}, attempt ${retries}/${maxRetries}.`);
           if (retries >= maxRetries) {
             throw error;
           }
@@ -217,6 +222,9 @@ export class StatsApiClient {
       dbcode,
       wdcode
     };
+
+    console.error(`POST Request URL: ${this.baseUrl}/easyquery.htm`);
+    console.error(`POST Request Body:`, JSON.stringify(params));
 
     try {
       const response = await axios.post<CategoryResponse>(`${this.baseUrl}/easyquery.htm`, new URLSearchParams(params));
@@ -244,6 +252,8 @@ export class StatsApiClient {
       k1: Date.now(), // 添加时间戳防止缓存
       h: 1
     };
+
+    console.error(`GET Request URL: ${this.baseUrl}/easyquery.htm with params:`, JSON.stringify(params));
 
     try {
       const response = await axios.get<TimeDimensionResponse>(`${this.baseUrl}/easyquery.htm`, { params });
@@ -274,6 +284,8 @@ export class StatsApiClient {
       k1: Date.now(), // 添加时间戳防止缓存
       h: 1
     };
+
+    console.error(`GET Request URL: ${this.baseUrl}/easyquery.htm with params:`, JSON.stringify(params));
 
     try {
       const response = await axios.get<StatsApiResponse>(`${this.baseUrl}/easyquery.htm`, { params });

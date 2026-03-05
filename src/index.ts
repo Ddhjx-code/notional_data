@@ -8,7 +8,7 @@ import { z } from 'zod';
 import { Command } from 'commander';
 
 // 获取版本号，这里使用package.json中的版本
-const VERSION = '1.0.0';
+const VERSION = '1.0.2';
 
 // 创建API客户端实例
 const apiClient = new StatsApiClient();

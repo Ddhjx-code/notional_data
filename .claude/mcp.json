@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "national-stats-mcp": {
+      "command": "npx",
+      "args": ["-y", "national-stats-mcp@latest"]
+    }
+  }
+}
