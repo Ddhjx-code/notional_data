@@ -1,0 +1,322 @@
+import axios from 'axios';
+import { z } from 'zod';
+
+// 定义国家统计局API响应结构
+export interface StatsApiResponse {
+  returncode: number;
+  returndata: {
+    hasdatacount: number;
+    datanodes: Array<{
+      code: string;
+      data: {
+        data: number | string;
+        dotcount: number;
+        hasdata: boolean;
+        strdata: string;
+      };
+      wds: Array<{
+        valuecode: string;
+        wdcode: string;
+      }>;
+    }>;
+    wdnodes: Array<{
+      wdcode: string;
+      wdname: string;
+      nodes: Array<{
+        code: string;
+        name: string;
+        unit: string;
+        dotcount?: number;
+      }>;
+    }>;
+  };
+}
+
+// 搜索API响应结构
+export interface StatsSearchResult {
+  pagecount: number;
+  pagecurrent: number;
+  result: Array<{
+    data: string;
+    db: string;
+    reg: string;
+    sj: string;
+    zb: string;
+    report: string;
+  }>;
+}
+
+// 搜索结果解析
+export interface SearchResponse {
+  name: string;  // 指标名称
+  value: string;  // 最新值
+  time: string;   // 时间
+  db: string;     // 数据库类型
+  zbCode: string; // 指标code
+  cnCode: string; // cn code (B01/C01)
+  dbcode: string; // 数据库code (hgjd/hgnd)
+  sjCode: string; // 时间code
+}
+
+// 定义分类API响应结构
+export type CategoryResponse = Array<{
+  id: string;
+  pid: string | number;
+  name: string;
+  isParent: boolean;
+  dbcode: string;
+  wdcode: string;
+}>;
+
+// 定义时间维度响应结构
+export interface TimeDimensionResponse {
+  returncode: number;
+  returndata: Array<{
+    wdcode: string;
+    wdname: string;
+    issj: boolean;
+    selcode: string;
+    nodes: Array<{
+      code: string;
+      name: string;
+    }>;
+  }>;
+}
+
+// 国家统计局API客户端
+export class StatsApiClient {
+  private baseUrl = 'https://data.stats.gov.cn';
+  private cnMap: Record<string, string> = {
+    'B01': 'hgjd',  // 季度
+    'C01': 'hgnd',  // 年度
+  };
+
+  /**
+   * 搜索指标
+   */
+  async search(keyword: string, db: string = '', page: number = 0): Promise<StatsSearchResult> {
+    const params = new URLSearchParams({
+      s: encodeURIComponent(keyword),
+      m: 'searchdata',
+      db: encodeURIComponent(db),
+      p: page.toString(),
+    });
+
+    const searchUrl = `${this.baseUrl}/search.htm?${params}`;
+    try {
+      const response = await axios.get<StatsSearchResult>(searchUrl);
+      return response.data;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`API search request failed: ${error.response?.data || error.message}`);
+      }
+      throw new Error(`Request failed: ${error}`);
+    }
+  }
+
+  /**
+   * 解析搜索结果
+   */
+  parseSearchResult(result: StatsSearchResult): SearchResponse[] {
+    return result.result.map(item => {
+      // 解析 report 字段获取参数
+      const reportParams = Object.fromEntries(
+        item.report.split('&').map(p => {
+          const [key, value] = p.split('=');
+          return [key, value] as [string, string];
+        })
+      );
+
+      // 确定数据库类型
+      const cnCode = reportParams.cn || 'B01'; // 默认为季度数据
+      const dbcode = this.cnMap[cnCode] || 'hgjd';
+
+      return {
+        name: item.zb,
+        value: item.data,
+        time: item.sj,
+        db: item.db,
+        zbCode: reportParams.zb || '',
+        cnCode,
+        dbcode,
+        sjCode: reportParams.sj || ''
+      };
+    });
+  }
+
+  /**
+   * 获取指标分类树
+   */
+  async getCategories(dbcode: string, wdcode: string = 'zb'): Promise<CategoryResponse> {
+    const params = {
+      m: 'getTree',
+      id: 'zb',  // 从指标根节点开始
+      dbcode,
+      wdcode
+    };
+
+    try {
+      const response = await axios.post<CategoryResponse>(`${this.baseUrl}/easyquery.htm`, new URLSearchParams(params));
+      return response.data;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`API category request failed: ${error.response?.data || error.message}`);
+      }
+      throw new Error(`Request failed: ${error}`);
+    }
+  }
+
+  /**
+   * 递归获取指标分类树的所有叶子节点（包含子节点）
+   */
+  async getLeafCategories(dbcode: string): Promise<CategoryResponse> {
+    let allLeaves: CategoryResponse = [];
+
+    const getRecursively = async (nodeId: string) => {
+      let retries = 0;
+      const maxRetries = 3;
+
+      while (retries < maxRetries) {
+        try {
+          // 添加延迟避免请求过于频繁
+          await new Promise(resolve => setTimeout(resolve, 200));
+
+          const categoryResp = await this.getTreeSpecificNode(nodeId, dbcode);
+
+          for (const node of categoryResp) {
+            if (!node.isParent) {
+              allLeaves.push(node);
+            } else {
+              await getRecursively(node.id);
+            }
+          }
+          return;
+        } catch (error) {
+          retries++;
+          console.log(`Category request failed for node ${nodeId}, attempt ${retries}/${maxRetries}.`);
+          if (retries >= maxRetries) {
+            throw error;
+          }
+          // 延迟重试
+          await new Promise(resolve => setTimeout(resolve, 1000 * retries));
+        }
+      }
+    };
+
+    await getRecursively('zb');
+    return allLeaves;
+  }
+
+  /**
+   * 获取特定ID的分类节点
+   */
+  private async getTreeSpecificNode(id: string, dbcode: string, wdcode: string = 'zb'): Promise<CategoryResponse> {
+    const params = {
+      m: 'getTree',
+      id,
+      dbcode,
+      wdcode
+    };
+
+    try {
+      const response = await axios.post<CategoryResponse>(`${this.baseUrl}/easyquery.htm`, new URLSearchParams(params));
+      return response.data;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`API getTree request failed: ${error.response?.data || error.message}`);
+      }
+      throw new Error(`Request failed: ${error}`);
+    }
+  }
+
+  /**
+   * 获取时间维度信息
+   */
+  async getTimeDimensions(dbcode: string): Promise<TimeDimensionResponse> {
+    const wds = '[]';
+
+    const params = {
+      m: 'getOtherWds',
+      dbcode,
+      rowcode: 'zb',
+      colcode: 'sj',
+      wds,
+      k1: Date.now(), // 添加时间戳防止缓存
+      h: 1
+    };
+
+    try {
+      const response = await axios.get<TimeDimensionResponse>(`${this.baseUrl}/easyquery.htm`, { params });
+      return response.data;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`API time dimension request failed: ${error.response?.data || error.message}`);
+      }
+      throw new Error(`Request failed: ${error}`);
+    }
+  }
+
+  /**
+   * 获取统计数据
+   */
+  async getData(zb: string, dbcode: string, sj: string = 'LAST30'): Promise<StatsApiResponse> {
+    const wds = JSON.stringify([{ "wdcode": "zb", "valuecode": zb }]);
+    const dfwds = JSON.stringify([{ "wdcode": "sj", "valuecode": sj }]);
+
+    const params = {
+      m: 'QueryData',
+      dbcode,
+      rowcode: 'zb',
+      colcode: 'sj',
+      // 编码数组形式的参数
+      wds: encodeURIComponent(wds),
+      dfwds: encodeURIComponent(dfwds),
+      k1: Date.now(), // 添加时间戳防止缓存
+      h: 1
+    };
+
+    const paramStr = Object.entries(params)
+      .map(([k, v]) => `${k}=${v}`)
+      .join('&');
+
+    try {
+      const response = await axios.get<StatsApiResponse>(`${this.baseUrl}/easyquery.htm?${paramStr}`);
+      return response.data;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`API query data request failed: ${error.response?.data || error.message}`);
+      }
+      throw new Error(`Request failed: ${error}`);
+    }
+  }
+
+  /**
+   * 批量获取数据
+   */
+  async batchGet(queryParams: Array<{ zb: string; dbcode: string; sj: string }>): Promise<Array<{
+    query: { zb: string; dbcode: string; sj: string };
+    result: StatsApiResponse | null;
+    error?: string;
+  }>> {
+    const results = [];
+
+    for (const param of queryParams) {
+      try {
+        const result = await this.getData(param.zb, param.dbcode, param.sj);
+        results.push({
+          query: param,
+          result,
+          error: undefined
+        });
+      } catch (error) {
+        results.push({
+          query: param,
+          result: null,
+          error: (error as Error).message
+        });
+      }
+    }
+
+    return results;
+  }
+}
