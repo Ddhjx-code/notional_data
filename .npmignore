@@ -12,6 +12,7 @@ test-client.js
 # 大文件/文档
 res/
 api_introduce.md
+nbs_data_repository/
 
 # 其他
 *.map

@@ -77,16 +77,18 @@ node dist/index.js --port 8080
 
 ## 数据编码对应
 - `dbcode.json`: 存储数据库代码及其相应的名称
-- `zb.json`: 包含用于查询不同类型国家数据的类别和子类别代码
 - `wbcode.json`: 维度代码定义
-- `nbs_data_repository/`: 预先遍历获取的完整的国家统计局分类编码体系（可减少递归调用）
-  - `csnd/`, `csyd/`: 城市统计数据（年度、月度）
-  - `fsnd/`, `fsyd/`: 分省年度、月度数据
-  - `hgnd/`, `hgjd/`, `hgyd/`: 国民经济核算数据（年度、季度、月度）
-  - `gjnd/`, `gjyd/`, `gatnd/`, `gatyd/`: 国际、港澳台统计数据（年度、月度）
-  - 每个数据库目录下包含预遍历的分类编码（以JSON文件形式存储）:
-    - 如 `nbs_data_repository/hgjd/A01.json` 包含A01分类下的具体指标
-    - 文件内容格式: `[{"id": "指标ID", "pid": "父级ID", "name": "指标名", "isParent": 是否为父级}]`
+- **预遍历编码数据**:
+  - **npm包中不包含**: `nbs_data_repository/` （因文件体积较大）
+  - **需从GitHub获取**: 预先遍历获取的完整的国家统计局分类编码体系（可减少递归调用）
+    - 完整数据集在 GitHub 仓库中，请从 [GitHub 仓库](https://github.com/Ddhjx-code/notional_data) 下载
+    - `csnd/`, `csyd/`: 城市统计数据（年度、月度）
+    - `fsnd/`, `fsyd/`: 分省年度、月度数据
+    - `hgnd/`, `hgjd/`, `hgyd/`: 国民经济核算数据（年度、季度、月度）
+    - `gjnd/`, `gjyd/`, `gatnd/`, `gatyd/`: 国际、港澳台统计数据（年度、月度）
+    - 每个数据库目录下包含预遍历的分类编码（以JSON文件形式存储）:
+      - 如 `nbs_data_repository/hgjd/A01.json` 包含A01分类下的具体指标
+      - 文件内容格式: `[{"id": "指标ID", "pid": "父级ID", "name": "指标名", "isParent": 是否为父级}]`
 
 ## 为AI Agent的使用
 本项目专门设计为MCP服务器，可以直接集成到AI Agent系统中，提供国家统计局数据查询能力。Agent可根据使用场景选择最合适的工具：
@@ -105,15 +107,25 @@ npm run dev
 
 ## 使用建议
 
-对于AI Agent开发者，建议采用以下方式使用本项目：
+对于AI Agent开发者，根据使用方式采用不同策略：
 
-### 推荐的数据获取流程：
-1. **优先使用预遍历数据**：从 `nbs_data_repository` 目录直接读取已存在的分类编码信息
-2. **快速查询**：使用 `search_statistics` 工具进行关键词搜索
-3. **实时数据获取**：使用 `get_statistics_data` 获取具体统计数据
-4. **递归调用**：仅在预遍历数据不满足需求时使用 `get_statistics_leaf_categories`
+### npm 包使用（核心库）：
+1. **安装**: `npm install national-stats-mcp`
+2. **功能**: 使用 API 工具进行动态数据查询
+3. **使用**: `search_statistics`、`get_statistics_data` 等
+4. **递归调用**: 当需要完整分类体系时，使用 `get_statistics_leaf_categories`
 
-### 预遍历数据优势：
+### GitHub 仓库使用（完整版本）：
+1. **克隆完整仓库**:
+   ```bash
+   git clone https://github.com/Ddhjx-code/notional_data.git
+   ```
+2. **优先使用预遍历数据**: 从 `nbs_data_repository` 目录直接读取已存在的分类编码信息
+3. **快速查询**: 使用 `search_statistics` 工具进行关键词搜索
+4. **实时数据获取**: 使用 `get_statistics_data` 获取具体统计数据
+5. **递归调用**: 仅在预遍历数据不满足需求时使用 `get_statistics_leaf_categories`
+
+### 预遍历数据优势（当可访问完整数据集时）：
 - ✅ 快速访问：无需等待实时API调用和递归遍历
 - ✅ 大数据量：包含国家统计局完整分类体系
 - ✅ 稳定性好：离线数据访问不受API限制
@@ -122,6 +134,7 @@ npm run dev
 ### 递归API使用场景：
 - 临时获取最新指标（若预遍历数据未及时更新）
 - 特殊查询需求超出预遍历数据范围
+- 在较小环境中仅安装了 npm 包的情况
 
 ## 贡献
 欢迎对本代码进行修改。请确保遵循项目的编码标准。
