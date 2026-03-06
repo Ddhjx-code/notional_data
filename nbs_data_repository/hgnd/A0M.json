@@ -1,0 +1,206 @@
+[
+  {
+    "id": "A0M01",
+    "pid": "A0M",
+    "name": "各级各类学校、教职工和专任教师情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M02",
+    "pid": "A0M",
+    "name": "各级各类学历教育学生情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M03",
+    "pid": "A0M",
+    "name": "各级各类非学历教育学生情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M04",
+    "pid": "A0M",
+    "name": "各级各类民办教育基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M05",
+    "pid": "A0M",
+    "name": "各级各类学校数",
+    "isParent": false
+  },
+  {
+    "id": "A0M06",
+    "pid": "A0M",
+    "name": "各级各类学校专任教师数",
+    "isParent": false
+  },
+  {
+    "id": "A0M07",
+    "pid": "A0M",
+    "name": "各级各类学校招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M08",
+    "pid": "A0M",
+    "name": "各级各类学校在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M09",
+    "pid": "A0M",
+    "name": "各级各类学校毕业生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0A",
+    "pid": "A0M",
+    "name": "研究生和留学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0B",
+    "pid": "A0M",
+    "name": "分学科研究生情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M0C",
+    "pid": "A0M",
+    "name": "高等教育学校(机构)数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0D",
+    "pid": "A0M",
+    "name": "高等教育学校(机构)学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0E",
+    "pid": "A0M",
+    "name": "成人本科分学科学生数",
+    "isParent": true
+  },
+  {
+    "id": "A0M0F",
+    "pid": "A0M",
+    "name": "成人专科分学科学生数",
+    "isParent": true
+  },
+  {
+    "id": "A0M0G",
+    "pid": "A0M",
+    "name": "普通本科分学科学生数",
+    "isParent": true
+  },
+  {
+    "id": "A0M0H",
+    "pid": "A0M",
+    "name": "普通专科分学科学生数",
+    "isParent": true
+  },
+  {
+    "id": "A0M0I",
+    "pid": "A0M",
+    "name": "网络本科分学科学生数",
+    "isParent": true
+  },
+  {
+    "id": "A0M0J",
+    "pid": "A0M",
+    "name": "网络专科分学科学生数",
+    "isParent": true
+  },
+  {
+    "id": "A0M0K",
+    "pid": "A0M",
+    "name": "中等职业学校(机构)数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0L",
+    "pid": "A0M",
+    "name": "中等职业学校(机构)学生分科类情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M0M",
+    "pid": "A0M",
+    "name": "职业技术培训机构基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M0N",
+    "pid": "A0M",
+    "name": "普通高中学校和学生情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M0O",
+    "pid": "A0M",
+    "name": "初中学校和学生情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M0P",
+    "pid": "A0M",
+    "name": "普通小学学校和学生情况",
+    "isParent": true
+  },
+  {
+    "id": "A0M0Q",
+    "pid": "A0M",
+    "name": "技工学校数、学生数和教职工数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0R",
+    "pid": "A0M",
+    "name": "学龄儿童入学率和各级普通学校毕业生升学率",
+    "isParent": false
+  },
+  {
+    "id": "A0M0S",
+    "pid": "A0M",
+    "name": "高等学校普通本、专科学校和学生情况",
+    "isParent": false
+  },
+  {
+    "id": "A0M0T",
+    "pid": "A0M",
+    "name": "普通高等学校(机构)教职工情况",
+    "isParent": false
+  },
+  {
+    "id": "A0M0U",
+    "pid": "A0M",
+    "name": "中等职业学校(机构)学生情况",
+    "isParent": false
+  },
+  {
+    "id": "A0M0V",
+    "pid": "A0M",
+    "name": "中等职业学校(机构)教职工数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0W",
+    "pid": "A0M",
+    "name": "各级普通学校生师比",
+    "isParent": false
+  },
+  {
+    "id": "A0M0X",
+    "pid": "A0M",
+    "name": "每十万人口各级学校平均在校生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y",
+    "pid": "A0M",
+    "name": "教育经费",
+    "isParent": true
+  }
+]

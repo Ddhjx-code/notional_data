@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0701",
+    "pid": "A07",
+    "name": "国民账户(现价，本币)",
+    "isParent": false
+  },
+  {
+    "id": "A0703",
+    "pid": "A07",
+    "name": "国民账户(现价，美元)",
+    "isParent": false
+  },
+  {
+    "id": "A0704",
+    "pid": "A07",
+    "name": "国民账户(2000年不变价，美元)",
+    "isParent": false
+  },
+  {
+    "id": "A0705",
+    "pid": "A07",
+    "name": "国民帐户(年增长率)",
+    "isParent": false
+  },
+  {
+    "id": "A0706",
+    "pid": "A07",
+    "name": "国民帐户(所占比例)",
+    "isParent": false
+  },
+  {
+    "id": "A0707",
+    "pid": "A07",
+    "name": "国民账户(现价，按购买力评价计算)",
+    "isParent": false
+  },
+  {
+    "id": "A0708",
+    "pid": "A07",
+    "name": "国内生产总值产业构成",
+    "isParent": false
+  }
+]

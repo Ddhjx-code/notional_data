@@ -1,0 +1,110 @@
+[
+  {
+    "id": "A0A01",
+    "pid": "A0A",
+    "name": "全国居民人均收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A02",
+    "pid": "A0A",
+    "name": "城镇居民人均收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A03",
+    "pid": "A0A",
+    "name": "农村居民人均收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A04",
+    "pid": "A0A",
+    "name": "全国居民人均支出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A05",
+    "pid": "A0A",
+    "name": "城镇居民人均支出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A06",
+    "pid": "A0A",
+    "name": "农村居民人均支出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A07",
+    "pid": "A0A",
+    "name": "全国居民按收入五等份分组的收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A08",
+    "pid": "A0A",
+    "name": "城镇居民按收入五等份分组的收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A09",
+    "pid": "A0A",
+    "name": "农村居民按收入五等份分组的收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0A0A",
+    "pid": "A0A",
+    "name": "全国居民主要食品消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0A0B",
+    "pid": "A0A",
+    "name": "城镇居民主要食品消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0A0C",
+    "pid": "A0A",
+    "name": "农村居民主要食品消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0A0D",
+    "pid": "A0A",
+    "name": "全国居民平均每百户年末主要耐用消费品拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0A0E",
+    "pid": "A0A",
+    "name": "城镇居民平均每百户年末主要耐用消费品拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0A0F",
+    "pid": "A0A",
+    "name": "农村居民平均每百户年末主要耐用消费品拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0A0G",
+    "pid": "A0A",
+    "name": "居民人均可支配收入基尼系数",
+    "isParent": false
+  },
+  {
+    "id": "A0A0H",
+    "pid": "A0A",
+    "name": "居民恩格尔系数",
+    "isParent": false
+  },
+  {
+    "id": "A0A0I",
+    "pid": "A0A",
+    "name": "农民工规模及收入主要数据",
+    "isParent": false
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0901",
+    "pid": "A09",
+    "name": "货物运输量",
+    "isParent": false
+  },
+  {
+    "id": "A0902",
+    "pid": "A09",
+    "name": "货物周转量",
+    "isParent": false
+  },
+  {
+    "id": "A0903",
+    "pid": "A09",
+    "name": "旅客运输量",
+    "isParent": false
+  },
+  {
+    "id": "A0904",
+    "pid": "A09",
+    "name": "旅客周转量",
+    "isParent": false
+  },
+  {
+    "id": "A0905",
+    "pid": "A09",
+    "name": "规模以上港口吞吐量（2005-2018）",
+    "isParent": false
+  },
+  {
+    "id": "A0906",
+    "pid": "A09",
+    "name": "全国港口货物吞吐量（2019-）",
+    "isParent": false
+  },
+  {
+    "id": "A0907",
+    "pid": "A09",
+    "name": "跨区域人员流动量",
+    "isParent": false
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A060501",
+    "pid": "A0605",
+    "name": "进出口总额",
+    "isParent": true
+  },
+  {
+    "id": "A060502",
+    "pid": "A0605",
+    "name": "出口总额",
+    "isParent": true
+  },
+  {
+    "id": "A060503",
+    "pid": "A0605",
+    "name": "进口总额",
+    "isParent": true
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0201",
+    "pid": "A02",
+    "name": "地区生产总值",
+    "isParent": false
+  },
+  {
+    "id": "A0202",
+    "pid": "A02",
+    "name": "地区生产总值指数",
+    "isParent": false
+  }
+]

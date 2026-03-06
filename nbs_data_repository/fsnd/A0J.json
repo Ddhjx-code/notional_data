@@ -1,0 +1,56 @@
+[
+  {
+    "id": "A0J01",
+    "pid": "A0J",
+    "name": "限额以上住宿和餐饮业企业年末资产负债",
+    "isParent": false
+  },
+  {
+    "id": "A0J02",
+    "pid": "A0J",
+    "name": "限额以上住宿和餐饮业企业主要财务指标",
+    "isParent": false
+  },
+  {
+    "id": "A0J03",
+    "pid": "A0J",
+    "name": "限额以上住宿业企业基本情况和经营情况",
+    "isParent": false
+  },
+  {
+    "id": "A0J04",
+    "pid": "A0J",
+    "name": "限额以上住宿业企业企业资产及负债",
+    "isParent": false
+  },
+  {
+    "id": "A0J05",
+    "pid": "A0J",
+    "name": "限额以上住宿业企业主要财务指标",
+    "isParent": false
+  },
+  {
+    "id": "A0J06",
+    "pid": "A0J",
+    "name": "限额以上餐饮业企业基本情况和经营情况",
+    "isParent": false
+  },
+  {
+    "id": "A0J07",
+    "pid": "A0J",
+    "name": "限额以上餐饮业企业资产及负债",
+    "isParent": false
+  },
+  {
+    "id": "A0J08",
+    "pid": "A0J",
+    "name": "限额以上餐饮业企业主要财务指标",
+    "isParent": false
+  },
+  {
+    "id": "A0J09",
+    "pid": "A0J",
+    "name": "连锁餐饮企业基本情况",
+    "isParent": false
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "A020M01",
+    "pid": "A020M",
+    "name": "工业企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A020M02",
+    "pid": "A020M",
+    "name": "工业亏损企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A020M03",
+    "pid": "A020M",
+    "name": "工业企业流动资产平均余额",
+    "isParent": false
+  },
+  {
+    "id": "A020M04",
+    "pid": "A020M",
+    "name": "工业企业应收账款",
+    "isParent": false
+  },
+  {
+    "id": "A020M05",
+    "pid": "A020M",
+    "name": "工业企业产成品存货",
+    "isParent": false
+  },
+  {
+    "id": "A020M06",
+    "pid": "A020M",
+    "name": "工业企业资产总计",
+    "isParent": false
+  },
+  {
+    "id": "A020M07",
+    "pid": "A020M",
+    "name": "工业企业负债合计",
+    "isParent": false
+  },
+  {
+    "id": "A020M08",
+    "pid": "A020M",
+    "name": "工业企业主营业务收入",
+    "isParent": false
+  },
+  {
+    "id": "A020M09",
+    "pid": "A020M",
+    "name": "工业企业主营业务成本",
+    "isParent": false
+  },
+  {
+    "id": "A020M0A",
+    "pid": "A020M",
+    "name": "工业企业主营业务税金及附加",
+    "isParent": false
+  },
+  {
+    "id": "A020M0B",
+    "pid": "A020M",
+    "name": "工业企业营业费用",
+    "isParent": false
+  },
+  {
+    "id": "A020M0C",
+    "pid": "A020M",
+    "name": "工业企业管理费用",
+    "isParent": false
+  },
+  {
+    "id": "A020M0D",
+    "pid": "A020M",
+    "name": "工业企业财务费用",
+    "isParent": false
+  },
+  {
+    "id": "A020M0E",
+    "pid": "A020M",
+    "name": "工业企业利息净支出",
+    "isParent": false
+  },
+  {
+    "id": "A020M0F",
+    "pid": "A020M",
+    "name": "工业企业利润总额",
+    "isParent": false
+  },
+  {
+    "id": "A020M0G",
+    "pid": "A020M",
+    "name": "工业企业亏损企业亏损总额",
+    "isParent": false
+  },
+  {
+    "id": "A020M0H",
+    "pid": "A020M",
+    "name": "工业企业应交增值税",
+    "isParent": false
+  }
+]

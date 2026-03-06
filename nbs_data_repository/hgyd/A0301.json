@@ -1,0 +1,134 @@
+[
+  {
+    "id": "A030101",
+    "pid": "A0301",
+    "name": "原煤",
+    "isParent": false
+  },
+  {
+    "id": "A030102",
+    "pid": "A0301",
+    "name": "原油",
+    "isParent": false
+  },
+  {
+    "id": "A030103",
+    "pid": "A0301",
+    "name": "天然气",
+    "isParent": false
+  },
+  {
+    "id": "A030104",
+    "pid": "A0301",
+    "name": "煤层气",
+    "isParent": false
+  },
+  {
+    "id": "A030105",
+    "pid": "A0301",
+    "name": "液化天然气",
+    "isParent": false
+  },
+  {
+    "id": "A030106",
+    "pid": "A0301",
+    "name": "原油加工量",
+    "isParent": false
+  },
+  {
+    "id": "A030107",
+    "pid": "A0301",
+    "name": "汽油",
+    "isParent": false
+  },
+  {
+    "id": "A030108",
+    "pid": "A0301",
+    "name": "煤油",
+    "isParent": false
+  },
+  {
+    "id": "A030109",
+    "pid": "A0301",
+    "name": "柴油",
+    "isParent": false
+  },
+  {
+    "id": "A03010A",
+    "pid": "A0301",
+    "name": "燃料油",
+    "isParent": false
+  },
+  {
+    "id": "A03010B",
+    "pid": "A0301",
+    "name": "石脑油",
+    "isParent": false
+  },
+  {
+    "id": "A03010C",
+    "pid": "A0301",
+    "name": "液化石油气",
+    "isParent": false
+  },
+  {
+    "id": "A03010D",
+    "pid": "A0301",
+    "name": "石油焦",
+    "isParent": false
+  },
+  {
+    "id": "A03010E",
+    "pid": "A0301",
+    "name": "石油沥青",
+    "isParent": false
+  },
+  {
+    "id": "A03010F",
+    "pid": "A0301",
+    "name": "焦炭",
+    "isParent": false
+  },
+  {
+    "id": "A03010G",
+    "pid": "A0301",
+    "name": "发电量",
+    "isParent": false
+  },
+  {
+    "id": "A03010H",
+    "pid": "A0301",
+    "name": "火力发电量",
+    "isParent": false
+  },
+  {
+    "id": "A03010I",
+    "pid": "A0301",
+    "name": "水力发电量",
+    "isParent": false
+  },
+  {
+    "id": "A03010J",
+    "pid": "A0301",
+    "name": "核能发电量",
+    "isParent": false
+  },
+  {
+    "id": "A03010K",
+    "pid": "A0301",
+    "name": "风力发电量",
+    "isParent": false
+  },
+  {
+    "id": "A03010L",
+    "pid": "A0301",
+    "name": "太阳能发电量",
+    "isParent": false
+  },
+  {
+    "id": "A03010M",
+    "pid": "A0301",
+    "name": "煤气",
+    "isParent": false
+  }
+]

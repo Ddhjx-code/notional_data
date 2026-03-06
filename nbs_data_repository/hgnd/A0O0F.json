@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0O0F01",
+    "pid": "A0O0F",
+    "name": "甲乙类法定报告传染病发病率",
+    "isParent": false
+  },
+  {
+    "id": "A0O0F02",
+    "pid": "A0O0F",
+    "name": "甲乙类法定报告传染病死亡率",
+    "isParent": false
+  },
+  {
+    "id": "A0O0F03",
+    "pid": "A0O0F",
+    "name": "甲乙类法定报告传染病病死率",
+    "isParent": false
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A0Q0401",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0402",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆从业人数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0403",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆坐席数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0404",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆演(映)出场次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0405",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆艺术演出场次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0406",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆观众人次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0407",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆艺术演出场次观众人次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0408",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆收入合计",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0409",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆财政拨款收入",
+    "isParent": false
+  },
+  {
+    "id": "A0Q040A",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆演出收入",
+    "isParent": false
+  },
+  {
+    "id": "A0Q040B",
+    "pid": "A0Q04",
+    "name": "艺术表演场馆支出合计",
+    "isParent": false
+  }
+]

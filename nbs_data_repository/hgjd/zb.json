@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A01",
+    "pid": "",
+    "name": "国民经济核算",
+    "isParent": true
+  },
+  {
+    "id": "A02",
+    "pid": "",
+    "name": "农业",
+    "isParent": true
+  },
+  {
+    "id": "A03",
+    "pid": "",
+    "name": "工业",
+    "isParent": true
+  },
+  {
+    "id": "A04",
+    "pid": "",
+    "name": "建筑业",
+    "isParent": true
+  },
+  {
+    "id": "A05",
+    "pid": "",
+    "name": "人民生活",
+    "isParent": true
+  },
+  {
+    "id": "A06",
+    "pid": "",
+    "name": "价格指数",
+    "isParent": true
+  },
+  {
+    "id": "A07",
+    "pid": "",
+    "name": "国内贸易",
+    "isParent": true
+  },
+  {
+    "id": "A08",
+    "pid": "",
+    "name": "文化",
+    "isParent": true
+  }
+]

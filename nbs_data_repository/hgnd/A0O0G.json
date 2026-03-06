@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0O0G01",
+    "pid": "A0O0G",
+    "name": "城市居民主要疾病粗死亡率",
+    "isParent": false
+  },
+  {
+    "id": "A0O0G02",
+    "pid": "A0O0G",
+    "name": "城市居民主要疾病死因构成",
+    "isParent": false
+  },
+  {
+    "id": "A0O0G03",
+    "pid": "A0O0G",
+    "name": "城市居民主要疾病粗死亡率位次",
+    "isParent": false
+  }
+]

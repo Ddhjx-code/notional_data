@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0I0A01",
+    "pid": "A0I0A",
+    "name": "摊位数",
+    "isParent": false
+  },
+  {
+    "id": "A0I0A02",
+    "pid": "A0I0A",
+    "name": "成交额",
+    "isParent": false
+  },
+  {
+    "id": "A0I0A03",
+    "pid": "A0I0A",
+    "name": "批发市场成交额",
+    "isParent": false
+  },
+  {
+    "id": "A0I0A04",
+    "pid": "A0I0A",
+    "name": "零售市场成交额",
+    "isParent": false
+  }
+]

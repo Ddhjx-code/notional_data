@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0S0O01",
+    "pid": "A0S0O",
+    "name": "人民法院刑事收案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0O02",
+    "pid": "A0S0O",
+    "name": "人民法院刑事结案件数",
+    "isParent": false
+  }
+]

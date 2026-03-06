@@ -1,0 +1,80 @@
+[
+  {
+    "id": "A0N01",
+    "pid": "A0N",
+    "name": "规模以上工业企业研究与试验发展(R&D)活动情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N02",
+    "pid": "A0N",
+    "name": "规模以上工业企业新产品开发及生产情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N03",
+    "pid": "A0N",
+    "name": "规模以上工业企业专利情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N04",
+    "pid": "A0N",
+    "name": "国内三种专利申请受理数和授权数",
+    "isParent": false
+  },
+  {
+    "id": "A0N05",
+    "pid": "A0N",
+    "name": "公有经济企事业单位专业技术人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0N06",
+    "pid": "A0N",
+    "name": "技术市场成交额",
+    "isParent": false
+  },
+  {
+    "id": "A0N07",
+    "pid": "A0N",
+    "name": "测绘地理信息部门生产完成情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N08",
+    "pid": "A0N",
+    "name": "测绘资料提供情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N09",
+    "pid": "A0N",
+    "name": "地震监测情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A",
+    "pid": "A0N",
+    "name": "气象业务站点及观测项目情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N0B",
+    "pid": "A0N",
+    "name": "产品质量情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N0C",
+    "pid": "A0N",
+    "name": "产品质量省级监督抽查",
+    "isParent": false
+  },
+  {
+    "id": "A0N0D",
+    "pid": "A0N",
+    "name": "出入境货物检验检疫",
+    "isParent": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0S0D01",
+    "pid": "A0S0D",
+    "name": "交通事故发生数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0D02",
+    "pid": "A0S0D",
+    "name": "交通事故死亡人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0D03",
+    "pid": "A0S0D",
+    "name": "交通事故受伤人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0D04",
+    "pid": "A0S0D",
+    "name": "交通事故直接财产损失",
+    "isParent": false
+  }
+]

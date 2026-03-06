@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0N0Q01",
+    "pid": "A0N0Q",
+    "name": "高技术产业企业数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Q02",
+    "pid": "A0N0Q",
+    "name": "高技术产业从业人员年平均人数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Q03",
+    "pid": "A0N0Q",
+    "name": "高技术产业总产值",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Q04",
+    "pid": "A0N0Q",
+    "name": "高技术产业主营业务收入",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Q05",
+    "pid": "A0N0Q",
+    "name": "高技术产业利润额",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Q06",
+    "pid": "A0N0Q",
+    "name": "高技术产业利税额",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Q07",
+    "pid": "A0N0Q",
+    "name": "高技术产业出口交货值",
+    "isParent": false
+  }
+]

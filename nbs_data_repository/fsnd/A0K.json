@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0K01",
+    "pid": "A0K",
+    "name": "国际旅游(外汇)收入",
+    "isParent": false
+  },
+  {
+    "id": "A0K02",
+    "pid": "A0K",
+    "name": "接待入境过夜游客",
+    "isParent": false
+  }
+]

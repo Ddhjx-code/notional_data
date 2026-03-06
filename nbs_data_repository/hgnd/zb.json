@@ -1,0 +1,170 @@
+[
+  {
+    "id": "A01",
+    "pid": "",
+    "name": "综合",
+    "isParent": true
+  },
+  {
+    "id": "A02",
+    "pid": "",
+    "name": "国民经济核算",
+    "isParent": true
+  },
+  {
+    "id": "A03",
+    "pid": "",
+    "name": "人口",
+    "isParent": true
+  },
+  {
+    "id": "A04",
+    "pid": "",
+    "name": "就业人员和工资",
+    "isParent": true
+  },
+  {
+    "id": "A05",
+    "pid": "",
+    "name": "固定资产投资和房地产",
+    "isParent": true
+  },
+  {
+    "id": "A06",
+    "pid": "",
+    "name": "对外经济贸易",
+    "isParent": true
+  },
+  {
+    "id": "A07",
+    "pid": "",
+    "name": "能源",
+    "isParent": true
+  },
+  {
+    "id": "A08",
+    "pid": "",
+    "name": "财政",
+    "isParent": true
+  },
+  {
+    "id": "A09",
+    "pid": "",
+    "name": "价格指数",
+    "isParent": true
+  },
+  {
+    "id": "A0A",
+    "pid": "",
+    "name": "人民生活",
+    "isParent": true
+  },
+  {
+    "id": "A0B",
+    "pid": "",
+    "name": "城市概况",
+    "isParent": true
+  },
+  {
+    "id": "A0C",
+    "pid": "",
+    "name": "资源和环境",
+    "isParent": true
+  },
+  {
+    "id": "A0D",
+    "pid": "",
+    "name": "农业",
+    "isParent": true
+  },
+  {
+    "id": "A0E",
+    "pid": "",
+    "name": "工业",
+    "isParent": true
+  },
+  {
+    "id": "A0F",
+    "pid": "",
+    "name": "建筑业",
+    "isParent": true
+  },
+  {
+    "id": "A0G",
+    "pid": "",
+    "name": "运输和邮电",
+    "isParent": true
+  },
+  {
+    "id": "A0H",
+    "pid": "",
+    "name": "社会消费品零售总额",
+    "isParent": false
+  },
+  {
+    "id": "A0I",
+    "pid": "",
+    "name": "批发和零售业",
+    "isParent": true
+  },
+  {
+    "id": "A0J",
+    "pid": "",
+    "name": "住宿和餐饮业",
+    "isParent": true
+  },
+  {
+    "id": "A0K",
+    "pid": "",
+    "name": "旅游业",
+    "isParent": true
+  },
+  {
+    "id": "A0L",
+    "pid": "",
+    "name": "金融业",
+    "isParent": true
+  },
+  {
+    "id": "A0M",
+    "pid": "",
+    "name": "教育",
+    "isParent": true
+  },
+  {
+    "id": "A0N",
+    "pid": "",
+    "name": "科技",
+    "isParent": true
+  },
+  {
+    "id": "A0O",
+    "pid": "",
+    "name": "卫生",
+    "isParent": true
+  },
+  {
+    "id": "A0P",
+    "pid": "",
+    "name": "社会服务",
+    "isParent": true
+  },
+  {
+    "id": "A0Q",
+    "pid": "",
+    "name": "文化",
+    "isParent": true
+  },
+  {
+    "id": "A0R",
+    "pid": "",
+    "name": "体育",
+    "isParent": true
+  },
+  {
+    "id": "A0S",
+    "pid": "",
+    "name": "公共管理、社会保障及其他",
+    "isParent": true
+  }
+]

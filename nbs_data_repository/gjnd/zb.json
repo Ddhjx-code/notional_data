@@ -1,0 +1,92 @@
+[
+  {
+    "id": "A01",
+    "pid": "",
+    "name": "人口",
+    "isParent": false
+  },
+  {
+    "id": "A02",
+    "pid": "",
+    "name": "劳动力与就业",
+    "isParent": false
+  },
+  {
+    "id": "A03",
+    "pid": "",
+    "name": "贫困与收入",
+    "isParent": false
+  },
+  {
+    "id": "A04",
+    "pid": "",
+    "name": "教育",
+    "isParent": false
+  },
+  {
+    "id": "A05",
+    "pid": "",
+    "name": "卫生",
+    "isParent": false
+  },
+  {
+    "id": "A06",
+    "pid": "",
+    "name": "能源生产和使用",
+    "isParent": false
+  },
+  {
+    "id": "A07",
+    "pid": "",
+    "name": "经济",
+    "isParent": true
+  },
+  {
+    "id": "A08",
+    "pid": "",
+    "name": "贸易",
+    "isParent": false
+  },
+  {
+    "id": "A09",
+    "pid": "",
+    "name": "政府财政",
+    "isParent": false
+  },
+  {
+    "id": "A0A",
+    "pid": "",
+    "name": "货币",
+    "isParent": false
+  },
+  {
+    "id": "A0C",
+    "pid": "",
+    "name": "投资环境",
+    "isParent": false
+  },
+  {
+    "id": "A0D",
+    "pid": "",
+    "name": "金融",
+    "isParent": false
+  },
+  {
+    "id": "A0F",
+    "pid": "",
+    "name": "交通和通讯",
+    "isParent": false
+  },
+  {
+    "id": "A0G",
+    "pid": "",
+    "name": "信息科技",
+    "isParent": false
+  },
+  {
+    "id": "A0I",
+    "pid": "",
+    "name": "旅游",
+    "isParent": false
+  }
+]

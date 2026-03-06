@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A0Q0701",
+    "pid": "A0Q07",
+    "name": "文物业机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0702",
+    "pid": "A0Q07",
+    "name": "文物业从业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0703",
+    "pid": "A0Q07",
+    "name": "文物业收入合计",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0704",
+    "pid": "A0Q07",
+    "name": "文物业支出合计",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0705",
+    "pid": "A0Q07",
+    "name": "文物业资产总计",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0706",
+    "pid": "A0Q07",
+    "name": "文物业实际使用房屋建筑面积",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0707",
+    "pid": "A0Q07",
+    "name": "文物业文物藏品数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0708",
+    "pid": "A0Q07",
+    "name": "文物业从有关部门接收文物数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0709",
+    "pid": "A0Q07",
+    "name": "文物业藏品征集数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q070A",
+    "pid": "A0Q07",
+    "name": "文物业举办陈列展览",
+    "isParent": false
+  },
+  {
+    "id": "A0Q070B",
+    "pid": "A0Q07",
+    "name": "文物业参观人次",
+    "isParent": false
+  }
+]

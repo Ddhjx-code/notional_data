@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0N1801",
+    "pid": "A0N18",
+    "name": "产品质量监督检验企业数",
+    "isParent": false
+  },
+  {
+    "id": "A0N1802",
+    "pid": "A0N18",
+    "name": "产品质量监督检查有不合格产品企业所占比例",
+    "isParent": false
+  },
+  {
+    "id": "A0N1803",
+    "pid": "A0N18",
+    "name": "产品质量监督检查批次合格率",
+    "isParent": false
+  }
+]

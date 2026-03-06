@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A0701",
+    "pid": "A07",
+    "name": "社会消费品零售总额",
+    "isParent": false
+  },
+  {
+    "id": "A0702",
+    "pid": "A07",
+    "name": "按经营地分社会消费品零售总额",
+    "isParent": false
+  },
+  {
+    "id": "A0703",
+    "pid": "A07",
+    "name": "按消费类型分社会消费品零售总额",
+    "isParent": false
+  },
+  {
+    "id": "A0704",
+    "pid": "A07",
+    "name": "限上单位商品零售类值",
+    "isParent": true
+  },
+  {
+    "id": "A0705",
+    "pid": "A07",
+    "name": "限额以上住宿和餐饮业经营情况(-2009)",
+    "isParent": false
+  },
+  {
+    "id": "A0706",
+    "pid": "A07",
+    "name": "网上零售额",
+    "isParent": false
+  },
+  {
+    "id": "A0707",
+    "pid": "A07",
+    "name": "按零售业态分限额以上消费品零售额",
+    "isParent": false
+  },
+  {
+    "id": "A0708",
+    "pid": "A07",
+    "name": "服务零售额",
+    "isParent": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0M0L01",
+    "pid": "A0M0L",
+    "name": "中等职业学校(机构)学生分科类招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0L02",
+    "pid": "A0M0L",
+    "name": "中等职业学校(机构)学生分科类在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0L03",
+    "pid": "A0M0L",
+    "name": "中等职业学校(机构)学生分科类毕业生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0L04",
+    "pid": "A0M0L",
+    "name": "中等职业学校(机构)学生分科类获得职业资格证书毕业生数",
+    "isParent": false
+  }
+]

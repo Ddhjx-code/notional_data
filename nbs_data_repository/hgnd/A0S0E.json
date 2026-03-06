@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0S0E01",
+    "pid": "A0S0E",
+    "name": "火灾发生数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0E02",
+    "pid": "A0S0E",
+    "name": "火灾死亡人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0E03",
+    "pid": "A0S0E",
+    "name": "火灾受伤人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0E04",
+    "pid": "A0S0E",
+    "name": "火灾直接经济损失",
+    "isParent": false
+  },
+  {
+    "id": "A0S0E05",
+    "pid": "A0S0E",
+    "name": "火灾平均每起事故损失",
+    "isParent": false
+  },
+  {
+    "id": "A0S0E06",
+    "pid": "A0S0E",
+    "name": "人口火灾发生率",
+    "isParent": false
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A0N0R01",
+    "pid": "A0N0R",
+    "name": "高技术产业研究与试验发展机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0R02",
+    "pid": "A0N0R",
+    "name": "高技术产业研究与试验发展人员全时当量",
+    "isParent": false
+  },
+  {
+    "id": "A0N0R03",
+    "pid": "A0N0R",
+    "name": "高技术产业研究与试验发展经费支出",
+    "isParent": false
+  },
+  {
+    "id": "A0N0R04",
+    "pid": "A0N0R",
+    "name": "高技术产业研究与试验发展项目数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0R05",
+    "pid": "A0N0R",
+    "name": "高技术产业研究与试验发展项目经费",
+    "isParent": false
+  }
+]

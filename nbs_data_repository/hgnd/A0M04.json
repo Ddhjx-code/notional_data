@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0M0401",
+    "pid": "A0M04",
+    "name": "各级各类民办教育学校数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0402",
+    "pid": "A0M04",
+    "name": "各级各类民办教育毕业生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0403",
+    "pid": "A0M04",
+    "name": "各级各类民办教育招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0404",
+    "pid": "A0M04",
+    "name": "各级各类民办教育在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0405",
+    "pid": "A0M04",
+    "name": "各级各类民办教育教职工数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0406",
+    "pid": "A0M04",
+    "name": "各级各类民办教育专任教师数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0407",
+    "pid": "A0M04",
+    "name": "各级各类民办教育另有其他学生数",
+    "isParent": false
+  }
+]

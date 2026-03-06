@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0M0101",
+    "pid": "A0M01",
+    "name": "各级各类学校数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0102",
+    "pid": "A0M01",
+    "name": "各级各类学校教职工数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0103",
+    "pid": "A0M01",
+    "name": "各级各类学校专任教师数",
+    "isParent": false
+  }
+]

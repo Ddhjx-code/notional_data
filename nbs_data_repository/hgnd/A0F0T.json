@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0F0T01",
+    "pid": "A0F0T",
+    "name": "企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A0F0T02",
+    "pid": "A0F0T",
+    "name": "从业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0F0T03",
+    "pid": "A0F0T",
+    "name": "注册执业人员",
+    "isParent": false
+  }
+]

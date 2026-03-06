@@ -1,0 +1,56 @@
+[
+  {
+    "id": "A01",
+    "pid": "",
+    "name": "国民经济核算",
+    "isParent": false
+  },
+  {
+    "id": "A02",
+    "pid": "",
+    "name": "人口和就业",
+    "isParent": false
+  },
+  {
+    "id": "A03",
+    "pid": "",
+    "name": "房地产",
+    "isParent": false
+  },
+  {
+    "id": "A04",
+    "pid": "",
+    "name": "财政和金融",
+    "isParent": false
+  },
+  {
+    "id": "A05",
+    "pid": "",
+    "name": "运输和邮电",
+    "isParent": false
+  },
+  {
+    "id": "A06",
+    "pid": "",
+    "name": "贸易经济",
+    "isParent": false
+  },
+  {
+    "id": "A08",
+    "pid": "",
+    "name": "教育、卫生、文化",
+    "isParent": false
+  },
+  {
+    "id": "A09",
+    "pid": "",
+    "name": "开发区高新技术企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0A",
+    "pid": "",
+    "name": "噪声监测",
+    "isParent": false
+  }
+]

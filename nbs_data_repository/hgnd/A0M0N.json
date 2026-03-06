@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0M0N01",
+    "pid": "A0M0N",
+    "name": "普通高中学校数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0N02",
+    "pid": "A0M0N",
+    "name": "普通高中招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0N03",
+    "pid": "A0M0N",
+    "name": "普通高中在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0N04",
+    "pid": "A0M0N",
+    "name": "普通高中毕业生数",
+    "isParent": false
+  }
+]

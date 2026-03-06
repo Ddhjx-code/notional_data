@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A0N1C01",
+    "pid": "A0N1C",
+    "name": "中国科协系统机构情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C02",
+    "pid": "A0N1C",
+    "name": "中国科协系统人员情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C03",
+    "pid": "A0N1C",
+    "name": "中国科协系统经费情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C04",
+    "pid": "A0N1C",
+    "name": "中国科协系统学术交流活动",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C05",
+    "pid": "A0N1C",
+    "name": "中国科协系统科学技术普及活动",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C06",
+    "pid": "A0N1C",
+    "name": "中国科协系统科学技术普及专题——青少年科技教育",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C07",
+    "pid": "A0N1C",
+    "name": "中国科协系统科普资源建设",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C08",
+    "pid": "A0N1C",
+    "name": "中国科协系统科普基础设施建设",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C09",
+    "pid": "A0N1C",
+    "name": "中国科协系统国际民间科技交流活动",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C0A",
+    "pid": "A0N1C",
+    "name": "中国科协系统科技活动和社会服务",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C0B",
+    "pid": "A0N1C",
+    "name": "中国科协系统科技传媒情况",
+    "isParent": false
+  }
+]

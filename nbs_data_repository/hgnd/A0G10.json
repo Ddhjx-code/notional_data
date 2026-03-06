@@ -1,0 +1,56 @@
+[
+  {
+    "id": "A0G1001",
+    "pid": "A0G10",
+    "name": "按行业分企业数",
+    "isParent": false
+  },
+  {
+    "id": "A0G1002",
+    "pid": "A0G10",
+    "name": "按行业分期末使用计算机数",
+    "isParent": false
+  },
+  {
+    "id": "A0G1003",
+    "pid": "A0G10",
+    "name": "按行业分每百人使用计算机数",
+    "isParent": false
+  },
+  {
+    "id": "A0G1004",
+    "pid": "A0G10",
+    "name": "按行业分企业拥有网站数",
+    "isParent": false
+  },
+  {
+    "id": "A0G1005",
+    "pid": "A0G10",
+    "name": "按行业分每百家企业拥有网站数",
+    "isParent": false
+  },
+  {
+    "id": "A0G1006",
+    "pid": "A0G10",
+    "name": "按行业分有电子商务交易活动的企业数",
+    "isParent": false
+  },
+  {
+    "id": "A0G1007",
+    "pid": "A0G10",
+    "name": "按行业分有电子商务交易活动的企业数比重",
+    "isParent": false
+  },
+  {
+    "id": "A0G1008",
+    "pid": "A0G10",
+    "name": "按行业分电子商务销售额",
+    "isParent": false
+  },
+  {
+    "id": "A0G1009",
+    "pid": "A0G10",
+    "name": "按行业分电子商务采购额",
+    "isParent": false
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0Q1001",
+    "pid": "A0Q10",
+    "name": "企业单位数",
+    "isParent": true
+  },
+  {
+    "id": "A0Q1002",
+    "pid": "A0Q10",
+    "name": "年末从业人员",
+    "isParent": true
+  },
+  {
+    "id": "A0Q1003",
+    "pid": "A0Q10",
+    "name": "资产总计",
+    "isParent": true
+  },
+  {
+    "id": "A0Q1004",
+    "pid": "A0Q10",
+    "name": "营业收入",
+    "isParent": true
+  },
+  {
+    "id": "A0Q1005",
+    "pid": "A0Q10",
+    "name": "税金及附加",
+    "isParent": true
+  },
+  {
+    "id": "A0Q1006",
+    "pid": "A0Q10",
+    "name": "营业利润",
+    "isParent": true
+  },
+  {
+    "id": "A0Q1007",
+    "pid": "A0Q10",
+    "name": "应交增值税",
+    "isParent": true
+  }
+]

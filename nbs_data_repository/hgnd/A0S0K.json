@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0S0K01",
+    "pid": "A0S0K",
+    "name": "人民检察院办理民事、行政抗诉案件",
+    "isParent": false
+  },
+  {
+    "id": "A0S0K02",
+    "pid": "A0S0K",
+    "name": "人民检察院民事案件",
+    "isParent": false
+  },
+  {
+    "id": "A0S0K03",
+    "pid": "A0S0K",
+    "name": "人民检察院行政案件",
+    "isParent": false
+  }
+]

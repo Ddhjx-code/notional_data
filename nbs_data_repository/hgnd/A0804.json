@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A080401",
+    "pid": "A0804",
+    "name": "国家财政主要收入项目",
+    "isParent": false
+  },
+  {
+    "id": "A080402",
+    "pid": "A0804",
+    "name": "中央财政主要收入项目",
+    "isParent": false
+  },
+  {
+    "id": "A080403",
+    "pid": "A0804",
+    "name": "地方财政主要收入项目",
+    "isParent": false
+  }
+]

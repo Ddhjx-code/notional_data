@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A0M0Y01",
+    "pid": "A0M0Y",
+    "name": "教育经费",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y02",
+    "pid": "A0M0Y",
+    "name": "国家财政性教育经费",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y03",
+    "pid": "A0M0Y",
+    "name": "国家财政预算内教育经费",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y04",
+    "pid": "A0M0Y",
+    "name": "民办学校办学经费",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y05",
+    "pid": "A0M0Y",
+    "name": "社会捐赠经费",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y06",
+    "pid": "A0M0Y",
+    "name": "事业收入",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y07",
+    "pid": "A0M0Y",
+    "name": "学杂费",
+    "isParent": false
+  },
+  {
+    "id": "A0M0Y08",
+    "pid": "A0M0Y",
+    "name": "其他教育经费",
+    "isParent": false
+  }
+]

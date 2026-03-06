@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A0F0201",
+    "pid": "A0F02",
+    "name": "建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0202",
+    "pid": "A0F02",
+    "name": "内资建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0203",
+    "pid": "A0F02",
+    "name": "国有建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0204",
+    "pid": "A0F02",
+    "name": "集体建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0205",
+    "pid": "A0F02",
+    "name": "港澳台商投资建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0206",
+    "pid": "A0F02",
+    "name": "港澳台商独资建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0207",
+    "pid": "A0F02",
+    "name": "外商投资建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0208",
+    "pid": "A0F02",
+    "name": "外商独资建筑业企业主要经济指标",
+    "isParent": false
+  }
+]

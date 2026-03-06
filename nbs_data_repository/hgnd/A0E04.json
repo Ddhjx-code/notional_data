@@ -1,0 +1,212 @@
+[
+  {
+    "id": "A0E0401",
+    "pid": "A0E04",
+    "name": "企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A0E0402",
+    "pid": "A0E04",
+    "name": "亏损企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A0E0403",
+    "pid": "A0E04",
+    "name": "实收资本",
+    "isParent": false
+  },
+  {
+    "id": "A0E0404",
+    "pid": "A0E04",
+    "name": "国家资本金",
+    "isParent": false
+  },
+  {
+    "id": "A0E0405",
+    "pid": "A0E04",
+    "name": "集体资本金",
+    "isParent": false
+  },
+  {
+    "id": "A0E0406",
+    "pid": "A0E04",
+    "name": "法人资本金",
+    "isParent": false
+  },
+  {
+    "id": "A0E0407",
+    "pid": "A0E04",
+    "name": "个人资本金",
+    "isParent": false
+  },
+  {
+    "id": "A0E0408",
+    "pid": "A0E04",
+    "name": "港澳台资本金",
+    "isParent": false
+  },
+  {
+    "id": "A0E0409",
+    "pid": "A0E04",
+    "name": "外商资本金",
+    "isParent": false
+  },
+  {
+    "id": "A0E040A",
+    "pid": "A0E04",
+    "name": "流动资产合计",
+    "isParent": false
+  },
+  {
+    "id": "A0E040B",
+    "pid": "A0E04",
+    "name": "应收账款净额",
+    "isParent": false
+  },
+  {
+    "id": "A0E040C",
+    "pid": "A0E04",
+    "name": "存货",
+    "isParent": false
+  },
+  {
+    "id": "A0E040D",
+    "pid": "A0E04",
+    "name": "产成品",
+    "isParent": false
+  },
+  {
+    "id": "A0E040E",
+    "pid": "A0E04",
+    "name": "固定资产合计",
+    "isParent": false
+  },
+  {
+    "id": "A0E040F",
+    "pid": "A0E04",
+    "name": "固定资产原价合计",
+    "isParent": false
+  },
+  {
+    "id": "A0E040G",
+    "pid": "A0E04",
+    "name": "累计折旧",
+    "isParent": false
+  },
+  {
+    "id": "A0E040H",
+    "pid": "A0E04",
+    "name": "资产总计",
+    "isParent": false
+  },
+  {
+    "id": "A0E040I",
+    "pid": "A0E04",
+    "name": "流动负债合计",
+    "isParent": false
+  },
+  {
+    "id": "A0E040J",
+    "pid": "A0E04",
+    "name": "应付账款",
+    "isParent": false
+  },
+  {
+    "id": "A0E040K",
+    "pid": "A0E04",
+    "name": "负债合计",
+    "isParent": false
+  },
+  {
+    "id": "A0E040L",
+    "pid": "A0E04",
+    "name": "所有者权益合计",
+    "isParent": false
+  },
+  {
+    "id": "A0E040M",
+    "pid": "A0E04",
+    "name": "主营业务收入",
+    "isParent": false
+  },
+  {
+    "id": "A0E040N",
+    "pid": "A0E04",
+    "name": "主营业务成本",
+    "isParent": false
+  },
+  {
+    "id": "A0E040O",
+    "pid": "A0E04",
+    "name": "销售费用",
+    "isParent": false
+  },
+  {
+    "id": "A0E040P",
+    "pid": "A0E04",
+    "name": "主营业务费用及附加",
+    "isParent": false
+  },
+  {
+    "id": "A0E040Q",
+    "pid": "A0E04",
+    "name": "管理费用",
+    "isParent": false
+  },
+  {
+    "id": "A0E040R",
+    "pid": "A0E04",
+    "name": "财务费用",
+    "isParent": false
+  },
+  {
+    "id": "A0E040S",
+    "pid": "A0E04",
+    "name": "利息支出",
+    "isParent": false
+  },
+  {
+    "id": "A0E040T",
+    "pid": "A0E04",
+    "name": "营业利润",
+    "isParent": false
+  },
+  {
+    "id": "A0E040U",
+    "pid": "A0E04",
+    "name": "利润总额",
+    "isParent": false
+  },
+  {
+    "id": "A0E040V",
+    "pid": "A0E04",
+    "name": "亏损总额",
+    "isParent": false
+  },
+  {
+    "id": "A0E040W",
+    "pid": "A0E04",
+    "name": "应交所得税",
+    "isParent": false
+  },
+  {
+    "id": "A0E040X",
+    "pid": "A0E04",
+    "name": "本年应交增值税",
+    "isParent": false
+  },
+  {
+    "id": "A0E040Y",
+    "pid": "A0E04",
+    "name": "工业销售产值(现价)",
+    "isParent": false
+  },
+  {
+    "id": "A0E040Z",
+    "pid": "A0E04",
+    "name": "出口交货值",
+    "isParent": false
+  }
+]

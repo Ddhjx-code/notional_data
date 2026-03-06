@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A0S01",
+    "pid": "A0S",
+    "name": "交通事故",
+    "isParent": false
+  },
+  {
+    "id": "A0S02",
+    "pid": "A0S",
+    "name": "火灾事故",
+    "isParent": false
+  },
+  {
+    "id": "A0S03",
+    "pid": "A0S",
+    "name": "年末城镇职工基本养老保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S04",
+    "pid": "A0S",
+    "name": "失业保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S05",
+    "pid": "A0S",
+    "name": "城镇基本医疗保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S06",
+    "pid": "A0S",
+    "name": "工伤保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S07",
+    "pid": "A0S",
+    "name": "生育保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S08",
+    "pid": "A0S",
+    "name": "新型农村社会养老保险试点情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S0A",
+    "pid": "A0S",
+    "name": "城乡居民最低生活保障和社会救济平均标准",
+    "isParent": false
+  },
+  {
+    "id": "A0S0B",
+    "pid": "A0S",
+    "name": "城乡居民社会养老保险情况",
+    "isParent": false
+  }
+]

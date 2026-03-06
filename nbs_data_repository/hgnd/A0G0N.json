@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0G0N01",
+    "pid": "A0G0N",
+    "name": "货物吞吐量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0N02",
+    "pid": "A0G0N",
+    "name": "出港量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0N03",
+    "pid": "A0G0N",
+    "name": "进港量",
+    "isParent": false
+  }
+]

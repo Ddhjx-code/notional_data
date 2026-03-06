@@ -1,0 +1,56 @@
+[
+  {
+    "id": "A1401",
+    "pid": "A14",
+    "name": "房地产开发投资情况",
+    "isParent": false
+  },
+  {
+    "id": "A1403",
+    "pid": "A14",
+    "name": "房地产施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A1404",
+    "pid": "A14",
+    "name": "商品住宅施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A1405",
+    "pid": "A14",
+    "name": "办公楼施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A1406",
+    "pid": "A14",
+    "name": "商业营业用房施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A1407",
+    "pid": "A14",
+    "name": "商品房销售面积",
+    "isParent": false
+  },
+  {
+    "id": "A1408",
+    "pid": "A14",
+    "name": "商品住宅销售面积",
+    "isParent": false
+  },
+  {
+    "id": "A1409",
+    "pid": "A14",
+    "name": "商品房销售额",
+    "isParent": false
+  },
+  {
+    "id": "A140A",
+    "pid": "A14",
+    "name": "商品住宅销售额",
+    "isParent": false
+  }
+]

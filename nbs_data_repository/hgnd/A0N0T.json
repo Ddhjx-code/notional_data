@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0N0T01",
+    "pid": "A0N0T",
+    "name": "高技术产业专利申请数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0T02",
+    "pid": "A0N0T",
+    "name": "高技术产业发明专利申请数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0T03",
+    "pid": "A0N0T",
+    "name": "高技术产业有效发明专利数",
+    "isParent": false
+  }
+]

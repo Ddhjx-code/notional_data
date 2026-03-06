@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A060I01",
+    "pid": "A060I",
+    "name": "对外承包工程完成营业额",
+    "isParent": true
+  },
+  {
+    "id": "A060I02",
+    "pid": "A060I",
+    "name": "对外承包工程派出人数",
+    "isParent": true
+  },
+  {
+    "id": "A060I03",
+    "pid": "A060I",
+    "name": "对外承包工程年末在外劳务人员",
+    "isParent": true
+  },
+  {
+    "id": "A060I04",
+    "pid": "A060I",
+    "name": "对外劳务合作派出人数",
+    "isParent": true
+  },
+  {
+    "id": "A060I05",
+    "pid": "A060I",
+    "name": "对外劳务合作年末在外人员",
+    "isParent": true
+  }
+]

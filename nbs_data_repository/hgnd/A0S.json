@@ -1,0 +1,236 @@
+[
+  {
+    "id": "A0S01",
+    "pid": "A0S",
+    "name": "历届全国人民代表大会代表人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S02",
+    "pid": "A0S",
+    "name": "历届全国政治协商会议委员人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S03",
+    "pid": "A0S",
+    "name": "妇联干部情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S04",
+    "pid": "A0S",
+    "name": "工会组织情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S05",
+    "pid": "A0S",
+    "name": "劳动争议处理情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S06",
+    "pid": "A0S",
+    "name": "律师、公证和调解工作基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S07",
+    "pid": "A0S",
+    "name": "国内公证文书分类",
+    "isParent": true
+  },
+  {
+    "id": "A0S08",
+    "pid": "A0S",
+    "name": "涉外公证文书分类",
+    "isParent": false
+  },
+  {
+    "id": "A0S09",
+    "pid": "A0S",
+    "name": "调解民间纠纷分类",
+    "isParent": false
+  },
+  {
+    "id": "A0S0A",
+    "pid": "A0S",
+    "name": "在押服刑人员基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S0B",
+    "pid": "A0S",
+    "name": "公安机关立案的刑事案件",
+    "isParent": false
+  },
+  {
+    "id": "A0S0C",
+    "pid": "A0S",
+    "name": "公安机关受理和查处治安案件数",
+    "isParent": true
+  },
+  {
+    "id": "A0S0D",
+    "pid": "A0S",
+    "name": "交通事故",
+    "isParent": true
+  },
+  {
+    "id": "A0S0E",
+    "pid": "A0S",
+    "name": "火灾事故",
+    "isParent": true
+  },
+  {
+    "id": "A0S0F",
+    "pid": "A0S",
+    "name": "人民检察院直接立案侦查案件情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0G",
+    "pid": "A0S",
+    "name": "人民检察院审查批准、决定逮捕犯罪嫌疑人和提起公诉被告人情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0H",
+    "pid": "A0S",
+    "name": "人民检察院处理申诉案件情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0I",
+    "pid": "A0S",
+    "name": "人民检察院出庭公诉情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0J",
+    "pid": "A0S",
+    "name": "人民检察院办理刑事抗诉案件情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0K",
+    "pid": "A0S",
+    "name": "人民检察院办理民事、行政抗诉案件情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0L",
+    "pid": "A0S",
+    "name": "人民检察院受理举报、控告和申诉案件情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S0M",
+    "pid": "A0S",
+    "name": "人民检察院纠正违法情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0N",
+    "pid": "A0S",
+    "name": "人民法院审理一审案件情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S0O",
+    "pid": "A0S",
+    "name": "人民法院审理刑事一审案件收结案情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0P",
+    "pid": "A0S",
+    "name": "人民法院审理刑事案件罪犯情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Q",
+    "pid": "A0S",
+    "name": "人民法院审理婚姻家庭、继承一审案件收结案情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0R",
+    "pid": "A0S",
+    "name": "人民法院审理合同纠纷一审案件收结案情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0S",
+    "pid": "A0S",
+    "name": "人民法院审理权属、侵权纠纷及其他民事一审案件收结案情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0T",
+    "pid": "A0S",
+    "name": "人民法院审理行政一审案件收结案情况",
+    "isParent": true
+  },
+  {
+    "id": "A0S0U",
+    "pid": "A0S",
+    "name": "社会保险基金收支及累计结余",
+    "isParent": false
+  },
+  {
+    "id": "A0S0V",
+    "pid": "A0S",
+    "name": "参加城镇基本养老保险人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0W",
+    "pid": "A0S",
+    "name": "社会保险基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S0X",
+    "pid": "A0S",
+    "name": "城镇基本养老保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Y",
+    "pid": "A0S",
+    "name": "失业保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Z",
+    "pid": "A0S",
+    "name": "城镇基本医疗保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S10",
+    "pid": "A0S",
+    "name": "工伤保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S11",
+    "pid": "A0S",
+    "name": "生育保险",
+    "isParent": false
+  },
+  {
+    "id": "A0S12",
+    "pid": "A0S",
+    "name": "新型农村社会养老保险试点情况",
+    "isParent": false
+  },
+  {
+    "id": "A0S13",
+    "pid": "A0S",
+    "name": "城乡居民社会养老保险情况",
+    "isParent": false
+  }
+]

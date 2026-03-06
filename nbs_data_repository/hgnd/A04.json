@@ -1,0 +1,176 @@
+[
+  {
+    "id": "A0401",
+    "pid": "A04",
+    "name": "劳动力",
+    "isParent": false
+  },
+  {
+    "id": "A0402",
+    "pid": "A04",
+    "name": "按三次产业分就业人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0403",
+    "pid": "A04",
+    "name": "按城乡分就业人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0404",
+    "pid": "A04",
+    "name": "按经济类型分城镇就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0405",
+    "pid": "A04",
+    "name": "按经济类型分乡村就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0406",
+    "pid": "A04",
+    "name": "按行业分城镇非私营单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040P",
+    "pid": "A04",
+    "name": "按行业分内资单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0407",
+    "pid": "A04",
+    "name": "按行业分国有单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040Q",
+    "pid": "A04",
+    "name": "按行业分港澳台投资单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040R",
+    "pid": "A04",
+    "name": "按行业分外商投资单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0408",
+    "pid": "A04",
+    "name": "按行业分城镇集体单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0409",
+    "pid": "A04",
+    "name": "按行业分其他单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040A",
+    "pid": "A04",
+    "name": "按行业分私营企业和个体就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040B",
+    "pid": "A04",
+    "name": "按行业分城镇私营企业和个体就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040C",
+    "pid": "A04",
+    "name": "私营企业就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040D",
+    "pid": "A04",
+    "name": "个体就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A040E",
+    "pid": "A04",
+    "name": "城镇非私营单位就业人员工资总额和指数",
+    "isParent": false
+  },
+  {
+    "id": "A040F",
+    "pid": "A04",
+    "name": "城镇非私营单位就业人员平均工资和指数",
+    "isParent": false
+  },
+  {
+    "id": "A040G",
+    "pid": "A04",
+    "name": "按登记注册统计类别分城镇非私营单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040H",
+    "pid": "A04",
+    "name": "按行业分城镇非私营单位就业人员工资总额",
+    "isParent": false
+  },
+  {
+    "id": "A040I",
+    "pid": "A04",
+    "name": "按行业分城镇非私营单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040S",
+    "pid": "A04",
+    "name": "按行业分内资单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040J",
+    "pid": "A04",
+    "name": "按行业分国有单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040T",
+    "pid": "A04",
+    "name": "按行业分港澳台投资单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040U",
+    "pid": "A04",
+    "name": "按行业分外商投资单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040K",
+    "pid": "A04",
+    "name": "按行业分城镇集体单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040L",
+    "pid": "A04",
+    "name": "按行业分其他单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040M",
+    "pid": "A04",
+    "name": "按行业分城镇私营单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040N",
+    "pid": "A04",
+    "name": "城镇登记失业人员及失业率",
+    "isParent": false
+  }
+]

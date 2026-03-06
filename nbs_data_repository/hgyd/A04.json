@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A0401",
+    "pid": "A04",
+    "name": "固定资产投资概况",
+    "isParent": false
+  },
+  {
+    "id": "A0402",
+    "pid": "A04",
+    "name": "固定资产投资增速",
+    "isParent": false
+  },
+  {
+    "id": "A0403",
+    "pid": "A04",
+    "name": "按行业分固定资产投资增速（2018-）",
+    "isParent": false
+  },
+  {
+    "id": "A0404",
+    "pid": "A04",
+    "name": "按登记注册类型分固定资产投资增速(-2023)",
+    "isParent": false
+  },
+  {
+    "id": "A0405",
+    "pid": "A04",
+    "name": "按行业分民间固定资产投资增速",
+    "isParent": false
+  },
+  {
+    "id": "A0406",
+    "pid": "A04",
+    "name": "固定资产投资(不含农户)资金来源增速情况",
+    "isParent": false
+  },
+  {
+    "id": "A0407",
+    "pid": "A04",
+    "name": "分行业固定资产投资情况(2012-2017)",
+    "isParent": false
+  },
+  {
+    "id": "A0408",
+    "pid": "A04",
+    "name": "分行业固定资产投资情况(2004-2011)",
+    "isParent": false
+  },
+  {
+    "id": "A0409",
+    "pid": "A04",
+    "name": "按行业分固定资产投资情况(1998-2003)",
+    "isParent": false
+  },
+  {
+    "id": "A040A",
+    "pid": "A04",
+    "name": "固定资产投资项目计划总投资增长情况",
+    "isParent": false
+  },
+  {
+    "id": "A040B",
+    "pid": "A04",
+    "name": "按登记注册类型分固定资产投资增速(2024-)",
+    "isParent": false
+  }
+]

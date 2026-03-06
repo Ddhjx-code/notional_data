@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A010G01",
+    "pid": "A010G",
+    "name": "粮食集贸市场价格",
+    "isParent": false
+  },
+  {
+    "id": "A010G02",
+    "pid": "A010G",
+    "name": "经济作物类集贸市场价格",
+    "isParent": false
+  },
+  {
+    "id": "A010G03",
+    "pid": "A010G",
+    "name": "畜产品集贸市场价格",
+    "isParent": false
+  },
+  {
+    "id": "A010G04",
+    "pid": "A010G",
+    "name": "水产品集贸市场价格",
+    "isParent": false
+  },
+  {
+    "id": "A010G05",
+    "pid": "A010G",
+    "name": "蔬菜集贸市场价格",
+    "isParent": false
+  },
+  {
+    "id": "A010G06",
+    "pid": "A010G",
+    "name": "水果集贸市场价格",
+    "isParent": false
+  }
+]

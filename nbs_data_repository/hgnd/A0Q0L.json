@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0Q0L01",
+    "pid": "A0Q0L",
+    "name": "图书出版种数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0L02",
+    "pid": "A0Q0L",
+    "name": "图书出版印数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0L03",
+    "pid": "A0Q0L",
+    "name": "图书出版印张数",
+    "isParent": false
+  }
+]

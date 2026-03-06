@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A010201",
+    "pid": "A0102",
+    "name": "三次产业法人单位数",
+    "isParent": false
+  },
+  {
+    "id": "A010202",
+    "pid": "A0102",
+    "name": "分机构类型法人单位数",
+    "isParent": false
+  },
+  {
+    "id": "A010203",
+    "pid": "A0102",
+    "name": "分行业法人单位数",
+    "isParent": false
+  }
+]

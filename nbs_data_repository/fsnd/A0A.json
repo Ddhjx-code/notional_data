@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A0A01",
+    "pid": "A0A",
+    "name": "居民人均可支配收入",
+    "isParent": false
+  },
+  {
+    "id": "A0A02",
+    "pid": "A0A",
+    "name": "居民人均消费支出",
+    "isParent": false
+  },
+  {
+    "id": "A0A03",
+    "pid": "A0A",
+    "name": "全体居民主要食品消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0A04",
+    "pid": "A0A",
+    "name": "城镇居民主要食品消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0A05",
+    "pid": "A0A",
+    "name": "农村居民主要食品消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0A06",
+    "pid": "A0A",
+    "name": "全体居民年末主要耐用消费品拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0A07",
+    "pid": "A0A",
+    "name": "城镇居民年末主要耐用消费品拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0A08",
+    "pid": "A0A",
+    "name": "农村居民年末主要耐用消费品拥有量",
+    "isParent": false
+  }
+]

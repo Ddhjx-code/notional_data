@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A0A01",
+    "pid": "A0A",
+    "name": "邮电业务总量",
+    "isParent": false
+  },
+  {
+    "id": "A0A02",
+    "pid": "A0A",
+    "name": "邮电业务收入",
+    "isParent": false
+  },
+  {
+    "id": "A0A03",
+    "pid": "A0A",
+    "name": "邮政业务量",
+    "isParent": false
+  },
+  {
+    "id": "A0A04",
+    "pid": "A0A",
+    "name": "电信业务量",
+    "isParent": false
+  },
+  {
+    "id": "A0A05",
+    "pid": "A0A",
+    "name": "软件业务收入",
+    "isParent": false
+  }
+]

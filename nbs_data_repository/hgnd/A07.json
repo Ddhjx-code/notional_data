@@ -1,0 +1,224 @@
+[
+  {
+    "id": "A0701",
+    "pid": "A07",
+    "name": "能源弹性系数",
+    "isParent": false
+  },
+  {
+    "id": "A0702",
+    "pid": "A07",
+    "name": "能源加工转换效率",
+    "isParent": false
+  },
+  {
+    "id": "A0703",
+    "pid": "A07",
+    "name": "平均每天能源消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0704",
+    "pid": "A07",
+    "name": "生活能源消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0705",
+    "pid": "A07",
+    "name": "人均能源生产量和消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0706",
+    "pid": "A07",
+    "name": "人均生活能源消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0707",
+    "pid": "A07",
+    "name": "主要能源品种进、出口量",
+    "isParent": false
+  },
+  {
+    "id": "A0708",
+    "pid": "A07",
+    "name": "主要高耗能产品的进、出口量",
+    "isParent": false
+  },
+  {
+    "id": "A0709",
+    "pid": "A07",
+    "name": "国有经济能源工业分行业固定资产投资",
+    "isParent": false
+  },
+  {
+    "id": "A070A",
+    "pid": "A07",
+    "name": "能源工业分行业投资",
+    "isParent": false
+  },
+  {
+    "id": "A070B",
+    "pid": "A07",
+    "name": "一次能源生产总量",
+    "isParent": false
+  },
+  {
+    "id": "A070C",
+    "pid": "A07",
+    "name": "城市能源产品供应",
+    "isParent": false
+  },
+  {
+    "id": "A070D",
+    "pid": "A07",
+    "name": "城市集中供热",
+    "isParent": false
+  },
+  {
+    "id": "A070E",
+    "pid": "A07",
+    "name": "能源消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070F",
+    "pid": "A07",
+    "name": "分行业能源消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070G",
+    "pid": "A07",
+    "name": "分行业煤炭消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070H",
+    "pid": "A07",
+    "name": "分行业焦炭消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070I",
+    "pid": "A07",
+    "name": "分行业原油消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070J",
+    "pid": "A07",
+    "name": "分行业汽油消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070K",
+    "pid": "A07",
+    "name": "分行业煤油消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070L",
+    "pid": "A07",
+    "name": "分行业柴油消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070M",
+    "pid": "A07",
+    "name": "分行业燃料油消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070N",
+    "pid": "A07",
+    "name": "分行业天然气消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070O",
+    "pid": "A07",
+    "name": "分行业电力消费总量",
+    "isParent": false
+  },
+  {
+    "id": "A070P",
+    "pid": "A07",
+    "name": "综合能源平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070Q",
+    "pid": "A07",
+    "name": "石油平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070R",
+    "pid": "A07",
+    "name": "煤炭平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070S",
+    "pid": "A07",
+    "name": "电力平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070T",
+    "pid": "A07",
+    "name": "焦炭平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070U",
+    "pid": "A07",
+    "name": "原油平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070V",
+    "pid": "A07",
+    "name": "燃料油平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070W",
+    "pid": "A07",
+    "name": "汽油平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070X",
+    "pid": "A07",
+    "name": "煤油平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070Y",
+    "pid": "A07",
+    "name": "柴油平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A070Z",
+    "pid": "A07",
+    "name": "液化石油气平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A0710",
+    "pid": "A07",
+    "name": "天然气平衡表",
+    "isParent": false
+  },
+  {
+    "id": "A0711",
+    "pid": "A07",
+    "name": "能源产品产量",
+    "isParent": false
+  }
+]

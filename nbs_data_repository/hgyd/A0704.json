@@ -1,0 +1,98 @@
+[
+  {
+    "id": "A070401",
+    "pid": "A0704",
+    "name": "粮油、食品、饮料、烟酒类",
+    "isParent": false
+  },
+  {
+    "id": "A070402",
+    "pid": "A0704",
+    "name": "服装鞋帽、针、纺织品类",
+    "isParent": false
+  },
+  {
+    "id": "A070403",
+    "pid": "A0704",
+    "name": "化妆品类",
+    "isParent": false
+  },
+  {
+    "id": "A070404",
+    "pid": "A0704",
+    "name": "金银珠宝类",
+    "isParent": false
+  },
+  {
+    "id": "A070405",
+    "pid": "A0704",
+    "name": "日用品类",
+    "isParent": false
+  },
+  {
+    "id": "A070406",
+    "pid": "A0704",
+    "name": "体育、娱乐用品类",
+    "isParent": false
+  },
+  {
+    "id": "A070407",
+    "pid": "A0704",
+    "name": "书报杂志类",
+    "isParent": false
+  },
+  {
+    "id": "A070408",
+    "pid": "A0704",
+    "name": "家用电器和音像器材类",
+    "isParent": false
+  },
+  {
+    "id": "A070409",
+    "pid": "A0704",
+    "name": "中西药品类",
+    "isParent": false
+  },
+  {
+    "id": "A07040A",
+    "pid": "A0704",
+    "name": "文化办公用品类",
+    "isParent": false
+  },
+  {
+    "id": "A07040B",
+    "pid": "A0704",
+    "name": "家具类",
+    "isParent": false
+  },
+  {
+    "id": "A07040C",
+    "pid": "A0704",
+    "name": "通讯器材类",
+    "isParent": false
+  },
+  {
+    "id": "A07040D",
+    "pid": "A0704",
+    "name": "石油及制品类",
+    "isParent": false
+  },
+  {
+    "id": "A07040E",
+    "pid": "A0704",
+    "name": "建筑及装潢材料类",
+    "isParent": false
+  },
+  {
+    "id": "A07040F",
+    "pid": "A0704",
+    "name": "汽车类",
+    "isParent": false
+  },
+  {
+    "id": "A07040G",
+    "pid": "A0704",
+    "name": "其他",
+    "isParent": false
+  }
+]

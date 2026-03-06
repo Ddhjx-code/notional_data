@@ -1,0 +1,98 @@
+[
+  {
+    "id": "A0I0801",
+    "pid": "A0I08",
+    "name": "按登记注册类型分连锁零售企业门店总数（2023年前）",
+    "isParent": false
+  },
+  {
+    "id": "A0I0802",
+    "pid": "A0I08",
+    "name": "按行业分连锁零售企业门店总数",
+    "isParent": false
+  },
+  {
+    "id": "A0I080E",
+    "pid": "A0I08",
+    "name": "按业态分连锁零售企业门店总数",
+    "isParent": false
+  },
+  {
+    "id": "A0I0804",
+    "pid": "A0I08",
+    "name": "按登记注册类型分连锁零售企业年末从业人数",
+    "isParent": false
+  },
+  {
+    "id": "A0I0805",
+    "pid": "A0I08",
+    "name": "按行业分连锁零售企业年末从业人数",
+    "isParent": false
+  },
+  {
+    "id": "A0I080F",
+    "pid": "A0I08",
+    "name": "按业态分连锁零售企业年末从业人数",
+    "isParent": false
+  },
+  {
+    "id": "A0I0807",
+    "pid": "A0I08",
+    "name": "按登记注册类型分连锁零售企业零售营业面积",
+    "isParent": false
+  },
+  {
+    "id": "A0I0808",
+    "pid": "A0I08",
+    "name": "按行业分连锁零售企业零售营业面积",
+    "isParent": false
+  },
+  {
+    "id": "A0I080G",
+    "pid": "A0I08",
+    "name": "按业态分连锁零售企业零售营业面积",
+    "isParent": false
+  },
+  {
+    "id": "A0I080A",
+    "pid": "A0I08",
+    "name": "按登记注册类型分连锁零售企业商品销售额（2023年前）",
+    "isParent": false
+  },
+  {
+    "id": "A0I080B",
+    "pid": "A0I08",
+    "name": "按行业分连锁零售企业商品销售额",
+    "isParent": false
+  },
+  {
+    "id": "A0I080H",
+    "pid": "A0I08",
+    "name": "按业态分连锁零售企业商品销售额",
+    "isParent": false
+  },
+  {
+    "id": "A0I080D",
+    "pid": "A0I08",
+    "name": "按登记注册统计类别分连锁零售企业门店总数（2023年起）",
+    "isParent": false
+  },
+  {
+    "id": "A0I080I",
+    "pid": "A0I08",
+    "name": "按登记注册统计类别分连锁零售企业年末从业人数（2023年起）",
+    "isParent": false
+  },
+  {
+    "id": "A0I080J",
+    "pid": "A0I08",
+    "name": "按登记注册统计类别分连锁零售企业零售营业面积（2023年起）",
+    "isParent": false
+  },
+  {
+    "id": "A0I080K",
+    "pid": "A0I08",
+    "name": "按登记注册统计类别分连锁零售企业商品销售额（2023年起）",
+    "isParent": false
+  }
+]

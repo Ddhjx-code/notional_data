@@ -1,0 +1,470 @@
+[
+  {
+    "id": "A030101",
+    "pid": "A0301",
+    "name": "铁矿石原矿",
+    "isParent": false
+  },
+  {
+    "id": "A030102",
+    "pid": "A0301",
+    "name": "原盐",
+    "isParent": false
+  },
+  {
+    "id": "A030103",
+    "pid": "A0301",
+    "name": "成品糖",
+    "isParent": false
+  },
+  {
+    "id": "A030104",
+    "pid": "A0301",
+    "name": "精制食用植物油",
+    "isParent": false
+  },
+  {
+    "id": "A030105",
+    "pid": "A0301",
+    "name": "乳制品",
+    "isParent": false
+  },
+  {
+    "id": "A030106",
+    "pid": "A0301",
+    "name": "白酒(折65度，商品量)",
+    "isParent": false
+  },
+  {
+    "id": "A030107",
+    "pid": "A0301",
+    "name": "啤酒",
+    "isParent": false
+  },
+  {
+    "id": "A030108",
+    "pid": "A0301",
+    "name": "饮料",
+    "isParent": false
+  },
+  {
+    "id": "A030109",
+    "pid": "A0301",
+    "name": "卷烟",
+    "isParent": false
+  },
+  {
+    "id": "A03010A",
+    "pid": "A0301",
+    "name": "纱",
+    "isParent": false
+  },
+  {
+    "id": "A03010B",
+    "pid": "A0301",
+    "name": "布",
+    "isParent": false
+  },
+  {
+    "id": "A03010C",
+    "pid": "A0301",
+    "name": "服装",
+    "isParent": false
+  },
+  {
+    "id": "A03010D",
+    "pid": "A0301",
+    "name": "棉布",
+    "isParent": false
+  },
+  {
+    "id": "A03010E",
+    "pid": "A0301",
+    "name": "棉混纺布(混纺交织布)",
+    "isParent": false
+  },
+  {
+    "id": "A03010F",
+    "pid": "A0301",
+    "name": "化学纤维布(纯化纤布)",
+    "isParent": false
+  },
+  {
+    "id": "A03010G",
+    "pid": "A0301",
+    "name": "毛机织物(呢绒)",
+    "isParent": false
+  },
+  {
+    "id": "A03010H",
+    "pid": "A0301",
+    "name": "机制纸及纸板",
+    "isParent": false
+  },
+  {
+    "id": "A03010I",
+    "pid": "A0301",
+    "name": "硫酸(折100%)",
+    "isParent": false
+  },
+  {
+    "id": "A03010J",
+    "pid": "A0301",
+    "name": "烧碱(折100%)",
+    "isParent": false
+  },
+  {
+    "id": "A03010K",
+    "pid": "A0301",
+    "name": "纯碱(碳酸钠)",
+    "isParent": false
+  },
+  {
+    "id": "A03010L",
+    "pid": "A0301",
+    "name": "碳化钙(电石，折300升/千克)",
+    "isParent": false
+  },
+  {
+    "id": "A03010M",
+    "pid": "A0301",
+    "name": "乙烯",
+    "isParent": false
+  },
+  {
+    "id": "A03010N",
+    "pid": "A0301",
+    "name": "合成氨(无水氨)",
+    "isParent": false
+  },
+  {
+    "id": "A03010O",
+    "pid": "A0301",
+    "name": "汽油",
+    "isParent": false
+  },
+  {
+    "id": "A03010P",
+    "pid": "A0301",
+    "name": "煤油",
+    "isParent": false
+  },
+  {
+    "id": "A03010Q",
+    "pid": "A0301",
+    "name": "柴油",
+    "isParent": false
+  },
+  {
+    "id": "A03010R",
+    "pid": "A0301",
+    "name": "农用氮磷钾化学肥料总计(折纯)",
+    "isParent": false
+  },
+  {
+    "id": "A03010S",
+    "pid": "A0301",
+    "name": "氮肥(折含氮100%)",
+    "isParent": false
+  },
+  {
+    "id": "A03010T",
+    "pid": "A0301",
+    "name": "磷肥(折五氧化二磷100%)",
+    "isParent": false
+  },
+  {
+    "id": "A03010U",
+    "pid": "A0301",
+    "name": "化学农药原药(折有效成份100%)",
+    "isParent": false
+  },
+  {
+    "id": "A03010V",
+    "pid": "A0301",
+    "name": "涂料",
+    "isParent": false
+  },
+  {
+    "id": "A03010W",
+    "pid": "A0301",
+    "name": "初级形态塑料",
+    "isParent": false
+  },
+  {
+    "id": "A03010X",
+    "pid": "A0301",
+    "name": "合成橡胶",
+    "isParent": false
+  },
+  {
+    "id": "A03010Y",
+    "pid": "A0301",
+    "name": "合成洗涤剂",
+    "isParent": false
+  },
+  {
+    "id": "A03010Z",
+    "pid": "A0301",
+    "name": "化学药品原药",
+    "isParent": false
+  },
+  {
+    "id": "A030110",
+    "pid": "A0301",
+    "name": "化学纤维",
+    "isParent": false
+  },
+  {
+    "id": "A030111",
+    "pid": "A0301",
+    "name": "橡胶轮胎外胎",
+    "isParent": false
+  },
+  {
+    "id": "A030112",
+    "pid": "A0301",
+    "name": "塑料制品",
+    "isParent": false
+  },
+  {
+    "id": "A030113",
+    "pid": "A0301",
+    "name": "农用薄膜",
+    "isParent": false
+  },
+  {
+    "id": "A030114",
+    "pid": "A0301",
+    "name": "水泥",
+    "isParent": false
+  },
+  {
+    "id": "A030115",
+    "pid": "A0301",
+    "name": "平板玻璃",
+    "isParent": false
+  },
+  {
+    "id": "A030116",
+    "pid": "A0301",
+    "name": "生铁",
+    "isParent": false
+  },
+  {
+    "id": "A030117",
+    "pid": "A0301",
+    "name": "粗钢",
+    "isParent": false
+  },
+  {
+    "id": "A030118",
+    "pid": "A0301",
+    "name": "钢材",
+    "isParent": false
+  },
+  {
+    "id": "A030119",
+    "pid": "A0301",
+    "name": "盘条(线材)",
+    "isParent": false
+  },
+  {
+    "id": "A03011A",
+    "pid": "A0301",
+    "name": "十种有色金属",
+    "isParent": false
+  },
+  {
+    "id": "A03011B",
+    "pid": "A0301",
+    "name": "氧化铝",
+    "isParent": false
+  },
+  {
+    "id": "A03011C",
+    "pid": "A0301",
+    "name": "原铝(电解铝)",
+    "isParent": false
+  },
+  {
+    "id": "A03011D",
+    "pid": "A0301",
+    "name": "金属切削机床",
+    "isParent": false
+  },
+  {
+    "id": "A03011E",
+    "pid": "A0301",
+    "name": "挖掘机",
+    "isParent": false
+  },
+  {
+    "id": "A03011F",
+    "pid": "A0301",
+    "name": "大型拖拉机",
+    "isParent": false
+  },
+  {
+    "id": "A03011G",
+    "pid": "A0301",
+    "name": "中型拖拉机",
+    "isParent": false
+  },
+  {
+    "id": "A03011H",
+    "pid": "A0301",
+    "name": "小型拖拉机",
+    "isParent": false
+  },
+  {
+    "id": "A03011I",
+    "pid": "A0301",
+    "name": "汽车",
+    "isParent": false
+  },
+  {
+    "id": "A03011J",
+    "pid": "A0301",
+    "name": "轿车",
+    "isParent": false
+  },
+  {
+    "id": "A03011K",
+    "pid": "A0301",
+    "name": "运动型多用途用车(SUV)",
+    "isParent": false
+  },
+  {
+    "id": "A03011L",
+    "pid": "A0301",
+    "name": "载货汽车",
+    "isParent": false
+  },
+  {
+    "id": "A03011M",
+    "pid": "A0301",
+    "name": "新能源汽车",
+    "isParent": false
+  },
+  {
+    "id": "A03011N",
+    "pid": "A0301",
+    "name": "摩托车",
+    "isParent": false
+  },
+  {
+    "id": "A03011O",
+    "pid": "A0301",
+    "name": "两轮脚踏自行车(自行车)",
+    "isParent": false
+  },
+  {
+    "id": "A03011P",
+    "pid": "A0301",
+    "name": "民用钢质船舶",
+    "isParent": false
+  },
+  {
+    "id": "A03011Q",
+    "pid": "A0301",
+    "name": "发电机组(发电设备)",
+    "isParent": false
+  },
+  {
+    "id": "A03011R",
+    "pid": "A0301",
+    "name": "家用洗衣机",
+    "isParent": false
+  },
+  {
+    "id": "A03011S",
+    "pid": "A0301",
+    "name": "家用吸尘器",
+    "isParent": false
+  },
+  {
+    "id": "A03011T",
+    "pid": "A0301",
+    "name": "家用电冰箱",
+    "isParent": false
+  },
+  {
+    "id": "A03011U",
+    "pid": "A0301",
+    "name": "家用冷柜",
+    "isParent": false
+  },
+  {
+    "id": "A03011V",
+    "pid": "A0301",
+    "name": "家用电风扇",
+    "isParent": false
+  },
+  {
+    "id": "A03011W",
+    "pid": "A0301",
+    "name": "房间空气调节器",
+    "isParent": false
+  },
+  {
+    "id": "A03011X",
+    "pid": "A0301",
+    "name": "电子计算机整机",
+    "isParent": false
+  },
+  {
+    "id": "A03011Y",
+    "pid": "A0301",
+    "name": "移动通信手持机(手机)",
+    "isParent": false
+  },
+  {
+    "id": "A03011Z",
+    "pid": "A0301",
+    "name": "吸排油烟机",
+    "isParent": false
+  },
+  {
+    "id": "A030120",
+    "pid": "A0301",
+    "name": "电饭锅",
+    "isParent": false
+  },
+  {
+    "id": "A030121",
+    "pid": "A0301",
+    "name": "微型计算机设备",
+    "isParent": false
+  },
+  {
+    "id": "A030122",
+    "pid": "A0301",
+    "name": "彩色电视机",
+    "isParent": false
+  },
+  {
+    "id": "A030123",
+    "pid": "A0301",
+    "name": "集成电路",
+    "isParent": false
+  },
+  {
+    "id": "A030124",
+    "pid": "A0301",
+    "name": "数字激光音视盘机",
+    "isParent": false
+  },
+  {
+    "id": "A030125",
+    "pid": "A0301",
+    "name": "组合音响",
+    "isParent": false
+  },
+  {
+    "id": "A030126",
+    "pid": "A0301",
+    "name": "照相机",
+    "isParent": false
+  }
+]

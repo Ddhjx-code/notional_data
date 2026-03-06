@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A0N0A01",
+    "pid": "A0N0A",
+    "name": "按登记注册类型分大中型工业企业新产品项目数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A02",
+    "pid": "A0N0A",
+    "name": "按登记注册类型分大中型工业企业开发新产品经费",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A03",
+    "pid": "A0N0A",
+    "name": "按登记注册类型分大中型工业企业新产品产值",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A04",
+    "pid": "A0N0A",
+    "name": "按登记注册类型分大中型工业企业新产品销售收入",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A05",
+    "pid": "A0N0A",
+    "name": "按登记注册类型分大中型工业企业新产品出口销售收入",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A06",
+    "pid": "A0N0A",
+    "name": "按行业分大中型工业企业新产品项目数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A07",
+    "pid": "A0N0A",
+    "name": "按行业分大中型工业企业新产品经费",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A08",
+    "pid": "A0N0A",
+    "name": "按行业分大中型工业企业新产品产值",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A09",
+    "pid": "A0N0A",
+    "name": "按行业分大中型工业企业新产品销售收入",
+    "isParent": false
+  },
+  {
+    "id": "A0N0A0A",
+    "pid": "A0N0A",
+    "name": "按行业分大中型工业企业新产品出口销售收入",
+    "isParent": false
+  }
+]

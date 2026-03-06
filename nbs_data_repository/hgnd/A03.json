@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0301",
+    "pid": "A03",
+    "name": "总人口",
+    "isParent": false
+  },
+  {
+    "id": "A0302",
+    "pid": "A03",
+    "name": "人口出生率、死亡率和自然增长率",
+    "isParent": false
+  },
+  {
+    "id": "A0303",
+    "pid": "A03",
+    "name": "人口年龄结构和抚养比",
+    "isParent": false
+  },
+  {
+    "id": "A0304",
+    "pid": "A03",
+    "name": "人口平均预期寿命",
+    "isParent": false
+  },
+  {
+    "id": "A0305",
+    "pid": "A03",
+    "name": "人口普查人口基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0306",
+    "pid": "A03",
+    "name": "人口抽样调查样本数据",
+    "isParent": true
+  }
+]

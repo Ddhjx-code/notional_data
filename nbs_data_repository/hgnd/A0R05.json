@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A0R0501",
+    "pid": "A0R05",
+    "name": "分项目等级运动员发展人数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0502",
+    "pid": "A0R05",
+    "name": "分项目等级女运动员发展人数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0503",
+    "pid": "A0R05",
+    "name": "分项目国际级运动健将数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0504",
+    "pid": "A0R05",
+    "name": "分项目国际级女运动健将数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0505",
+    "pid": "A0R05",
+    "name": "分项目运动健将数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0506",
+    "pid": "A0R05",
+    "name": "分项目女运动健将数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0507",
+    "pid": "A0R05",
+    "name": "分项目一级运动员数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0508",
+    "pid": "A0R05",
+    "name": "分项目一级女运动员数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0509",
+    "pid": "A0R05",
+    "name": "分项目二级运动员数",
+    "isParent": false
+  },
+  {
+    "id": "A0R050A",
+    "pid": "A0R05",
+    "name": "分项目二级女运动员数",
+    "isParent": false
+  }
+]

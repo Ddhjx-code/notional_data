@@ -1,0 +1,122 @@
+[
+  {
+    "id": "A0201",
+    "pid": "A02",
+    "name": "规上工业增加值增长速度",
+    "isParent": false
+  },
+  {
+    "id": "A0202",
+    "pid": "A02",
+    "name": "按经济类型分工业增加值增长速度",
+    "isParent": false
+  },
+  {
+    "id": "A020P",
+    "pid": "A02",
+    "name": "按三大门类分工业增加值增长速度",
+    "isParent": false
+  },
+  {
+    "id": "A0203",
+    "pid": "A02",
+    "name": "工业分大类行业增加值增长速度(2003-2011)",
+    "isParent": false
+  },
+  {
+    "id": "A0204",
+    "pid": "A02",
+    "name": "工业分大类行业增加值增长速度(2012-2017)",
+    "isParent": false
+  },
+  {
+    "id": "A0205",
+    "pid": "A02",
+    "name": "工业分大类行业增加值增长速度(2018-至今)",
+    "isParent": false
+  },
+  {
+    "id": "A0206",
+    "pid": "A02",
+    "name": "工业分大类行业出口交货值(2003-2011)",
+    "isParent": true
+  },
+  {
+    "id": "A0207",
+    "pid": "A02",
+    "name": "工业分大类行业出口交货值(2012-2017)",
+    "isParent": true
+  },
+  {
+    "id": "A0208",
+    "pid": "A02",
+    "name": "工业分大类行业出口交货值(2018-至今)",
+    "isParent": true
+  },
+  {
+    "id": "A020Q",
+    "pid": "A02",
+    "name": "产品销售率(按现价计算)",
+    "isParent": false
+  },
+  {
+    "id": "A0209",
+    "pid": "A02",
+    "name": "工业主要产品产量",
+    "isParent": true
+  },
+  {
+    "id": "A020A",
+    "pid": "A02",
+    "name": "工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020S",
+    "pid": "A02",
+    "name": "按登记注册类型分工业企业主要经济指标（-2023）",
+    "isParent": true
+  },
+  {
+    "id": "A020R",
+    "pid": "A02",
+    "name": "按登记注册类型分工业企业主要经济指标（2024-）",
+    "isParent": true
+  },
+  {
+    "id": "A020I",
+    "pid": "A02",
+    "name": "大中型工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020J",
+    "pid": "A02",
+    "name": "大中型国有控股工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020L",
+    "pid": "A02",
+    "name": "按行业分工业企业主要经济指标(2001-2002)",
+    "isParent": true
+  },
+  {
+    "id": "A020M",
+    "pid": "A02",
+    "name": "按行业分工业企业主要经济指标(2003-2011)",
+    "isParent": true
+  },
+  {
+    "id": "A020N",
+    "pid": "A02",
+    "name": "按行业分工业企业主要经济指标(2012-2017)",
+    "isParent": true
+  },
+  {
+    "id": "A020O",
+    "pid": "A02",
+    "name": "按行业分工业企业主要经济指标(2018-至今)",
+    "isParent": true
+  }
+]

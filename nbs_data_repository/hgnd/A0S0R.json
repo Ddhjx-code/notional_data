@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0S0R01",
+    "pid": "A0S0R",
+    "name": "人民法院审理合同纠纷一审案件收案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0R02",
+    "pid": "A0S0R",
+    "name": "人民法院审理合同纠纷一审案件结案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0R03",
+    "pid": "A0S0R",
+    "name": "人民法院审理合同纠纷一审案件调解件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0R04",
+    "pid": "A0S0R",
+    "name": "人民法院审理合同纠纷一审案件判决件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0R05",
+    "pid": "A0S0R",
+    "name": "人民法院审理合同纠纷一审案件驳回件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0R06",
+    "pid": "A0S0R",
+    "name": "人民法院审理合同纠纷一审案件撤诉件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0R07",
+    "pid": "A0S0R",
+    "name": "人民法院审理合同纠纷一审案件其他结案件数",
+    "isParent": false
+  }
+]

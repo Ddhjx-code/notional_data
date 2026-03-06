@@ -1,0 +1,56 @@
+[
+  {
+    "id": "A0O0801",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构诊疗人次数",
+    "isParent": false
+  },
+  {
+    "id": "A0O0802",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构入院人数",
+    "isParent": false
+  },
+  {
+    "id": "A0O0803",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构实际开放总床日数",
+    "isParent": false
+  },
+  {
+    "id": "A0O0804",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构平均开放病床",
+    "isParent": false
+  },
+  {
+    "id": "A0O0805",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构实际占用总床日数",
+    "isParent": false
+  },
+  {
+    "id": "A0O0806",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构出院者占用总床日数",
+    "isParent": false
+  },
+  {
+    "id": "A0O0807",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构病床工作日",
+    "isParent": false
+  },
+  {
+    "id": "A0O0808",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构病床使用率",
+    "isParent": false
+  },
+  {
+    "id": "A0O0809",
+    "pid": "A0O08",
+    "name": "各类医疗卫生机构平均住院日",
+    "isParent": false
+  }
+]

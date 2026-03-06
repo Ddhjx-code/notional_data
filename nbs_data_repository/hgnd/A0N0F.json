@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0N0F01",
+    "pid": "A0N0F",
+    "name": "研究与试验发展人员",
+    "isParent": false
+  },
+  {
+    "id": "A0N0F02",
+    "pid": "A0N0F",
+    "name": "研究与试验发展女性人员",
+    "isParent": false
+  },
+  {
+    "id": "A0N0F03",
+    "pid": "A0N0F",
+    "name": "研究与试验发展全时人员",
+    "isParent": false
+  },
+  {
+    "id": "A0N0F04",
+    "pid": "A0N0F",
+    "name": "博士毕业研究与试验发展人员",
+    "isParent": false
+  },
+  {
+    "id": "A0N0F05",
+    "pid": "A0N0F",
+    "name": "硕士毕业研究与试验发展人员",
+    "isParent": false
+  },
+  {
+    "id": "A0N0F06",
+    "pid": "A0N0F",
+    "name": "本科毕业研究与试验发展人员",
+    "isParent": false
+  }
+]

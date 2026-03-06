@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A0N0S01",
+    "pid": "A0N0S",
+    "name": "高技术产业新产品开发项目数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0S02",
+    "pid": "A0N0S",
+    "name": "高技术产业新产品开发经费支出",
+    "isParent": false
+  },
+  {
+    "id": "A0N0S03",
+    "pid": "A0N0S",
+    "name": "高技术产业新产品产值",
+    "isParent": false
+  },
+  {
+    "id": "A0N0S04",
+    "pid": "A0N0S",
+    "name": "高技术产业新产品销售收入",
+    "isParent": false
+  },
+  {
+    "id": "A0N0S05",
+    "pid": "A0N0S",
+    "name": "高技术产业新产品出口销售收入",
+    "isParent": false
+  }
+]

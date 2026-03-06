@@ -1,0 +1,74 @@
+[
+  {
+    "id": "A0P01",
+    "pid": "A0P",
+    "name": "社会福利企业",
+    "isParent": false
+  },
+  {
+    "id": "A0P02",
+    "pid": "A0P",
+    "name": "孤儿和家庭儿童收养",
+    "isParent": false
+  },
+  {
+    "id": "A0P03",
+    "pid": "A0P",
+    "name": "社会救助",
+    "isParent": false
+  },
+  {
+    "id": "A0P04",
+    "pid": "A0P",
+    "name": "医疗救助",
+    "isParent": false
+  },
+  {
+    "id": "A0P05",
+    "pid": "A0P",
+    "name": "优抚安置",
+    "isParent": false
+  },
+  {
+    "id": "A0P06",
+    "pid": "A0P",
+    "name": "福利彩票销售",
+    "isParent": false
+  },
+  {
+    "id": "A0P07",
+    "pid": "A0P",
+    "name": "社会捐赠",
+    "isParent": false
+  },
+  {
+    "id": "A0P08",
+    "pid": "A0P",
+    "name": "社区服务机构",
+    "isParent": false
+  },
+  {
+    "id": "A0P09",
+    "pid": "A0P",
+    "name": "婚姻服务",
+    "isParent": false
+  },
+  {
+    "id": "A0P0A",
+    "pid": "A0P",
+    "name": "殡葬服务",
+    "isParent": false
+  },
+  {
+    "id": "A0P0B",
+    "pid": "A0P",
+    "name": "社会组织",
+    "isParent": false
+  },
+  {
+    "id": "A0P0C",
+    "pid": "A0P",
+    "name": "自治组织",
+    "isParent": false
+  }
+]

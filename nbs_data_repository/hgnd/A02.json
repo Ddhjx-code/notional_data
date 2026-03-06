@@ -1,0 +1,86 @@
+[
+  {
+    "id": "A0201",
+    "pid": "A02",
+    "name": "国内生产总值",
+    "isParent": false
+  },
+  {
+    "id": "A0202",
+    "pid": "A02",
+    "name": "国内生产总值指数",
+    "isParent": true
+  },
+  {
+    "id": "A0203",
+    "pid": "A02",
+    "name": "三次产业构成",
+    "isParent": false
+  },
+  {
+    "id": "A0204",
+    "pid": "A02",
+    "name": "分行业增加值",
+    "isParent": false
+  },
+  {
+    "id": "A0205",
+    "pid": "A02",
+    "name": "分行业增加值指数",
+    "isParent": true
+  },
+  {
+    "id": "A0206",
+    "pid": "A02",
+    "name": "分行业增加值构成",
+    "isParent": false
+  },
+  {
+    "id": "A0207",
+    "pid": "A02",
+    "name": "三次产业贡献率",
+    "isParent": false
+  },
+  {
+    "id": "A0208",
+    "pid": "A02",
+    "name": "三次产业对国内生产总值增长的拉动",
+    "isParent": false
+  },
+  {
+    "id": "A0209",
+    "pid": "A02",
+    "name": "支出法国内生产总值",
+    "isParent": false
+  },
+  {
+    "id": "A020A",
+    "pid": "A02",
+    "name": "三大需求对国内生产总值增长的贡献率和拉动",
+    "isParent": false
+  },
+  {
+    "id": "A020B",
+    "pid": "A02",
+    "name": "居民消费水平",
+    "isParent": false
+  },
+  {
+    "id": "A020F",
+    "pid": "A02",
+    "name": "资金流量表（非金融交易）",
+    "isParent": true
+  },
+  {
+    "id": "A020G",
+    "pid": "A02",
+    "name": "资金流量表(金融交易)",
+    "isParent": true
+  },
+  {
+    "id": "A020H",
+    "pid": "A02",
+    "name": "国际收支平衡表",
+    "isParent": true
+  }
+]

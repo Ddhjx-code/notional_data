@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0101",
+    "pid": "A01",
+    "name": "行政区划",
+    "isParent": false
+  },
+  {
+    "id": "A0102",
+    "pid": "A01",
+    "name": "法人单位数",
+    "isParent": true
+  },
+  {
+    "id": "A0103",
+    "pid": "A01",
+    "name": "企业法人单位数",
+    "isParent": true
+  }
+]

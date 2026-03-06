@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0Q0Z0301",
+    "pid": "A0Q0Z03",
+    "name": "按产业类型分文化产业营业收入",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0Z0302",
+    "pid": "A0Q0Z03",
+    "name": "按行业类别分文化产业营业收入",
+    "isParent": false
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A060B01",
+    "pid": "A060B",
+    "name": "实际利用外商直接投资",
+    "isParent": true
+  },
+  {
+    "id": "A060B02",
+    "pid": "A060B",
+    "name": "实际利用外商其他投资",
+    "isParent": true
+  }
+]

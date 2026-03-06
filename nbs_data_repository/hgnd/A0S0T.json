@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A0S0T01",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件收案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0T02",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件结案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0T03",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件维持件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0T04",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件撤销件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0T05",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件驳回件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0T06",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件撤诉件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0T07",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件单独赔偿件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0T08",
+    "pid": "A0S0T",
+    "name": "人民法院审理行政一审案件其他结案件数",
+    "isParent": false
+  }
+]

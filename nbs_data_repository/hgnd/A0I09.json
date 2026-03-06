@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0I0901",
+    "pid": "A0I09",
+    "name": "市场数量",
+    "isParent": false
+  },
+  {
+    "id": "A0I0902",
+    "pid": "A0I09",
+    "name": "摊位数",
+    "isParent": false
+  },
+  {
+    "id": "A0I0903",
+    "pid": "A0I09",
+    "name": "营业面积",
+    "isParent": false
+  },
+  {
+    "id": "A0I0904",
+    "pid": "A0I09",
+    "name": "成交额",
+    "isParent": false
+  },
+  {
+    "id": "A0I0905",
+    "pid": "A0I09",
+    "name": "批发市场成交额",
+    "isParent": false
+  },
+  {
+    "id": "A0I0906",
+    "pid": "A0I09",
+    "name": "零售市场成交额",
+    "isParent": false
+  }
+]

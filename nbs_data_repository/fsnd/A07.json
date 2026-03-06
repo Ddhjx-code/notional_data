@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0701",
+    "pid": "A07",
+    "name": "按行业分国有经济能源工业固定资产投资",
+    "isParent": false
+  },
+  {
+    "id": "A0702",
+    "pid": "A07",
+    "name": "能源工业分行业投资",
+    "isParent": false
+  },
+  {
+    "id": "A0703",
+    "pid": "A07",
+    "name": "主要能源产品产量",
+    "isParent": false
+  },
+  {
+    "id": "A0704",
+    "pid": "A07",
+    "name": "城市能源产品供应",
+    "isParent": false
+  },
+  {
+    "id": "A0705",
+    "pid": "A07",
+    "name": "城市集中供热",
+    "isParent": false
+  },
+  {
+    "id": "A0706",
+    "pid": "A07",
+    "name": "主要能源产品消费量",
+    "isParent": false
+  },
+  {
+    "id": "A0707",
+    "pid": "A07",
+    "name": "能源消耗指标",
+    "isParent": false
+  }
+]

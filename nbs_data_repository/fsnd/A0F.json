@@ -1,0 +1,200 @@
+[
+  {
+    "id": "A0F01",
+    "pid": "A0F",
+    "name": "总承包建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F02",
+    "pid": "A0F",
+    "name": "专业承包建筑业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F03",
+    "pid": "A0F",
+    "name": "建筑业总产值",
+    "isParent": false
+  },
+  {
+    "id": "A0F05",
+    "pid": "A0F",
+    "name": "建筑业企业利税总额",
+    "isParent": false
+  },
+  {
+    "id": "A0F06",
+    "pid": "A0F",
+    "name": "建筑业企业利润总额",
+    "isParent": false
+  },
+  {
+    "id": "A0F08",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A0F09",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业从业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0F0A",
+    "pid": "A0F",
+    "name": "建筑业企业技术装备情况",
+    "isParent": false
+  },
+  {
+    "id": "A0F0B",
+    "pid": "A0F",
+    "name": "国有建筑业企业技术装备情况",
+    "isParent": false
+  },
+  {
+    "id": "A0F0C",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业总产值",
+    "isParent": false
+  },
+  {
+    "id": "A0F0D",
+    "pid": "A0F",
+    "name": "按行业分建筑业总产值",
+    "isParent": false
+  },
+  {
+    "id": "A0F0E",
+    "pid": "A0F",
+    "name": "建筑业企业签订合同和承包工程完成情况",
+    "isParent": false
+  },
+  {
+    "id": "A0F0F",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业实收资本",
+    "isParent": false
+  },
+  {
+    "id": "A0F0G",
+    "pid": "A0F",
+    "name": "建筑业企业资产",
+    "isParent": false
+  },
+  {
+    "id": "A0F0H",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业资产",
+    "isParent": false
+  },
+  {
+    "id": "A0F0I",
+    "pid": "A0F",
+    "name": "建筑业企业负债及所有者权益",
+    "isParent": false
+  },
+  {
+    "id": "A0F0J",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业所有者权益",
+    "isParent": false
+  },
+  {
+    "id": "A0F0K",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业负债",
+    "isParent": false
+  },
+  {
+    "id": "A0F0L",
+    "pid": "A0F",
+    "name": "建筑业企业总收入",
+    "isParent": false
+  },
+  {
+    "id": "A0F0M",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业总收入",
+    "isParent": false
+  },
+  {
+    "id": "A0F0N",
+    "pid": "A0F",
+    "name": "建筑业企业利税总额",
+    "isParent": false
+  },
+  {
+    "id": "A0F0O",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业税金总额",
+    "isParent": false
+  },
+  {
+    "id": "A0F0P",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业利润总额",
+    "isParent": false
+  },
+  {
+    "id": "A0F0Q",
+    "pid": "A0F",
+    "name": "按资质等级分总承包建筑业企业利润总额",
+    "isParent": false
+  },
+  {
+    "id": "A0F0R",
+    "pid": "A0F",
+    "name": "按资质等级分专业承包建筑业企业利润总额",
+    "isParent": false
+  },
+  {
+    "id": "A0F0S",
+    "pid": "A0F",
+    "name": "按登记注册类型分建筑业企业工程结算利润",
+    "isParent": false
+  },
+  {
+    "id": "A0F0T",
+    "pid": "A0F",
+    "name": "建筑业劳动生产率",
+    "isParent": false
+  },
+  {
+    "id": "A0F0U",
+    "pid": "A0F",
+    "name": "建筑业房屋建筑面积",
+    "isParent": false
+  },
+  {
+    "id": "A0F0V",
+    "pid": "A0F",
+    "name": "劳务分包建筑业企业主要指标",
+    "isParent": false
+  },
+  {
+    "id": "A0F0W",
+    "pid": "A0F",
+    "name": "勘察设计机构和人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0F0X",
+    "pid": "A0F",
+    "name": "勘察设计单位营业收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0F0Y",
+    "pid": "A0F",
+    "name": "建设工程监理企业和人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0F0Z",
+    "pid": "A0F",
+    "name": "建设工程监理营业收入",
+    "isParent": false
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A0N0Z01",
+    "pid": "A0N0Z",
+    "name": "按学科分国外主要检索工具收录科技论文数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Z02",
+    "pid": "A0N0Z",
+    "name": "按学科分SCI收录科技论文数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Z03",
+    "pid": "A0N0Z",
+    "name": "按学科分EI收录科技论文数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Z04",
+    "pid": "A0N0Z",
+    "name": "按学科分CPCI-S收录科技论文数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0Z05",
+    "pid": "A0N0Z",
+    "name": "国外主要检索工具收录科技论文位次",
+    "isParent": false
+  }
+]

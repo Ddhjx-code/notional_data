@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0P0101",
+    "pid": "A0P01",
+    "name": "社会服务机构单位数",
+    "isParent": false
+  },
+  {
+    "id": "A0P0102",
+    "pid": "A0P01",
+    "name": "社会服务机构职工人数",
+    "isParent": false
+  }
+]

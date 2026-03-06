@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0M0J01",
+    "pid": "A0M0J",
+    "name": "网络专科分学科招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0J02",
+    "pid": "A0M0J",
+    "name": "网络专科分学科在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0J03",
+    "pid": "A0M0J",
+    "name": "网络专科分学科毕业生数",
+    "isParent": false
+  }
+]

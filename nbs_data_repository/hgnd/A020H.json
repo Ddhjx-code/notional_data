@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A020H01",
+    "pid": "A020H",
+    "name": "差额(贷-借)",
+    "isParent": true
+  },
+  {
+    "id": "A020H02",
+    "pid": "A020H",
+    "name": "贷方",
+    "isParent": true
+  },
+  {
+    "id": "A020H03",
+    "pid": "A020H",
+    "name": "借方",
+    "isParent": true
+  }
+]

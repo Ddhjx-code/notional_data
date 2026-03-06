@@ -1,0 +1,116 @@
+[
+  {
+    "id": "A0601",
+    "pid": "A06",
+    "name": "货物进出口总额",
+    "isParent": false
+  },
+  {
+    "id": "A0602",
+    "pid": "A06",
+    "name": "出口货物分类金额(按SITC分类)",
+    "isParent": false
+  },
+  {
+    "id": "A0603",
+    "pid": "A06",
+    "name": "进口货物分类金额(按SITC分类)",
+    "isParent": false
+  },
+  {
+    "id": "A0604",
+    "pid": "A06",
+    "name": "进出口货物分类金额",
+    "isParent": true
+  },
+  {
+    "id": "A0605",
+    "pid": "A06",
+    "name": "同各国(地区)海关货物进出口总额",
+    "isParent": true
+  },
+  {
+    "id": "A0606",
+    "pid": "A06",
+    "name": "出口主要货物数量和金额",
+    "isParent": true
+  },
+  {
+    "id": "A0607",
+    "pid": "A06",
+    "name": "进口主要货物数量和金额",
+    "isParent": true
+  },
+  {
+    "id": "A0608",
+    "pid": "A06",
+    "name": "外商投资企业货物进出口总额",
+    "isParent": false
+  },
+  {
+    "id": "A0609",
+    "pid": "A06",
+    "name": "合同利用外资",
+    "isParent": false
+  },
+  {
+    "id": "A060A",
+    "pid": "A06",
+    "name": "实际利用外资",
+    "isParent": false
+  },
+  {
+    "id": "A060B",
+    "pid": "A06",
+    "name": "按国别(地区)分实际外商投资额",
+    "isParent": true
+  },
+  {
+    "id": "A060C",
+    "pid": "A06",
+    "name": "按方式分外商投资额",
+    "isParent": true
+  },
+  {
+    "id": "A060D",
+    "pid": "A06",
+    "name": "按行业分外商直接投资额",
+    "isParent": true
+  },
+  {
+    "id": "A060E",
+    "pid": "A06",
+    "name": "按行业分外商投资企业年底注册登记情况",
+    "isParent": true
+  },
+  {
+    "id": "A060F",
+    "pid": "A06",
+    "name": "按主要国别(地区)分对外直接投资",
+    "isParent": true
+  },
+  {
+    "id": "A060G",
+    "pid": "A06",
+    "name": "按行业分对外直接投资",
+    "isParent": true
+  },
+  {
+    "id": "A060H",
+    "pid": "A06",
+    "name": "对外经济合作",
+    "isParent": false
+  },
+  {
+    "id": "A060I",
+    "pid": "A06",
+    "name": "按国别(地区)分对外经济合作",
+    "isParent": true
+  },
+  {
+    "id": "A060J",
+    "pid": "A06",
+    "name": "人民币汇率(年平均价)",
+    "isParent": false
+  }
+]

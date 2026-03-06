@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0801",
+    "pid": "A08",
+    "name": "地方财政收入",
+    "isParent": false
+  },
+  {
+    "id": "A0802",
+    "pid": "A08",
+    "name": "地方财政支出",
+    "isParent": false
+  }
+]

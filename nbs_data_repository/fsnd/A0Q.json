@@ -1,0 +1,98 @@
+[
+  {
+    "id": "A0Q01",
+    "pid": "A0Q",
+    "name": "艺术表演团体、艺术表演场馆演出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q02",
+    "pid": "A0Q",
+    "name": "博物馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q03",
+    "pid": "A0Q",
+    "name": "公共图书馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q04",
+    "pid": "A0Q",
+    "name": "广播电视节目综合人口覆盖情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q05",
+    "pid": "A0Q",
+    "name": "广播节目制作播出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q06",
+    "pid": "A0Q",
+    "name": "电视节目制作播出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q07",
+    "pid": "A0Q",
+    "name": "有线广播电视传输干线网络及用户情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q08",
+    "pid": "A0Q",
+    "name": "广播电视技术情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q09",
+    "pid": "A0Q",
+    "name": "图书、期刊和报纸出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0A",
+    "pid": "A0Q",
+    "name": "少年儿童读物类图书和课本出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0B",
+    "pid": "A0Q",
+    "name": "录像制品出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0C",
+    "pid": "A0Q",
+    "name": "录音制品出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0D",
+    "pid": "A0Q",
+    "name": "电子出版物出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0E",
+    "pid": "A0Q",
+    "name": "版权合同登记",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0F",
+    "pid": "A0Q",
+    "name": "出版物发行机构数和网点数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0G",
+    "pid": "A0Q",
+    "name": "出版印刷生产情况",
+    "isParent": false
+  }
+]

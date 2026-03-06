@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0B01",
+    "pid": "A0B",
+    "name": "制造业采购经理指数",
+    "isParent": false
+  },
+  {
+    "id": "A0B02",
+    "pid": "A0B",
+    "name": "非制造业采购经理指数",
+    "isParent": false
+  },
+  {
+    "id": "A0B03",
+    "pid": "A0B",
+    "name": "综合PMI产出指数",
+    "isParent": false
+  }
+]

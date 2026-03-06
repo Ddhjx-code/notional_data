@@ -1,0 +1,86 @@
+[
+  {
+    "id": "A01",
+    "pid": "",
+    "name": "价格指数",
+    "isParent": true
+  },
+  {
+    "id": "A02",
+    "pid": "",
+    "name": "工业",
+    "isParent": true
+  },
+  {
+    "id": "A03",
+    "pid": "",
+    "name": "能源",
+    "isParent": true
+  },
+  {
+    "id": "A04",
+    "pid": "",
+    "name": "固定资产投资(不含农户)",
+    "isParent": true
+  },
+  {
+    "id": "A05",
+    "pid": "",
+    "name": "服务业生产指数",
+    "isParent": true
+  },
+  {
+    "id": "A0E",
+    "pid": "",
+    "name": "城镇调查失业率",
+    "isParent": true
+  },
+  {
+    "id": "A06",
+    "pid": "",
+    "name": "房地产",
+    "isParent": true
+  },
+  {
+    "id": "A07",
+    "pid": "",
+    "name": "国内贸易",
+    "isParent": true
+  },
+  {
+    "id": "A08",
+    "pid": "",
+    "name": "对外经济",
+    "isParent": true
+  },
+  {
+    "id": "A09",
+    "pid": "",
+    "name": "交通运输",
+    "isParent": true
+  },
+  {
+    "id": "A0A",
+    "pid": "",
+    "name": "邮电通信",
+    "isParent": true
+  },
+  {
+    "id": "A0B",
+    "pid": "",
+    "name": "采购经理指数",
+    "isParent": true
+  },
+  {
+    "id": "A0C",
+    "pid": "",
+    "name": "财政",
+    "isParent": true
+  },
+  {
+    "id": "A0D",
+    "pid": "",
+    "name": "金融",
+    "isParent": true
+  }
+]

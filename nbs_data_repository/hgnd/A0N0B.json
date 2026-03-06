@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0N0B01",
+    "pid": "A0N0B",
+    "name": "按登记注册类型分大中型工业企业专利申请数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0B02",
+    "pid": "A0N0B",
+    "name": "按登记注册类型分大中型工业企业发明专利申请数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0B03",
+    "pid": "A0N0B",
+    "name": "按登记注册类型分大中型工业企业有效发明专利数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0B04",
+    "pid": "A0N0B",
+    "name": "按行业分大中型工业企业专利申请数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0B05",
+    "pid": "A0N0B",
+    "name": "按行业分大中型工业企业发明专利申请数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0B06",
+    "pid": "A0N0B",
+    "name": "按行业分大中型工业企业有效发明专利数",
+    "isParent": false
+  }
+]

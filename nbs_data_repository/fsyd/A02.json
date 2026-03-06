@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0201",
+    "pid": "A02",
+    "name": "工业增加值增长速度",
+    "isParent": false
+  },
+  {
+    "id": "A0204",
+    "pid": "A02",
+    "name": "产品销售率(按现价计算)",
+    "isParent": false
+  },
+  {
+    "id": "A0202",
+    "pid": "A02",
+    "name": "工业主要产品产量",
+    "isParent": true
+  },
+  {
+    "id": "A0203",
+    "pid": "A02",
+    "name": "工业企业主要经济指标",
+    "isParent": false
+  }
+]

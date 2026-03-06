@@ -1,0 +1,122 @@
+[
+  {
+    "id": "A020N01",
+    "pid": "A020N",
+    "name": "工业企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A020N02",
+    "pid": "A020N",
+    "name": "工业亏损企业单位数",
+    "isParent": false
+  },
+  {
+    "id": "A020N03",
+    "pid": "A020N",
+    "name": "工业企业流动资产合计",
+    "isParent": false
+  },
+  {
+    "id": "A020N04",
+    "pid": "A020N",
+    "name": "工业企业应收账款",
+    "isParent": false
+  },
+  {
+    "id": "A020N05",
+    "pid": "A020N",
+    "name": "工业企业存货",
+    "isParent": false
+  },
+  {
+    "id": "A020N06",
+    "pid": "A020N",
+    "name": "工业企业产成品存货",
+    "isParent": false
+  },
+  {
+    "id": "A020N07",
+    "pid": "A020N",
+    "name": "工业企业资产总计",
+    "isParent": false
+  },
+  {
+    "id": "A020N08",
+    "pid": "A020N",
+    "name": "工业企业负债合计",
+    "isParent": false
+  },
+  {
+    "id": "A020N09",
+    "pid": "A020N",
+    "name": "工业企业营业收入",
+    "isParent": false
+  },
+  {
+    "id": "A020N0A",
+    "pid": "A020N",
+    "name": "工业企业主营业务收入",
+    "isParent": false
+  },
+  {
+    "id": "A020N0B",
+    "pid": "A020N",
+    "name": "工业企业营业成本",
+    "isParent": false
+  },
+  {
+    "id": "A020N0C",
+    "pid": "A020N",
+    "name": "工业企业主营业务成本",
+    "isParent": false
+  },
+  {
+    "id": "A020N0D",
+    "pid": "A020N",
+    "name": "工业企业主营业务税金及附加",
+    "isParent": false
+  },
+  {
+    "id": "A020N0E",
+    "pid": "A020N",
+    "name": "工业企业销售费用",
+    "isParent": false
+  },
+  {
+    "id": "A020N0F",
+    "pid": "A020N",
+    "name": "工业企业管理费用",
+    "isParent": false
+  },
+  {
+    "id": "A020N0G",
+    "pid": "A020N",
+    "name": "工业企业财务费用",
+    "isParent": false
+  },
+  {
+    "id": "A020N0H",
+    "pid": "A020N",
+    "name": "工业企业利息支出",
+    "isParent": false
+  },
+  {
+    "id": "A020N0I",
+    "pid": "A020N",
+    "name": "工业企业利润总额",
+    "isParent": false
+  },
+  {
+    "id": "A020N0J",
+    "pid": "A020N",
+    "name": "工业亏损企业亏损总额",
+    "isParent": false
+  },
+  {
+    "id": "A020N0K",
+    "pid": "A020N",
+    "name": "工业企业应交增值税",
+    "isParent": false
+  }
+]

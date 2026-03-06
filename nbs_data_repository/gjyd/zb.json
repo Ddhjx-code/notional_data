@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A01",
+    "pid": "",
+    "name": "国民经济核算",
+    "isParent": false
+  },
+  {
+    "id": "A02",
+    "pid": "",
+    "name": "货币",
+    "isParent": false
+  },
+  {
+    "id": "A03",
+    "pid": "",
+    "name": "贸易",
+    "isParent": false
+  },
+  {
+    "id": "A04",
+    "pid": "",
+    "name": "经济",
+    "isParent": false
+  }
+]

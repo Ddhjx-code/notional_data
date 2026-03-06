@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0G0P01",
+    "pid": "A0G0P",
+    "name": "码头长度",
+    "isParent": false
+  },
+  {
+    "id": "A0G0P02",
+    "pid": "A0G0P",
+    "name": "泊位",
+    "isParent": false
+  },
+  {
+    "id": "A0G0P03",
+    "pid": "A0G0P",
+    "name": "万吨级泊位",
+    "isParent": false
+  }
+]

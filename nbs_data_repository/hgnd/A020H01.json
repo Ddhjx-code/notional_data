@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A020H0101",
+    "pid": "A020H01",
+    "name": "经常项目差额(贷-借)",
+    "isParent": false
+  },
+  {
+    "id": "A020H0102",
+    "pid": "A020H01",
+    "name": "资本和金融项目差额(贷-借)",
+    "isParent": false
+  },
+  {
+    "id": "A020H0103",
+    "pid": "A020H01",
+    "name": "储备资产差额(贷-借)",
+    "isParent": false
+  },
+  {
+    "id": "A020H0104",
+    "pid": "A020H01",
+    "name": "净误差与遗漏差额(贷-借)",
+    "isParent": false
+  }
+]

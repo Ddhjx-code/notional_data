@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0F0U01",
+    "pid": "A0F0U",
+    "name": "营业收入",
+    "isParent": false
+  },
+  {
+    "id": "A0F0U02",
+    "pid": "A0F0U",
+    "name": "工程监理收入",
+    "isParent": false
+  },
+  {
+    "id": "A0F0U03",
+    "pid": "A0F0U",
+    "name": "工程招标代理收入",
+    "isParent": false
+  },
+  {
+    "id": "A0F0U04",
+    "pid": "A0F0U",
+    "name": "工程造价咨询收入",
+    "isParent": false
+  },
+  {
+    "id": "A0F0U05",
+    "pid": "A0F0U",
+    "name": "工程项目管理与咨询服务收入",
+    "isParent": false
+  },
+  {
+    "id": "A0F0U06",
+    "pid": "A0F0U",
+    "name": "建设工程监理其他收入",
+    "isParent": false
+  }
+]

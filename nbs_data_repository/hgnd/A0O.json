@@ -1,0 +1,134 @@
+[
+  {
+    "id": "A0O01",
+    "pid": "A0O",
+    "name": "医疗卫生机构",
+    "isParent": false
+  },
+  {
+    "id": "A0O02",
+    "pid": "A0O",
+    "name": "卫生人员",
+    "isParent": false
+  },
+  {
+    "id": "A0O03",
+    "pid": "A0O",
+    "name": "每万人口卫生技术人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0O04",
+    "pid": "A0O",
+    "name": "村卫生室情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O05",
+    "pid": "A0O",
+    "name": "医疗卫生机构床位",
+    "isParent": false
+  },
+  {
+    "id": "A0O06",
+    "pid": "A0O",
+    "name": "每万人口医疗卫生机构床位数",
+    "isParent": false
+  },
+  {
+    "id": "A0O07",
+    "pid": "A0O",
+    "name": "按床位数分组的社区卫生服务中心(站)",
+    "isParent": false
+  },
+  {
+    "id": "A0O08",
+    "pid": "A0O",
+    "name": "各类医疗卫生机构医疗服务及床位利用",
+    "isParent": true
+  },
+  {
+    "id": "A0O09",
+    "pid": "A0O",
+    "name": "医疗卫生机构门诊服务情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0A",
+    "pid": "A0O",
+    "name": "医疗卫生机构住院服务情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0B",
+    "pid": "A0O",
+    "name": "医院床位利用情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0C",
+    "pid": "A0O",
+    "name": "乡镇卫生院医疗服务情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0D",
+    "pid": "A0O",
+    "name": "社区卫生服务中心(站)医疗服务情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0E",
+    "pid": "A0O",
+    "name": "甲乙类法定报告传染病发病人数及死亡人数",
+    "isParent": true
+  },
+  {
+    "id": "A0O0F",
+    "pid": "A0O",
+    "name": "甲乙类法定报告传染病发病率、死亡率及病死率",
+    "isParent": true
+  },
+  {
+    "id": "A0O0G",
+    "pid": "A0O",
+    "name": "城市居民主要疾病死亡率及死因构成",
+    "isParent": true
+  },
+  {
+    "id": "A0O0H",
+    "pid": "A0O",
+    "name": "农村居民主要疾病死亡率及死因构成",
+    "isParent": true
+  },
+  {
+    "id": "A0O0I",
+    "pid": "A0O",
+    "name": "监测地区5岁以下儿童和孕产妇死亡率",
+    "isParent": false
+  },
+  {
+    "id": "A0O0L",
+    "pid": "A0O",
+    "name": "儿童健康情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0M",
+    "pid": "A0O",
+    "name": "孕产妇健康情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0J",
+    "pid": "A0O",
+    "name": "新型农村合作医疗情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0K",
+    "pid": "A0O",
+    "name": "卫生总费用",
+    "isParent": false
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "A0Q0301",
+    "pid": "A0Q03",
+    "name": "艺术表演团体机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0302",
+    "pid": "A0Q03",
+    "name": "艺术表演团体从业人数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0303",
+    "pid": "A0Q03",
+    "name": "艺术表演团体剧团原创首演剧目数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0304",
+    "pid": "A0Q03",
+    "name": "艺术表演团体演出场次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0305",
+    "pid": "A0Q03",
+    "name": "艺术表演团体国内演出场次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0306",
+    "pid": "A0Q03",
+    "name": "艺术表演团体到农村演出场次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0307",
+    "pid": "A0Q03",
+    "name": "艺术表演团体国内演出观众人次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0308",
+    "pid": "A0Q03",
+    "name": "艺术表演团体国内演出农村观众人次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0309",
+    "pid": "A0Q03",
+    "name": "艺术表演团体收入合计",
+    "isParent": false
+  },
+  {
+    "id": "A0Q030A",
+    "pid": "A0Q03",
+    "name": "艺术表演团体财政拨款收入",
+    "isParent": false
+  },
+  {
+    "id": "A0Q030B",
+    "pid": "A0Q03",
+    "name": "艺术表演团体演出收入",
+    "isParent": false
+  },
+  {
+    "id": "A0Q030C",
+    "pid": "A0Q03",
+    "name": "艺术表演团体支出合计",
+    "isParent": false
+  },
+  {
+    "id": "A0Q030D",
+    "pid": "A0Q03",
+    "name": "政府采购的公益演出活动演出场次",
+    "isParent": false
+  },
+  {
+    "id": "A0Q030E",
+    "pid": "A0Q03",
+    "name": "政府采购的公益演出活动观众人次",
+    "isParent": false
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0S0M01",
+    "pid": "A0S0M",
+    "name": "人民检察院书面提出纠正",
+    "isParent": false
+  },
+  {
+    "id": "A0S0M02",
+    "pid": "A0S0M",
+    "name": "人民检察院已纠正",
+    "isParent": false
+  }
+]

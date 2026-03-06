@@ -1,0 +1,230 @@
+[
+  {
+    "id": "A0G01",
+    "pid": "A0G",
+    "name": "交通运输、邮电通信业就业人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0G02",
+    "pid": "A0G",
+    "name": "运输线路长度",
+    "isParent": false
+  },
+  {
+    "id": "A0G03",
+    "pid": "A0G",
+    "name": "运输线路质量",
+    "isParent": false
+  },
+  {
+    "id": "A0G04",
+    "pid": "A0G",
+    "name": "客运量",
+    "isParent": false
+  },
+  {
+    "id": "A0G05",
+    "pid": "A0G",
+    "name": "旅客周转量",
+    "isParent": false
+  },
+  {
+    "id": "A0G06",
+    "pid": "A0G",
+    "name": "货运量",
+    "isParent": false
+  },
+  {
+    "id": "A0G07",
+    "pid": "A0G",
+    "name": "货物周转量",
+    "isParent": false
+  },
+  {
+    "id": "A0G08",
+    "pid": "A0G",
+    "name": "旅客运输平均运距",
+    "isParent": false
+  },
+  {
+    "id": "A0G09",
+    "pid": "A0G",
+    "name": "货物运输平均运距",
+    "isParent": false
+  },
+  {
+    "id": "A0G0A",
+    "pid": "A0G",
+    "name": "国家营业铁路基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0G0B",
+    "pid": "A0G",
+    "name": "铁路机车拥有量(-2014)",
+    "isParent": false
+  },
+  {
+    "id": "A0G0C",
+    "pid": "A0G",
+    "name": "国家铁路客、货车拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0D",
+    "pid": "A0G",
+    "name": "按货类分国家铁路货物运输量",
+    "isParent": true
+  },
+  {
+    "id": "A0G0E",
+    "pid": "A0G",
+    "name": "铁路主要干线客货运输量(-2014)",
+    "isParent": true
+  },
+  {
+    "id": "A0G0F",
+    "pid": "A0G",
+    "name": "国家铁路主要车站旅客发送量(-2014)",
+    "isParent": false
+  },
+  {
+    "id": "A0G0G",
+    "pid": "A0G",
+    "name": "国家铁路主要车站货物发送量(-2014)",
+    "isParent": false
+  },
+  {
+    "id": "A0G0H",
+    "pid": "A0G",
+    "name": "国家铁路运输主要技术经济指标(-2014)",
+    "isParent": false
+  },
+  {
+    "id": "A0G0I",
+    "pid": "A0G",
+    "name": "民用汽车拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0J",
+    "pid": "A0G",
+    "name": "私人汽车拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0K",
+    "pid": "A0G",
+    "name": "新注册民用汽车数量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0L",
+    "pid": "A0G",
+    "name": "公路营运汽车拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0M",
+    "pid": "A0G",
+    "name": "民用运输船舶拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0N",
+    "pid": "A0G",
+    "name": "沿海规模以上港口分货类吞吐量",
+    "isParent": true
+  },
+  {
+    "id": "A0G0O",
+    "pid": "A0G",
+    "name": "沿海主要规模以上港口货物吞吐量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0P",
+    "pid": "A0G",
+    "name": "沿海主要规模以上港口码头泊位数",
+    "isParent": true
+  },
+  {
+    "id": "A0G0Q",
+    "pid": "A0G",
+    "name": "内河主要规模以上港口码头泊位数",
+    "isParent": true
+  },
+  {
+    "id": "A0G0R",
+    "pid": "A0G",
+    "name": "民用航空航线及飞机架数",
+    "isParent": false
+  },
+  {
+    "id": "A0G0S",
+    "pid": "A0G",
+    "name": "民用航空运输量及通用航空飞行时间",
+    "isParent": false
+  },
+  {
+    "id": "A0G0T",
+    "pid": "A0G",
+    "name": "邮电业务量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0U",
+    "pid": "A0G",
+    "name": "快递业务量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0V",
+    "pid": "A0G",
+    "name": "邮政业网点及邮递线路",
+    "isParent": false
+  },
+  {
+    "id": "A0G0W",
+    "pid": "A0G",
+    "name": "电信主要通信能力",
+    "isParent": false
+  },
+  {
+    "id": "A0G0X",
+    "pid": "A0G",
+    "name": "电信通信服务水平",
+    "isParent": false
+  },
+  {
+    "id": "A0G0Y",
+    "pid": "A0G",
+    "name": "邮政通信服务水平",
+    "isParent": false
+  },
+  {
+    "id": "A0G0Z",
+    "pid": "A0G",
+    "name": "互联网主要指标发展情况",
+    "isParent": false
+  },
+  {
+    "id": "A0G10",
+    "pid": "A0G",
+    "name": "企业信息化及电子商务情况",
+    "isParent": true
+  },
+  {
+    "id": "A0G11",
+    "pid": "A0G",
+    "name": "软件和信息技术服务业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A0G12",
+    "pid": "A0G",
+    "name": "电子商务交易额及增速",
+    "isParent": false
+  }
+]

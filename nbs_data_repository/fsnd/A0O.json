@@ -1,0 +1,74 @@
+[
+  {
+    "id": "A0O01",
+    "pid": "A0O",
+    "name": "医疗卫生机构",
+    "isParent": false
+  },
+  {
+    "id": "A0O02",
+    "pid": "A0O",
+    "name": "卫生人员",
+    "isParent": false
+  },
+  {
+    "id": "A0O03",
+    "pid": "A0O",
+    "name": "每万人口卫生技术人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0O04",
+    "pid": "A0O",
+    "name": "村卫生室情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O05",
+    "pid": "A0O",
+    "name": "医疗卫生机构床位",
+    "isParent": false
+  },
+  {
+    "id": "A0O06",
+    "pid": "A0O",
+    "name": "每万人口医疗卫生机构床位数",
+    "isParent": false
+  },
+  {
+    "id": "A0O07",
+    "pid": "A0O",
+    "name": "按床位数分组的社区卫生服务中心(站)",
+    "isParent": false
+  },
+  {
+    "id": "A0O08",
+    "pid": "A0O",
+    "name": "医疗卫生机构门诊服务情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O09",
+    "pid": "A0O",
+    "name": "医疗卫生机构住院服务情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0A",
+    "pid": "A0O",
+    "name": "医院床位利用情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0B",
+    "pid": "A0O",
+    "name": "乡镇卫生院医疗服务情况",
+    "isParent": false
+  },
+  {
+    "id": "A0O0C",
+    "pid": "A0O",
+    "name": "新型农村合作医疗情况",
+    "isParent": false
+  }
+]

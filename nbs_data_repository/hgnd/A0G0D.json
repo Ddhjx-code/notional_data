@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0G0D01",
+    "pid": "A0G0D",
+    "name": "货运量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0D02",
+    "pid": "A0G0D",
+    "name": "货物周转量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0D03",
+    "pid": "A0G0D",
+    "name": "平均运距",
+    "isParent": false
+  }
+]

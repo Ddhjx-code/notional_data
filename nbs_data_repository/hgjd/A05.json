@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0501",
+    "pid": "A05",
+    "name": "全国居民人均收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0502",
+    "pid": "A05",
+    "name": "城镇居民人均收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0503",
+    "pid": "A05",
+    "name": "农村居民人均收入情况",
+    "isParent": false
+  },
+  {
+    "id": "A0504",
+    "pid": "A05",
+    "name": "全国居民人均支出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0505",
+    "pid": "A05",
+    "name": "城镇居民人均支出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0506",
+    "pid": "A05",
+    "name": "农村居民人均支出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0507",
+    "pid": "A05",
+    "name": "外出务工情况",
+    "isParent": false
+  }
+]

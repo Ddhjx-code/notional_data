@@ -1,0 +1,110 @@
+[
+  {
+    "id": "A0Q0V01",
+    "pid": "A0Q0V",
+    "name": "引进版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V02",
+    "pid": "A0Q0V",
+    "name": "引进图书版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V03",
+    "pid": "A0Q0V",
+    "name": "引进录音制品版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V04",
+    "pid": "A0Q0V",
+    "name": "引进录像制品版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V05",
+    "pid": "A0Q0V",
+    "name": "引进电子出版物版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V06",
+    "pid": "A0Q0V",
+    "name": "引进软件版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V07",
+    "pid": "A0Q0V",
+    "name": "引进电影版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V08",
+    "pid": "A0Q0V",
+    "name": "引进电视节目版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V09",
+    "pid": "A0Q0V",
+    "name": "引进其它版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0A",
+    "pid": "A0Q0V",
+    "name": "输出版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0B",
+    "pid": "A0Q0V",
+    "name": "输出图书版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0C",
+    "pid": "A0Q0V",
+    "name": "输出录音制品版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0D",
+    "pid": "A0Q0V",
+    "name": "输出录像制品版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0E",
+    "pid": "A0Q0V",
+    "name": "输出电子出版物版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0F",
+    "pid": "A0Q0V",
+    "name": "输出软件版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0G",
+    "pid": "A0Q0V",
+    "name": "输出电影版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0H",
+    "pid": "A0Q0V",
+    "name": "输出电视节目版权总数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V0I",
+    "pid": "A0Q0V",
+    "name": "输出其它版权总数",
+    "isParent": false
+  }
+]

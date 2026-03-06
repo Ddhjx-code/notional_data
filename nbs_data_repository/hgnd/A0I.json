@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A0I01",
+    "pid": "A0I",
+    "name": "批发和零售业情况",
+    "isParent": false
+  },
+  {
+    "id": "A0I02",
+    "pid": "A0I",
+    "name": "限额以上批发业企业基本情况和商品购销存情况",
+    "isParent": true
+  },
+  {
+    "id": "A0I03",
+    "pid": "A0I",
+    "name": "限额以上批发业企业资产及负债",
+    "isParent": true
+  },
+  {
+    "id": "A0I04",
+    "pid": "A0I",
+    "name": "限额以上批发业企业主要财务指标",
+    "isParent": true
+  },
+  {
+    "id": "A0I05",
+    "pid": "A0I",
+    "name": "限额以上零售业企业基本情况和商品购销存情况",
+    "isParent": true
+  },
+  {
+    "id": "A0I06",
+    "pid": "A0I",
+    "name": "限额以上零售业企业资产及负债",
+    "isParent": true
+  },
+  {
+    "id": "A0I07",
+    "pid": "A0I",
+    "name": "限额以上零售业企业主要财务指标",
+    "isParent": true
+  },
+  {
+    "id": "A0I08",
+    "pid": "A0I",
+    "name": "连锁零售企业",
+    "isParent": true
+  },
+  {
+    "id": "A0I09",
+    "pid": "A0I",
+    "name": "亿元以上商品交易市场基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0I0A",
+    "pid": "A0I",
+    "name": "亿元以上商品交易市场摊位分类情况",
+    "isParent": true
+  }
+]

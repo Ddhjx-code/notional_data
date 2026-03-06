@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A060E01",
+    "pid": "A060E",
+    "name": "企业数",
+    "isParent": false
+  },
+  {
+    "id": "A060E02",
+    "pid": "A060E",
+    "name": "投资总额",
+    "isParent": false
+  },
+  {
+    "id": "A060E03",
+    "pid": "A060E",
+    "name": "注册资本",
+    "isParent": false
+  },
+  {
+    "id": "A060E04",
+    "pid": "A060E",
+    "name": "外方注册资本",
+    "isParent": false
+  }
+]

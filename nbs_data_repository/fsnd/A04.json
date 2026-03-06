@@ -1,0 +1,74 @@
+[
+  {
+    "id": "A0401",
+    "pid": "A04",
+    "name": "按行业分城镇单位就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0402",
+    "pid": "A04",
+    "name": "按行业分私营企业和个体就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0403",
+    "pid": "A04",
+    "name": "按行业分城镇私营企业和个体就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0404",
+    "pid": "A04",
+    "name": "私营企业就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0405",
+    "pid": "A04",
+    "name": "个体就业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0406",
+    "pid": "A04",
+    "name": "城镇单位就业人员工资总额和指数",
+    "isParent": false
+  },
+  {
+    "id": "A0407",
+    "pid": "A04",
+    "name": "城镇单位就业人员平均工资和指数",
+    "isParent": false
+  },
+  {
+    "id": "A0408",
+    "pid": "A04",
+    "name": "按登记注册类型分城镇单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A0409",
+    "pid": "A04",
+    "name": "按行业分城镇单位就业人员工资总额",
+    "isParent": false
+  },
+  {
+    "id": "A040A",
+    "pid": "A04",
+    "name": "按行业分城镇单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040B",
+    "pid": "A04",
+    "name": "按行业分城镇私营单位就业人员平均工资",
+    "isParent": false
+  },
+  {
+    "id": "A040C",
+    "pid": "A04",
+    "name": "城镇登记失业人员及失业率",
+    "isParent": false
+  }
+]

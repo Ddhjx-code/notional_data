@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0101",
+    "pid": "A01",
+    "name": "居民消费价格分类指数",
+    "isParent": true
+  },
+  {
+    "id": "A0102",
+    "pid": "A01",
+    "name": "商品零售价格分类指数",
+    "isParent": true
+  },
+  {
+    "id": "A0103",
+    "pid": "A01",
+    "name": "工业生产者价格指数",
+    "isParent": false
+  }
+]

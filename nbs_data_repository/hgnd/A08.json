@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A0801",
+    "pid": "A08",
+    "name": "国家财政收支总额及增长速度",
+    "isParent": false
+  },
+  {
+    "id": "A0802",
+    "pid": "A08",
+    "name": "中央和地方财政收入及比重",
+    "isParent": false
+  },
+  {
+    "id": "A0803",
+    "pid": "A08",
+    "name": "中央和地方财政支出及比重",
+    "isParent": false
+  },
+  {
+    "id": "A0804",
+    "pid": "A08",
+    "name": "中央和地方财政主要收入项目",
+    "isParent": true
+  },
+  {
+    "id": "A0805",
+    "pid": "A08",
+    "name": "中央和地方财政主要支出项目",
+    "isParent": true
+  },
+  {
+    "id": "A0806",
+    "pid": "A08",
+    "name": "各项税收",
+    "isParent": false
+  },
+  {
+    "id": "A0807",
+    "pid": "A08",
+    "name": "中央财政债务余额情况",
+    "isParent": false
+  },
+  {
+    "id": "A0808",
+    "pid": "A08",
+    "name": "预算外资金分项目收入",
+    "isParent": false
+  },
+  {
+    "id": "A0809",
+    "pid": "A08",
+    "name": "预算外资金分项目支出",
+    "isParent": false
+  },
+  {
+    "id": "A080A",
+    "pid": "A08",
+    "name": "中央和地方预算外资金收支",
+    "isParent": false
+  },
+  {
+    "id": "A080B",
+    "pid": "A08",
+    "name": "外债情况",
+    "isParent": false
+  }
+]

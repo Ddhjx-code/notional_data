@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0S0G01",
+    "pid": "A0S0G",
+    "name": "人民检察院批捕、决定逮捕件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0G02",
+    "pid": "A0S0G",
+    "name": "人民检察院批捕、决定逮捕人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0G03",
+    "pid": "A0S0G",
+    "name": "人民检察院决定起诉件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0G04",
+    "pid": "A0S0G",
+    "name": "人民检察院决定起诉人数",
+    "isParent": false
+  }
+]

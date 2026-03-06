@@ -1,0 +1,194 @@
+[
+  {
+    "id": "A0D01",
+    "pid": "A0D",
+    "name": "农村基层组织情况",
+    "isParent": false
+  },
+  {
+    "id": "A0D02",
+    "pid": "A0D",
+    "name": "乡村户数和乡村人口",
+    "isParent": false
+  },
+  {
+    "id": "A0D03",
+    "pid": "A0D",
+    "name": "乡村从业人员",
+    "isParent": false
+  },
+  {
+    "id": "A0D04",
+    "pid": "A0D",
+    "name": "农、林、牧、渔业总产值及指数",
+    "isParent": false
+  },
+  {
+    "id": "A0D05",
+    "pid": "A0D",
+    "name": "主要农业机械年末拥有量",
+    "isParent": false
+  },
+  {
+    "id": "A0D06",
+    "pid": "A0D",
+    "name": "有效灌溉面积、农用化肥施用量、农村水电站及用电量",
+    "isParent": false
+  },
+  {
+    "id": "A0D07",
+    "pid": "A0D",
+    "name": "农村水电建设和发电量",
+    "isParent": false
+  },
+  {
+    "id": "A0D08",
+    "pid": "A0D",
+    "name": "灌溉、水库和除涝、治水情况",
+    "isParent": false
+  },
+  {
+    "id": "A0D09",
+    "pid": "A0D",
+    "name": "农村居民家庭生产性固定资产原值",
+    "isParent": false
+  },
+  {
+    "id": "A0D0A",
+    "pid": "A0D",
+    "name": "农村居民家庭平均每百户拥有主要生产性固定资产数量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0B",
+    "pid": "A0D",
+    "name": "农村居民家庭土地经营情况",
+    "isParent": false
+  },
+  {
+    "id": "A0D0C",
+    "pid": "A0D",
+    "name": "农用柴油和农药使用量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0D",
+    "pid": "A0D",
+    "name": "农用塑料薄膜使用量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0E",
+    "pid": "A0D",
+    "name": "主要农作物播种面积",
+    "isParent": false
+  },
+  {
+    "id": "A0D0F",
+    "pid": "A0D",
+    "name": "主要农作物产品产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0G",
+    "pid": "A0D",
+    "name": "主要农作物单位面积产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0H",
+    "pid": "A0D",
+    "name": "果园面积",
+    "isParent": false
+  },
+  {
+    "id": "A0D0I",
+    "pid": "A0D",
+    "name": "瓜果类面积",
+    "isParent": false
+  },
+  {
+    "id": "A0D0J",
+    "pid": "A0D",
+    "name": "茶园面积",
+    "isParent": false
+  },
+  {
+    "id": "A0D0K",
+    "pid": "A0D",
+    "name": "茶叶、水果产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0L",
+    "pid": "A0D",
+    "name": "瓜果类单位面积产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0M",
+    "pid": "A0D",
+    "name": "主要林产品产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0N",
+    "pid": "A0D",
+    "name": "牲畜饲养",
+    "isParent": false
+  },
+  {
+    "id": "A0D0O",
+    "pid": "A0D",
+    "name": "牲畜出栏量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0P",
+    "pid": "A0D",
+    "name": "畜产品产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0Q",
+    "pid": "A0D",
+    "name": "水产品产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0R",
+    "pid": "A0D",
+    "name": "按人口平均的主要农产品产量",
+    "isParent": false
+  },
+  {
+    "id": "A0D0S",
+    "pid": "A0D",
+    "name": "平均每一农业劳动力生产的主要农产品",
+    "isParent": false
+  },
+  {
+    "id": "A0D0T",
+    "pid": "A0D",
+    "name": "农村居民家庭平均每人出售主要农产品",
+    "isParent": false
+  },
+  {
+    "id": "A0D0U",
+    "pid": "A0D",
+    "name": "农村居民家庭平均每人出售主要畜产品及水产品",
+    "isParent": false
+  },
+  {
+    "id": "A0D0V",
+    "pid": "A0D",
+    "name": "受灾和成灾面积",
+    "isParent": false
+  },
+  {
+    "id": "A0D0W",
+    "pid": "A0D",
+    "name": "国有农场",
+    "isParent": false
+  }
+]

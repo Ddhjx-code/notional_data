@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0301",
+    "pid": "A03",
+    "name": "居民人均可支配收入",
+    "isParent": false
+  },
+  {
+    "id": "A0302",
+    "pid": "A03",
+    "name": "居民人均消费支出",
+    "isParent": false
+  }
+]

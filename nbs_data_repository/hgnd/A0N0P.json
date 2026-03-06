@@ -1,0 +1,56 @@
+[
+  {
+    "id": "A0N0P01",
+    "pid": "A0N0P",
+    "name": "高技术产业工业总产值(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P02",
+    "pid": "A0N0P",
+    "name": "高技术产业新产品产值(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P03",
+    "pid": "A0N0P",
+    "name": "高技术产业主营业务收入(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P04",
+    "pid": "A0N0P",
+    "name": "高技术产业新产品销售收入(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P05",
+    "pid": "A0N0P",
+    "name": "高技术产业新产品出口销售收入(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P06",
+    "pid": "A0N0P",
+    "name": "高技术产业利润总额(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P07",
+    "pid": "A0N0P",
+    "name": "高技术产业专利申请数(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P08",
+    "pid": "A0N0P",
+    "name": "高技术产业发明专利申请数(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0P09",
+    "pid": "A0N0P",
+    "name": "高技术产业有效发明专利数(大中型工业企业口径)",
+    "isParent": false
+  }
+]

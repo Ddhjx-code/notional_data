@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A0N0X01",
+    "pid": "A0N0X",
+    "name": "国外专利申请受理数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X02",
+    "pid": "A0N0X",
+    "name": "国外发明专利申请受理数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X03",
+    "pid": "A0N0X",
+    "name": "国外实用新型专利申请受理数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X04",
+    "pid": "A0N0X",
+    "name": "国外外观设计专利申请受理数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X05",
+    "pid": "A0N0X",
+    "name": "国外专利申请授权数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X06",
+    "pid": "A0N0X",
+    "name": "国外发明专利申请授权数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X07",
+    "pid": "A0N0X",
+    "name": "国外实用新型专利申请授权数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X08",
+    "pid": "A0N0X",
+    "name": "国外外观设计专利申请授权数",
+    "isParent": false
+  }
+]

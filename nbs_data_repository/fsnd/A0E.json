@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A0E0C",
+    "pid": "A0E",
+    "name": "规模以上工业企业主要经济指标（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E01",
+    "pid": "A0E",
+    "name": "规模以上工业企业主要经济指标（-2022）",
+    "isParent": false
+  },
+  {
+    "id": "A0E0D",
+    "pid": "A0E",
+    "name": "国有控股工业企业主要经济指标（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E02",
+    "pid": "A0E",
+    "name": "国有控股工业企业主要经济指标（-2022）",
+    "isParent": false
+  },
+  {
+    "id": "A0E0E",
+    "pid": "A0E",
+    "name": "私营工业企业主要经济指标（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E03",
+    "pid": "A0E",
+    "name": "私营工业企业主要经济指标（-2022）",
+    "isParent": false
+  },
+  {
+    "id": "A0E0F",
+    "pid": "A0E",
+    "name": "外商及港澳台商投资工业企业主要经济指标（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E04",
+    "pid": "A0E",
+    "name": "外商及港澳台商投资工业企业主要经济指标（-2022）",
+    "isParent": false
+  },
+  {
+    "id": "A0E0G",
+    "pid": "A0E",
+    "name": "大中型工业企业主要经济指标（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E05",
+    "pid": "A0E",
+    "name": "大中型工业企业主要经济指标（-2022）",
+    "isParent": false
+  },
+  {
+    "id": "A0E0B",
+    "pid": "A0E",
+    "name": "工业产品产量",
+    "isParent": false
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "A020801",
+    "pid": "A0208",
+    "name": "工业出口交货值",
+    "isParent": false
+  },
+  {
+    "id": "A020802",
+    "pid": "A0208",
+    "name": "煤炭开采和洗选业",
+    "isParent": false
+  },
+  {
+    "id": "A020803",
+    "pid": "A0208",
+    "name": "石油和天然气开采业",
+    "isParent": false
+  },
+  {
+    "id": "A020804",
+    "pid": "A0208",
+    "name": "黑色金属矿采选业",
+    "isParent": false
+  },
+  {
+    "id": "A020805",
+    "pid": "A0208",
+    "name": "有色金属矿采选业",
+    "isParent": false
+  },
+  {
+    "id": "A020806",
+    "pid": "A0208",
+    "name": "非金属矿采选业",
+    "isParent": false
+  },
+  {
+    "id": "A020807",
+    "pid": "A0208",
+    "name": "开采专业及辅助性活动",
+    "isParent": false
+  },
+  {
+    "id": "A020808",
+    "pid": "A0208",
+    "name": "其他采矿业",
+    "isParent": false
+  },
+  {
+    "id": "A020809",
+    "pid": "A0208",
+    "name": "农副食品加工业",
+    "isParent": false
+  },
+  {
+    "id": "A02080A",
+    "pid": "A0208",
+    "name": "食品制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080B",
+    "pid": "A0208",
+    "name": "酒、饮料和精制茶制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080C",
+    "pid": "A0208",
+    "name": "烟草制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02080D",
+    "pid": "A0208",
+    "name": "纺织业",
+    "isParent": false
+  },
+  {
+    "id": "A02080E",
+    "pid": "A0208",
+    "name": "纺织服装、服饰业",
+    "isParent": false
+  },
+  {
+    "id": "A02080F",
+    "pid": "A0208",
+    "name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "isParent": false
+  },
+  {
+    "id": "A02080G",
+    "pid": "A0208",
+    "name": "木材加工和木、竹、藤、棕、草制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02080H",
+    "pid": "A0208",
+    "name": "家具制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080I",
+    "pid": "A0208",
+    "name": "造纸和纸制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02080J",
+    "pid": "A0208",
+    "name": "印刷和记录媒介复制业",
+    "isParent": false
+  },
+  {
+    "id": "A02080K",
+    "pid": "A0208",
+    "name": "文教、工美、体育和娱乐用品制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080L",
+    "pid": "A0208",
+    "name": "石油、煤炭及其他燃料加工业",
+    "isParent": false
+  },
+  {
+    "id": "A02080M",
+    "pid": "A0208",
+    "name": "化学原料和化学制品制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080N",
+    "pid": "A0208",
+    "name": "医药制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080O",
+    "pid": "A0208",
+    "name": "化学纤维制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080P",
+    "pid": "A0208",
+    "name": "橡胶和塑料制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02080Q",
+    "pid": "A0208",
+    "name": "非金属矿物制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02080R",
+    "pid": "A0208",
+    "name": "黑色金属冶炼和压延加工业",
+    "isParent": false
+  },
+  {
+    "id": "A02080S",
+    "pid": "A0208",
+    "name": "有色金属冶炼和压延加工业",
+    "isParent": false
+  },
+  {
+    "id": "A02080T",
+    "pid": "A0208",
+    "name": "金属制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02080U",
+    "pid": "A0208",
+    "name": "通用设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080V",
+    "pid": "A0208",
+    "name": "专用设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080W",
+    "pid": "A0208",
+    "name": "汽车制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080X",
+    "pid": "A0208",
+    "name": "铁路、船舶、航空航天和其他运输设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080Y",
+    "pid": "A0208",
+    "name": "电气机械和器材制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02080Z",
+    "pid": "A0208",
+    "name": "计算机、通信和其他电子设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A020810",
+    "pid": "A0208",
+    "name": "仪器仪表制造业",
+    "isParent": true
+  },
+  {
+    "id": "A020811",
+    "pid": "A0208",
+    "name": "其他制造业",
+    "isParent": false
+  },
+  {
+    "id": "A020812",
+    "pid": "A0208",
+    "name": "废弃资源综合利用业",
+    "isParent": false
+  },
+  {
+    "id": "A020813",
+    "pid": "A0208",
+    "name": "金属制品、机械和设备修理业",
+    "isParent": false
+  },
+  {
+    "id": "A020814",
+    "pid": "A0208",
+    "name": "电力、热力生产和供应业",
+    "isParent": false
+  },
+  {
+    "id": "A020815",
+    "pid": "A0208",
+    "name": "燃气生产和供应业",
+    "isParent": false
+  },
+  {
+    "id": "A020816",
+    "pid": "A0208",
+    "name": "水的生产和供应业",
+    "isParent": false
+  }
+]

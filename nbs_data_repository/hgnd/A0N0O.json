@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0N0O01",
+    "pid": "A0N0O",
+    "name": "高技术产业科技活动人员数(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0O02",
+    "pid": "A0N0O",
+    "name": "高技术产业研究与试验发展人员全时当量(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0O03",
+    "pid": "A0N0O",
+    "name": "高技术产业研究与试验发展科学家和工程师人员全时当量(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0O04",
+    "pid": "A0N0O",
+    "name": "高技术产业科技活动经费支出(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0O05",
+    "pid": "A0N0O",
+    "name": "高技术产业研究与试验发展经费(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0O06",
+    "pid": "A0N0O",
+    "name": "高技术产业新产品开发经费(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0O07",
+    "pid": "A0N0O",
+    "name": "高技术产业技术改造经费支出(大中型工业企业口径)",
+    "isParent": false
+  }
+]

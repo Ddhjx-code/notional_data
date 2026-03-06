@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A020R01",
+    "pid": "A020R",
+    "name": "国有控股工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020R02",
+    "pid": "A020R",
+    "name": "私营工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020R03",
+    "pid": "A020R",
+    "name": "股份制工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020R04",
+    "pid": "A020R",
+    "name": "外商及港澳台投资工业企业主要经济指标",
+    "isParent": false
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0Q0Z0201",
+    "pid": "A0Q0Z02",
+    "name": "按产业类型分文化产业资产总计",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0Z0202",
+    "pid": "A0Q0Z02",
+    "name": "按行业类别分文化产业资产总计",
+    "isParent": false
+  }
+]

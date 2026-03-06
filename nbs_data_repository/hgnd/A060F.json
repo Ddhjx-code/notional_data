@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A060F01",
+    "pid": "A060F",
+    "name": "对外直接投资流量",
+    "isParent": false
+  },
+  {
+    "id": "A060F02",
+    "pid": "A060F",
+    "name": "截至本年对外直接投资存量",
+    "isParent": false
+  }
+]

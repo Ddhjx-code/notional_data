@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0C01",
+    "pid": "A0C",
+    "name": "国家财政预算收入",
+    "isParent": false
+  },
+  {
+    "id": "A0C02",
+    "pid": "A0C",
+    "name": "国家财政预算支出",
+    "isParent": false
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "id": "A0E2401",
+    "pid": "A0E24",
+    "name": "企业单位数（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2402",
+    "pid": "A0E24",
+    "name": "资产总计（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2403",
+    "pid": "A0E24",
+    "name": "固定资产净额（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2404",
+    "pid": "A0E24",
+    "name": "固定资产原价（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2405",
+    "pid": "A0E24",
+    "name": "累计折旧（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2406",
+    "pid": "A0E24",
+    "name": "流动资产合计（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2407",
+    "pid": "A0E24",
+    "name": "应收账款（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2408",
+    "pid": "A0E24",
+    "name": "存货（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E2409",
+    "pid": "A0E24",
+    "name": "产成品（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240A",
+    "pid": "A0E24",
+    "name": "负债合计（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240B",
+    "pid": "A0E24",
+    "name": "流动负债合计（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240C",
+    "pid": "A0E24",
+    "name": "应付账款（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240D",
+    "pid": "A0E24",
+    "name": "所有者权益合计（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240E",
+    "pid": "A0E24",
+    "name": "实收资本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240F",
+    "pid": "A0E24",
+    "name": "国家资本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240G",
+    "pid": "A0E24",
+    "name": "集体资本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240H",
+    "pid": "A0E24",
+    "name": "法人资本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240I",
+    "pid": "A0E24",
+    "name": "个人资本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240J",
+    "pid": "A0E24",
+    "name": "港澳台资本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240K",
+    "pid": "A0E24",
+    "name": "外商资本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240L",
+    "pid": "A0E24",
+    "name": "营业收入（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240M",
+    "pid": "A0E24",
+    "name": "营业成本（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240N",
+    "pid": "A0E24",
+    "name": "销售费用（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240O",
+    "pid": "A0E24",
+    "name": "管理费用（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240P",
+    "pid": "A0E24",
+    "name": "财务费用（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240Q",
+    "pid": "A0E24",
+    "name": "利息费用（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240R",
+    "pid": "A0E24",
+    "name": "投资收益（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240S",
+    "pid": "A0E24",
+    "name": "营业利润（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240T",
+    "pid": "A0E24",
+    "name": "利润总额（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240U",
+    "pid": "A0E24",
+    "name": "亏损企业亏损额（2023-至今）",
+    "isParent": false
+  },
+  {
+    "id": "A0E240V",
+    "pid": "A0E24",
+    "name": "平均用工人数（2023-至今）",
+    "isParent": false
+  }
+]

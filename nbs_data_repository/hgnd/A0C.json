@@ -1,0 +1,122 @@
+[
+  {
+    "id": "A0C01",
+    "pid": "A0C",
+    "name": "主要矿产基础储量",
+    "isParent": false
+  },
+  {
+    "id": "A0C02",
+    "pid": "A0C",
+    "name": "水资源",
+    "isParent": false
+  },
+  {
+    "id": "A0C03",
+    "pid": "A0C",
+    "name": "供水用水情况",
+    "isParent": false
+  },
+  {
+    "id": "A0C04",
+    "pid": "A0C",
+    "name": "废水中主要污染物排放",
+    "isParent": false
+  },
+  {
+    "id": "A0C05",
+    "pid": "A0C",
+    "name": "废气中主要污染物排放",
+    "isParent": false
+  },
+  {
+    "id": "A0C06",
+    "pid": "A0C",
+    "name": "城市生活垃圾清运和处理情况",
+    "isParent": false
+  },
+  {
+    "id": "A0C07",
+    "pid": "A0C",
+    "name": "森林资源",
+    "isParent": false
+  },
+  {
+    "id": "A0C08",
+    "pid": "A0C",
+    "name": "造林面积",
+    "isParent": false
+  },
+  {
+    "id": "A0C09",
+    "pid": "A0C",
+    "name": "林业重点工程造林面积",
+    "isParent": false
+  },
+  {
+    "id": "A0C0A",
+    "pid": "A0C",
+    "name": "草原建设利用",
+    "isParent": false
+  },
+  {
+    "id": "A0C0B",
+    "pid": "A0C",
+    "name": "自然保护基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0C0C",
+    "pid": "A0C",
+    "name": "自然灾害",
+    "isParent": false
+  },
+  {
+    "id": "A0C0D",
+    "pid": "A0C",
+    "name": "地质灾害及防治",
+    "isParent": false
+  },
+  {
+    "id": "A0C0E",
+    "pid": "A0C",
+    "name": "森林火灾",
+    "isParent": false
+  },
+  {
+    "id": "A0C0F",
+    "pid": "A0C",
+    "name": "森林病虫鼠害防治",
+    "isParent": false
+  },
+  {
+    "id": "A0C0G",
+    "pid": "A0C",
+    "name": "地震灾害",
+    "isParent": false
+  },
+  {
+    "id": "A0C0H",
+    "pid": "A0C",
+    "name": "环境污染治理投资",
+    "isParent": false
+  },
+  {
+    "id": "A0C0I",
+    "pid": "A0C",
+    "name": "工业污染治理投资",
+    "isParent": false
+  },
+  {
+    "id": "A0C0J",
+    "pid": "A0C",
+    "name": "主要矿产查明资源储量",
+    "isParent": false
+  },
+  {
+    "id": "A0C0K",
+    "pid": "A0C",
+    "name": "主要矿产储量",
+    "isParent": false
+  }
+]

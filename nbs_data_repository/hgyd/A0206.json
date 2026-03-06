@@ -1,0 +1,242 @@
+[
+  {
+    "id": "A020601",
+    "pid": "A0206",
+    "name": "工业出口交货值",
+    "isParent": false
+  },
+  {
+    "id": "A020602",
+    "pid": "A0206",
+    "name": "煤炭开采和洗选业",
+    "isParent": false
+  },
+  {
+    "id": "A020603",
+    "pid": "A0206",
+    "name": "石油和天然气开采业",
+    "isParent": false
+  },
+  {
+    "id": "A020604",
+    "pid": "A0206",
+    "name": "黑色金属矿采选业",
+    "isParent": false
+  },
+  {
+    "id": "A020605",
+    "pid": "A0206",
+    "name": "有色金属矿采选业",
+    "isParent": false
+  },
+  {
+    "id": "A020606",
+    "pid": "A0206",
+    "name": "非金属矿采选业",
+    "isParent": false
+  },
+  {
+    "id": "A020607",
+    "pid": "A0206",
+    "name": "其他采矿业",
+    "isParent": false
+  },
+  {
+    "id": "A020608",
+    "pid": "A0206",
+    "name": "农副食品加工业",
+    "isParent": false
+  },
+  {
+    "id": "A020609",
+    "pid": "A0206",
+    "name": "食品制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060A",
+    "pid": "A0206",
+    "name": "饮料制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060B",
+    "pid": "A0206",
+    "name": "烟草制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060C",
+    "pid": "A0206",
+    "name": "纺织业",
+    "isParent": false
+  },
+  {
+    "id": "A02060D",
+    "pid": "A0206",
+    "name": "纺织服装、鞋、帽制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060E",
+    "pid": "A0206",
+    "name": "皮革、毛皮、羽毛(绒)及其制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060F",
+    "pid": "A0206",
+    "name": "木材加工及木、竹、藤、棕、草制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060G",
+    "pid": "A0206",
+    "name": "家具制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060H",
+    "pid": "A0206",
+    "name": "造纸及纸制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060I",
+    "pid": "A0206",
+    "name": "印刷业和记录媒介的复制",
+    "isParent": false
+  },
+  {
+    "id": "A02060J",
+    "pid": "A0206",
+    "name": "文教体育用品制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060K",
+    "pid": "A0206",
+    "name": "石油加工、炼焦及核燃料加工业",
+    "isParent": false
+  },
+  {
+    "id": "A02060L",
+    "pid": "A0206",
+    "name": "化学原料及化学制品制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060M",
+    "pid": "A0206",
+    "name": "医药制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060N",
+    "pid": "A0206",
+    "name": "化学纤维制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060O",
+    "pid": "A0206",
+    "name": "橡胶制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060P",
+    "pid": "A0206",
+    "name": "塑料制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060Q",
+    "pid": "A0206",
+    "name": "非金属矿物制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060R",
+    "pid": "A0206",
+    "name": "黑色金属冶炼及压延加工业",
+    "isParent": false
+  },
+  {
+    "id": "A02060S",
+    "pid": "A0206",
+    "name": "有色金属冶炼及压延加工业",
+    "isParent": false
+  },
+  {
+    "id": "A02060T",
+    "pid": "A0206",
+    "name": "金属制品业",
+    "isParent": false
+  },
+  {
+    "id": "A02060U",
+    "pid": "A0206",
+    "name": "通用设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060V",
+    "pid": "A0206",
+    "name": "专用设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060W",
+    "pid": "A0206",
+    "name": "交通运输设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060X",
+    "pid": "A0206",
+    "name": "电气机械及器材制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060Y",
+    "pid": "A0206",
+    "name": "通信设备、计算机及其他电子设备制造业",
+    "isParent": false
+  },
+  {
+    "id": "A02060Z",
+    "pid": "A0206",
+    "name": "仪器仪表及文化、办公用机械制造业",
+    "isParent": false
+  },
+  {
+    "id": "A020610",
+    "pid": "A0206",
+    "name": "工艺品及其他制造业",
+    "isParent": false
+  },
+  {
+    "id": "A020611",
+    "pid": "A0206",
+    "name": "废弃资源和废旧材料回收加工业",
+    "isParent": false
+  },
+  {
+    "id": "A020612",
+    "pid": "A0206",
+    "name": "电力、热力的生产和供应业",
+    "isParent": false
+  },
+  {
+    "id": "A020613",
+    "pid": "A0206",
+    "name": "燃气生产和供应业",
+    "isParent": false
+  },
+  {
+    "id": "A020614",
+    "pid": "A0206",
+    "name": "水的生产和供应业",
+    "isParent": false
+  }
+]

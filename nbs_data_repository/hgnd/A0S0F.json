@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A0S0F01",
+    "pid": "A0S0F",
+    "name": "人民检察院受案数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0F02",
+    "pid": "A0S0F",
+    "name": "人民检察院立案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0F03",
+    "pid": "A0S0F",
+    "name": "人民检察院立案人数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0F04",
+    "pid": "A0S0F",
+    "name": "人民检察院结案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0F05",
+    "pid": "A0S0F",
+    "name": "人民检察院结案人数",
+    "isParent": false
+  }
+]

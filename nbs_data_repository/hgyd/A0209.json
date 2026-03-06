@@ -1,0 +1,632 @@
+[
+  {
+    "id": "A020901",
+    "pid": "A0209",
+    "name": "铁矿石原矿",
+    "isParent": false
+  },
+  {
+    "id": "A020902",
+    "pid": "A0209",
+    "name": "磷矿石（折含五氧化二磷30％）",
+    "isParent": false
+  },
+  {
+    "id": "A020903",
+    "pid": "A0209",
+    "name": "原盐",
+    "isParent": false
+  },
+  {
+    "id": "A020904",
+    "pid": "A0209",
+    "name": "饲料",
+    "isParent": false
+  },
+  {
+    "id": "A020905",
+    "pid": "A0209",
+    "name": "精制食用植物油",
+    "isParent": false
+  },
+  {
+    "id": "A020906",
+    "pid": "A0209",
+    "name": "成品糖",
+    "isParent": false
+  },
+  {
+    "id": "A020907",
+    "pid": "A0209",
+    "name": "鲜、冷藏肉",
+    "isParent": false
+  },
+  {
+    "id": "A020908",
+    "pid": "A0209",
+    "name": "乳制品",
+    "isParent": false
+  },
+  {
+    "id": "A020909",
+    "pid": "A0209",
+    "name": "白酒（折65度，商品量）",
+    "isParent": false
+  },
+  {
+    "id": "A02090A",
+    "pid": "A0209",
+    "name": "啤酒",
+    "isParent": false
+  },
+  {
+    "id": "A02090B",
+    "pid": "A0209",
+    "name": "葡萄酒",
+    "isParent": false
+  },
+  {
+    "id": "A02090C",
+    "pid": "A0209",
+    "name": "饮料",
+    "isParent": false
+  },
+  {
+    "id": "A02090D",
+    "pid": "A0209",
+    "name": "卷烟",
+    "isParent": false
+  },
+  {
+    "id": "A02090E",
+    "pid": "A0209",
+    "name": "纱",
+    "isParent": false
+  },
+  {
+    "id": "A02090F",
+    "pid": "A0209",
+    "name": "布",
+    "isParent": false
+  },
+  {
+    "id": "A02090G",
+    "pid": "A0209",
+    "name": "蚕丝及交织机织物（含蚕丝≥30％）",
+    "isParent": false
+  },
+  {
+    "id": "A02090H",
+    "pid": "A0209",
+    "name": "机制纸及纸板（外购原纸加工除外）",
+    "isParent": false
+  },
+  {
+    "id": "A02090I",
+    "pid": "A0209",
+    "name": "新闻纸",
+    "isParent": false
+  },
+  {
+    "id": "A02090J",
+    "pid": "A0209",
+    "name": "硫酸（折100％）",
+    "isParent": false
+  },
+  {
+    "id": "A02090K",
+    "pid": "A0209",
+    "name": "烧碱（折100％）",
+    "isParent": false
+  },
+  {
+    "id": "A02090L",
+    "pid": "A0209",
+    "name": "纯碱（碳酸钠）",
+    "isParent": false
+  },
+  {
+    "id": "A02090M",
+    "pid": "A0209",
+    "name": "乙烯",
+    "isParent": false
+  },
+  {
+    "id": "A02090N",
+    "pid": "A0209",
+    "name": "农用氮、磷、钾化学肥料（折纯）",
+    "isParent": false
+  },
+  {
+    "id": "A02090O",
+    "pid": "A0209",
+    "name": "化学农药原药（折有效成分100％）",
+    "isParent": false
+  },
+  {
+    "id": "A02090P",
+    "pid": "A0209",
+    "name": "初级形态塑料",
+    "isParent": false
+  },
+  {
+    "id": "A02090Q",
+    "pid": "A0209",
+    "name": "合成橡胶",
+    "isParent": false
+  },
+  {
+    "id": "A02090R",
+    "pid": "A0209",
+    "name": "合成洗涤剂",
+    "isParent": false
+  },
+  {
+    "id": "A02090S",
+    "pid": "A0209",
+    "name": "化学药品原药",
+    "isParent": false
+  },
+  {
+    "id": "A02090T",
+    "pid": "A0209",
+    "name": "中成药",
+    "isParent": false
+  },
+  {
+    "id": "A02090U",
+    "pid": "A0209",
+    "name": "化学纤维",
+    "isParent": false
+  },
+  {
+    "id": "A02090V",
+    "pid": "A0209",
+    "name": "合成纤维",
+    "isParent": false
+  },
+  {
+    "id": "A02090W",
+    "pid": "A0209",
+    "name": "橡胶轮胎外胎",
+    "isParent": false
+  },
+  {
+    "id": "A02090X",
+    "pid": "A0209",
+    "name": "塑料制品",
+    "isParent": false
+  },
+  {
+    "id": "A02090Y",
+    "pid": "A0209",
+    "name": "水泥",
+    "isParent": false
+  },
+  {
+    "id": "A02090Z",
+    "pid": "A0209",
+    "name": "平板玻璃",
+    "isParent": false
+  },
+  {
+    "id": "A020910",
+    "pid": "A0209",
+    "name": "钢化玻璃",
+    "isParent": false
+  },
+  {
+    "id": "A020911",
+    "pid": "A0209",
+    "name": "夹层玻璃",
+    "isParent": false
+  },
+  {
+    "id": "A020912",
+    "pid": "A0209",
+    "name": "中空玻璃",
+    "isParent": false
+  },
+  {
+    "id": "A020913",
+    "pid": "A0209",
+    "name": "生铁",
+    "isParent": false
+  },
+  {
+    "id": "A020914",
+    "pid": "A0209",
+    "name": "粗钢",
+    "isParent": false
+  },
+  {
+    "id": "A020915",
+    "pid": "A0209",
+    "name": "钢材",
+    "isParent": false
+  },
+  {
+    "id": "A020916",
+    "pid": "A0209",
+    "name": "钢筋",
+    "isParent": false
+  },
+  {
+    "id": "A020917",
+    "pid": "A0209",
+    "name": "线材（盘条）",
+    "isParent": false
+  },
+  {
+    "id": "A020918",
+    "pid": "A0209",
+    "name": "冷轧薄板",
+    "isParent": false
+  },
+  {
+    "id": "A020919",
+    "pid": "A0209",
+    "name": "中厚宽钢带",
+    "isParent": false
+  },
+  {
+    "id": "A02091A",
+    "pid": "A0209",
+    "name": "焊接钢管",
+    "isParent": false
+  },
+  {
+    "id": "A02091B",
+    "pid": "A0209",
+    "name": "铁合金",
+    "isParent": false
+  },
+  {
+    "id": "A02091C",
+    "pid": "A0209",
+    "name": "氧化铝",
+    "isParent": false
+  },
+  {
+    "id": "A02091D",
+    "pid": "A0209",
+    "name": "十种有色金属",
+    "isParent": false
+  },
+  {
+    "id": "A02091E",
+    "pid": "A0209",
+    "name": "精炼铜（电解铜）",
+    "isParent": false
+  },
+  {
+    "id": "A02091F",
+    "pid": "A0209",
+    "name": "铅",
+    "isParent": false
+  },
+  {
+    "id": "A02091G",
+    "pid": "A0209",
+    "name": "锌",
+    "isParent": false
+  },
+  {
+    "id": "A02091H",
+    "pid": "A0209",
+    "name": "原铝（电解铝）",
+    "isParent": false
+  },
+  {
+    "id": "A02091I",
+    "pid": "A0209",
+    "name": "铝合金",
+    "isParent": false
+  },
+  {
+    "id": "A02091J",
+    "pid": "A0209",
+    "name": "铜材",
+    "isParent": false
+  },
+  {
+    "id": "A02091K",
+    "pid": "A0209",
+    "name": "铝材",
+    "isParent": false
+  },
+  {
+    "id": "A02091L",
+    "pid": "A0209",
+    "name": "金属集装箱",
+    "isParent": false
+  },
+  {
+    "id": "A02091M",
+    "pid": "A0209",
+    "name": "工业锅炉",
+    "isParent": false
+  },
+  {
+    "id": "A02091N",
+    "pid": "A0209",
+    "name": "发动机",
+    "isParent": false
+  },
+  {
+    "id": "A02091O",
+    "pid": "A0209",
+    "name": "金属切削机床",
+    "isParent": false
+  },
+  {
+    "id": "A02091P",
+    "pid": "A0209",
+    "name": "金属成形机床",
+    "isParent": false
+  },
+  {
+    "id": "A02091Q",
+    "pid": "A0209",
+    "name": "电梯、自动扶梯及升降机",
+    "isParent": false
+  },
+  {
+    "id": "A02091R",
+    "pid": "A0209",
+    "name": "电动手提式工具",
+    "isParent": false
+  },
+  {
+    "id": "A02091S",
+    "pid": "A0209",
+    "name": "包装专用设备",
+    "isParent": false
+  },
+  {
+    "id": "A02091T",
+    "pid": "A0209",
+    "name": "复印和胶版印制设备",
+    "isParent": false
+  },
+  {
+    "id": "A02091U",
+    "pid": "A0209",
+    "name": "挖掘机",
+    "isParent": false
+  },
+  {
+    "id": "A02091V",
+    "pid": "A0209",
+    "name": "水泥专用设备",
+    "isParent": false
+  },
+  {
+    "id": "A02091W",
+    "pid": "A0209",
+    "name": "金属冶炼设备",
+    "isParent": false
+  },
+  {
+    "id": "A02091X",
+    "pid": "A0209",
+    "name": "饲料生产专用设备",
+    "isParent": false
+  },
+  {
+    "id": "A02091Y",
+    "pid": "A0209",
+    "name": "大型拖拉机",
+    "isParent": false
+  },
+  {
+    "id": "A02091Z",
+    "pid": "A0209",
+    "name": "中型拖拉机",
+    "isParent": false
+  },
+  {
+    "id": "A020920",
+    "pid": "A0209",
+    "name": "小型拖拉机",
+    "isParent": false
+  },
+  {
+    "id": "A020921",
+    "pid": "A0209",
+    "name": "大气污染防治设备",
+    "isParent": false
+  },
+  {
+    "id": "A020922",
+    "pid": "A0209",
+    "name": "工业机器人",
+    "isParent": false
+  },
+  {
+    "id": "A020923",
+    "pid": "A0209",
+    "name": "汽车",
+    "isParent": false
+  },
+  {
+    "id": "A020924",
+    "pid": "A0209",
+    "name": "基本型乘用车（轿车）",
+    "isParent": false
+  },
+  {
+    "id": "A020925",
+    "pid": "A0209",
+    "name": "运动型多用途乘用车（SUV）",
+    "isParent": false
+  },
+  {
+    "id": "A020926",
+    "pid": "A0209",
+    "name": "载货汽车",
+    "isParent": false
+  },
+  {
+    "id": "A020927",
+    "pid": "A0209",
+    "name": "铁路机车",
+    "isParent": false
+  },
+  {
+    "id": "A020928",
+    "pid": "A0209",
+    "name": "动车组",
+    "isParent": false
+  },
+  {
+    "id": "A020929",
+    "pid": "A0209",
+    "name": "民用钢质船舶",
+    "isParent": false
+  },
+  {
+    "id": "A02092A",
+    "pid": "A0209",
+    "name": "发电机组（发电设备）",
+    "isParent": false
+  },
+  {
+    "id": "A02092B",
+    "pid": "A0209",
+    "name": "交流电动机",
+    "isParent": false
+  },
+  {
+    "id": "A02092C",
+    "pid": "A0209",
+    "name": "光缆",
+    "isParent": false
+  },
+  {
+    "id": "A02092D",
+    "pid": "A0209",
+    "name": "锂离子电池",
+    "isParent": false
+  },
+  {
+    "id": "A02092E",
+    "pid": "A0209",
+    "name": "太阳能电池（光伏电池）",
+    "isParent": false
+  },
+  {
+    "id": "A02092F",
+    "pid": "A0209",
+    "name": "家用电冰箱（家用冷冻冷藏箱）",
+    "isParent": false
+  },
+  {
+    "id": "A02092G",
+    "pid": "A0209",
+    "name": "家用冷柜（家用冷冻箱）",
+    "isParent": false
+  },
+  {
+    "id": "A02092H",
+    "pid": "A0209",
+    "name": "房间空气调节器",
+    "isParent": false
+  },
+  {
+    "id": "A02092I",
+    "pid": "A0209",
+    "name": "家用洗衣机",
+    "isParent": false
+  },
+  {
+    "id": "A02092J",
+    "pid": "A0209",
+    "name": "电子计算机整机",
+    "isParent": false
+  },
+  {
+    "id": "A02092K",
+    "pid": "A0209",
+    "name": "微型计算机设备",
+    "isParent": false
+  },
+  {
+    "id": "A02092L",
+    "pid": "A0209",
+    "name": "程控交换机",
+    "isParent": false
+  },
+  {
+    "id": "A02092M",
+    "pid": "A0209",
+    "name": "移动通信基站设备",
+    "isParent": false
+  },
+  {
+    "id": "A02092N",
+    "pid": "A0209",
+    "name": "传真机",
+    "isParent": false
+  },
+  {
+    "id": "A02092O",
+    "pid": "A0209",
+    "name": "移动通信手持机（手机）",
+    "isParent": false
+  },
+  {
+    "id": "A02092P",
+    "pid": "A0209",
+    "name": "彩色电视机",
+    "isParent": false
+  },
+  {
+    "id": "A02092Q",
+    "pid": "A0209",
+    "name": "集成电路",
+    "isParent": false
+  },
+  {
+    "id": "A02092R",
+    "pid": "A0209",
+    "name": "光电子器件",
+    "isParent": false
+  },
+  {
+    "id": "A02092S",
+    "pid": "A0209",
+    "name": "电工仪器仪表",
+    "isParent": false
+  },
+  {
+    "id": "A02092T",
+    "pid": "A0209",
+    "name": "挖掘铲土运输机械",
+    "isParent": false
+  },
+  {
+    "id": "A02092U",
+    "pid": "A0209",
+    "name": "服务机器人",
+    "isParent": false
+  },
+  {
+    "id": "A02092V",
+    "pid": "A0209",
+    "name": "智能手表",
+    "isParent": false
+  },
+  {
+    "id": "A02092W",
+    "pid": "A0209",
+    "name": "新能源汽车",
+    "isParent": false
+  },
+  {
+    "id": "A02092X",
+    "pid": "A0209",
+    "name": "智能手机",
+    "isParent": false
+  }
+]

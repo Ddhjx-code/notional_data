@@ -1,0 +1,254 @@
+[
+  {
+    "id": "A0Q01",
+    "pid": "A0Q",
+    "name": "文化文物机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q02",
+    "pid": "A0Q",
+    "name": "文化文物从业人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q03",
+    "pid": "A0Q",
+    "name": "艺术表演团体基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q04",
+    "pid": "A0Q",
+    "name": "艺术表演场馆基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q05",
+    "pid": "A0Q",
+    "name": "公共图书馆基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q06",
+    "pid": "A0Q",
+    "name": "群众文化机构基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q07",
+    "pid": "A0Q",
+    "name": "文物业基本情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q08",
+    "pid": "A0Q",
+    "name": "主要文化机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q09",
+    "pid": "A0Q",
+    "name": "艺术表演团体、艺术表演场馆演出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0A",
+    "pid": "A0Q",
+    "name": "博物馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0B",
+    "pid": "A0Q",
+    "name": "广播电视事业发展情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0C",
+    "pid": "A0Q",
+    "name": "广播电视节目制作时间",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0D",
+    "pid": "A0Q",
+    "name": "广播电视节目播出时间",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0E",
+    "pid": "A0Q",
+    "name": "广播电视节目综合人口覆盖情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0F",
+    "pid": "A0Q",
+    "name": "广播节目制作播出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0G",
+    "pid": "A0Q",
+    "name": "电视节目制作播出情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0H",
+    "pid": "A0Q",
+    "name": "有线广播电视传输干线网络及用户情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0I",
+    "pid": "A0Q",
+    "name": "广播电视技术情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0J",
+    "pid": "A0Q",
+    "name": "电视节目进出口情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q0K",
+    "pid": "A0Q",
+    "name": "电影综合情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0L",
+    "pid": "A0Q",
+    "name": "图书出版情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q0M",
+    "pid": "A0Q",
+    "name": "图书、期刊和报纸出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0N",
+    "pid": "A0Q",
+    "name": "少年儿童读物类图书和课本出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0O",
+    "pid": "A0Q",
+    "name": "课本出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0P",
+    "pid": "A0Q",
+    "name": "录像制品出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0Q",
+    "pid": "A0Q",
+    "name": "录音制品出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0R",
+    "pid": "A0Q",
+    "name": "电子出版物出版情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0S",
+    "pid": "A0Q",
+    "name": "全国图书、期刊、报纸进出口情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0T",
+    "pid": "A0Q",
+    "name": "音像、电子出版物进出口情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0U",
+    "pid": "A0Q",
+    "name": "版权合同登记",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0V",
+    "pid": "A0Q",
+    "name": "引进和输出版权情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q0W",
+    "pid": "A0Q",
+    "name": "出版物发行机构数和网点数",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0X",
+    "pid": "A0Q",
+    "name": "出版印刷生产情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0Y",
+    "pid": "A0Q",
+    "name": "档案馆机构和人员情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0Z",
+    "pid": "A0Q",
+    "name": "文化产业情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q10",
+    "pid": "A0Q",
+    "name": "规模以上文化企业情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q11",
+    "pid": "A0Q",
+    "name": "规模以上文化制造业企业情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q12",
+    "pid": "A0Q",
+    "name": "限额以上文化批发和零售业企业情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q13",
+    "pid": "A0Q",
+    "name": "规模以上文化服务业企业情况",
+    "isParent": true
+  },
+  {
+    "id": "A0Q14",
+    "pid": "A0Q",
+    "name": "图书出版机构及人员情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q15",
+    "pid": "A0Q",
+    "name": "出版物发行购、销、存情况",
+    "isParent": false
+  },
+  {
+    "id": "A0Q16",
+    "pid": "A0Q",
+    "name": "作品自愿登记情况",
+    "isParent": false
+  }
+]

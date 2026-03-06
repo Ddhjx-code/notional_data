@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0R0101",
+    "pid": "A0R01",
+    "name": "体育系统机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0R0102",
+    "pid": "A0R01",
+    "name": "体育系统人员数",
+    "isParent": false
+  }
+]

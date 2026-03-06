@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0M0F01",
+    "pid": "A0M0F",
+    "name": "成人专科分学科招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0F02",
+    "pid": "A0M0F",
+    "name": "成人专科分学科在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0F03",
+    "pid": "A0M0F",
+    "name": "成人专科分学科毕业生数",
+    "isParent": false
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0L0D01",
+    "pid": "A0L0D",
+    "name": "保险系统机构数",
+    "isParent": false
+  },
+  {
+    "id": "A0L0D02",
+    "pid": "A0L0D",
+    "name": "保险系统职工人数",
+    "isParent": false
+  }
+]

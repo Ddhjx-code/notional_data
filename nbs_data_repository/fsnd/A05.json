@@ -1,0 +1,158 @@
+[
+  {
+    "id": "A0501",
+    "pid": "A05",
+    "name": "按领域分固定资产投资(不含农户)增速（2018-）",
+    "isParent": false
+  },
+  {
+    "id": "A0502",
+    "pid": "A05",
+    "name": "固定资产投资(不含农户)实际到位资金增长情况",
+    "isParent": false
+  },
+  {
+    "id": "A0503",
+    "pid": "A05",
+    "name": "按构成和建设性质分固定资产投资(不含农户)增长情况",
+    "isParent": false
+  },
+  {
+    "id": "A0504",
+    "pid": "A05",
+    "name": "按隶属关系分固定资产投资(不含农户)增长情况",
+    "isParent": false
+  },
+  {
+    "id": "A0505",
+    "pid": "A05",
+    "name": "按登记注册类型分固定资产投资(不含农户)增长情况",
+    "isParent": false
+  },
+  {
+    "id": "A0506",
+    "pid": "A05",
+    "name": "按控股情况分固定资产投资(不含农户)增长情况",
+    "isParent": false
+  },
+  {
+    "id": "A0507",
+    "pid": "A05",
+    "name": "按行业分固定资产投资(不含农户)增长情况（2018-）",
+    "isParent": false
+  },
+  {
+    "id": "A0508",
+    "pid": "A05",
+    "name": "农村农户固定资产投资比上年增长情况",
+    "isParent": false
+  },
+  {
+    "id": "A0509",
+    "pid": "A05",
+    "name": "房地产开发企业个数（-2022）",
+    "isParent": false
+  },
+  {
+    "id": "A050A",
+    "pid": "A05",
+    "name": "房地产开发企业从业人员数（-2022）",
+    "isParent": false
+  },
+  {
+    "id": "A050B",
+    "pid": "A05",
+    "name": "房地产开发企业土地开发及购置",
+    "isParent": false
+  },
+  {
+    "id": "A050C",
+    "pid": "A05",
+    "name": "房地产开发企业投资总规模及完成情况",
+    "isParent": false
+  },
+  {
+    "id": "A050D",
+    "pid": "A05",
+    "name": "按用途分房地产开发企业完成投资",
+    "isParent": false
+  },
+  {
+    "id": "A050E",
+    "pid": "A05",
+    "name": "房地产开发企业资金来源",
+    "isParent": false
+  },
+  {
+    "id": "A050F",
+    "pid": "A05",
+    "name": "房地产开发企业房屋建筑面积和造价",
+    "isParent": false
+  },
+  {
+    "id": "A050G",
+    "pid": "A05",
+    "name": "按用途分房地产开发企业新开工面积",
+    "isParent": false
+  },
+  {
+    "id": "A050H",
+    "pid": "A05",
+    "name": "按用途分新建商品房销售面积",
+    "isParent": false
+  },
+  {
+    "id": "A050I",
+    "pid": "A05",
+    "name": "按用途分新建商品房销售额",
+    "isParent": false
+  },
+  {
+    "id": "A050J",
+    "pid": "A05",
+    "name": "按用途分新建商品房平均销售价格",
+    "isParent": false
+  },
+  {
+    "id": "A050K",
+    "pid": "A05",
+    "name": "房地产开发企业资产负债",
+    "isParent": false
+  },
+  {
+    "id": "A050L",
+    "pid": "A05",
+    "name": "房地产开发企业经营情况",
+    "isParent": false
+  },
+  {
+    "id": "A050M",
+    "pid": "A05",
+    "name": "按项目规模分房地产开发完成投资",
+    "isParent": false
+  },
+  {
+    "id": "A050N",
+    "pid": "A05",
+    "name": "房地产开发企业成套住宅竣工与销售情况",
+    "isParent": false
+  },
+  {
+    "id": "A050O",
+    "pid": "A05",
+    "name": "固定资产投资(不含农户)增速",
+    "isParent": false
+  },
+  {
+    "id": "A050P",
+    "pid": "A05",
+    "name": "房地产开发企业个数（2023-）",
+    "isParent": false
+  },
+  {
+    "id": "A050Q",
+    "pid": "A05",
+    "name": "房地产开发企业从业人员数（2023-）",
+    "isParent": false
+  }
+]

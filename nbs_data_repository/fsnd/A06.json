@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0601",
+    "pid": "A06",
+    "name": "按经营单位所在地分货物进出口总额",
+    "isParent": false
+  },
+  {
+    "id": "A0602",
+    "pid": "A06",
+    "name": "按境内目的地和货源地分货物进出口总额",
+    "isParent": false
+  },
+  {
+    "id": "A0603",
+    "pid": "A06",
+    "name": "外商投资企业货物进出口总额",
+    "isParent": false
+  },
+  {
+    "id": "A0604",
+    "pid": "A06",
+    "name": "外商投资企业年底注册登记情况",
+    "isParent": false
+  }
+]

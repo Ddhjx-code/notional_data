@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A020H0201",
+    "pid": "A020H02",
+    "name": "贷方经常项目",
+    "isParent": false
+  },
+  {
+    "id": "A020H0202",
+    "pid": "A020H02",
+    "name": "贷方资本和金融项目",
+    "isParent": false
+  },
+  {
+    "id": "A020H0203",
+    "pid": "A020H02",
+    "name": "贷方储备资产",
+    "isParent": false
+  },
+  {
+    "id": "A020H0204",
+    "pid": "A020H02",
+    "name": "贷方净误差与遗漏",
+    "isParent": false
+  }
+]

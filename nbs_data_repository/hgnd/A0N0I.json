@@ -1,0 +1,32 @@
+[
+  {
+    "id": "A0N0I01",
+    "pid": "A0N0I",
+    "name": "限额以上研究与试验发展项目(课题)数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0I02",
+    "pid": "A0N0I",
+    "name": "限额以上研究与试验发展项目(课题)人员全时当量",
+    "isParent": false
+  },
+  {
+    "id": "A0N0I03",
+    "pid": "A0N0I",
+    "name": "限额以上研究与试验发展项目(课题)研究人员全时当量",
+    "isParent": false
+  },
+  {
+    "id": "A0N0I04",
+    "pid": "A0N0I",
+    "name": "限额以上研究与试验发展项目(课题)经费支出",
+    "isParent": false
+  },
+  {
+    "id": "A0N0I05",
+    "pid": "A0N0I",
+    "name": "限额以上研究与试验发展项目(课题)政府资金支出",
+    "isParent": false
+  }
+]

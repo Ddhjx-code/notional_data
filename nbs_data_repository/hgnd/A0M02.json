@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A0M0201",
+    "pid": "A0M02",
+    "name": "各级各类学历教育招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0202",
+    "pid": "A0M02",
+    "name": "各级各类学历教育在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0203",
+    "pid": "A0M02",
+    "name": "各级各类学历教育毕业生数",
+    "isParent": false
+  }
+]

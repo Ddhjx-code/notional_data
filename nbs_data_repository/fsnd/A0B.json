@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A0B01",
+    "pid": "A0B",
+    "name": "全部地级及以上城市数",
+    "isParent": false
+  },
+  {
+    "id": "A0B02",
+    "pid": "A0B",
+    "name": "城市建设",
+    "isParent": false
+  },
+  {
+    "id": "A0B03",
+    "pid": "A0B",
+    "name": "城市供水",
+    "isParent": false
+  },
+  {
+    "id": "A0B04",
+    "pid": "A0B",
+    "name": "城市燃气",
+    "isParent": false
+  },
+  {
+    "id": "A0B05",
+    "pid": "A0B",
+    "name": "城市集中供热",
+    "isParent": false
+  },
+  {
+    "id": "A0B06",
+    "pid": "A0B",
+    "name": "城市市政设施",
+    "isParent": false
+  },
+  {
+    "id": "A0B07",
+    "pid": "A0B",
+    "name": "城市公共交通",
+    "isParent": false
+  },
+  {
+    "id": "A0B08",
+    "pid": "A0B",
+    "name": "城市绿地和园林",
+    "isParent": false
+  },
+  {
+    "id": "A0B09",
+    "pid": "A0B",
+    "name": "城市市容环境卫生",
+    "isParent": false
+  },
+  {
+    "id": "A0B0A",
+    "pid": "A0B",
+    "name": "城市设施水平",
+    "isParent": false
+  }
+]

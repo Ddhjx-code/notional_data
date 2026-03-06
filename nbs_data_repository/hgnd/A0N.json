@@ -1,0 +1,302 @@
+[
+  {
+    "id": "A0N01",
+    "pid": "A0N",
+    "name": "科技活动基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N02",
+    "pid": "A0N",
+    "name": "科学研究与开发机构基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N03",
+    "pid": "A0N",
+    "name": "高等学校科技活动情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N04",
+    "pid": "A0N",
+    "name": "规模以上工业企业的科技活动基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N05",
+    "pid": "A0N",
+    "name": "按登记注册统计分类和行业分规模以上工业企业研究与试验发展(研究与试验发展)活动情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N06",
+    "pid": "A0N",
+    "name": "规模以上工业企业新产品开发及生产情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N07",
+    "pid": "A0N",
+    "name": "规模以上工业企业专利情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N08",
+    "pid": "A0N",
+    "name": "大中型工业企业科技活动基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N09",
+    "pid": "A0N",
+    "name": "按登记注册类型和行业分大中型工业企业研究与试验发展(研究与试验发展)活动情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0A",
+    "pid": "A0N",
+    "name": "按登记注册类型和行业分大中型工业企业新产品开发及生产情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0B",
+    "pid": "A0N",
+    "name": "按登记注册类型和行业分大中型工业企业专利情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0C",
+    "pid": "A0N",
+    "name": "按活动类型分全国研究与试验发展经费支出",
+    "isParent": false
+  },
+  {
+    "id": "A0N0D",
+    "pid": "A0N",
+    "name": "按支出用途分全国研究与试验发展经费支出",
+    "isParent": false
+  },
+  {
+    "id": "A0N0E",
+    "pid": "A0N",
+    "name": "按经费来源分全国研究与试验发展经费支出",
+    "isParent": false
+  },
+  {
+    "id": "A0N0F",
+    "pid": "A0N",
+    "name": "研究与试验发展人员情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0G",
+    "pid": "A0N",
+    "name": "按行业分研究与试验发展人员全时当量",
+    "isParent": false
+  },
+  {
+    "id": "A0N0H",
+    "pid": "A0N",
+    "name": "研究与试验发展项目(课题)情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N0I",
+    "pid": "A0N",
+    "name": "限额以上研究与试验发展项目(课题)情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0J",
+    "pid": "A0N",
+    "name": "全国研究开发机构情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N0K",
+    "pid": "A0N",
+    "name": "规模以上制造业企业产品和工艺创新情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0L",
+    "pid": "A0N",
+    "name": "高技术产业基本情况(大中型工业企业口径)",
+    "isParent": false
+  },
+  {
+    "id": "A0N0M",
+    "pid": "A0N",
+    "name": "高技术产业专利及新产品生产情况(大中型工业企业口径)",
+    "isParent": true
+  },
+  {
+    "id": "A0N0N",
+    "pid": "A0N",
+    "name": "高技术产业研究与试验发展活动及新产品开发情况(大中型工业企业口径)",
+    "isParent": true
+  },
+  {
+    "id": "A0N0O",
+    "pid": "A0N",
+    "name": "高技术产业科技活动投入情况(大中型工业企业口径)",
+    "isParent": true
+  },
+  {
+    "id": "A0N0P",
+    "pid": "A0N",
+    "name": "高技术产业大中型工业企业科技活动产出情况(大中型工业企业口径)",
+    "isParent": true
+  },
+  {
+    "id": "A0N0Q",
+    "pid": "A0N",
+    "name": "高技术产业生产经营情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0R",
+    "pid": "A0N",
+    "name": "高技术产业研究与试验发展活动情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0S",
+    "pid": "A0N",
+    "name": "高技术产业新产品开发情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0T",
+    "pid": "A0N",
+    "name": "高技术产业专利情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N0U",
+    "pid": "A0N",
+    "name": "国内外三种专利申请受理量",
+    "isParent": false
+  },
+  {
+    "id": "A0N0V",
+    "pid": "A0N",
+    "name": "国内外三种专利申请授权量",
+    "isParent": false
+  },
+  {
+    "id": "A0N0W",
+    "pid": "A0N",
+    "name": "国内三种专利申请受理数和授权数",
+    "isParent": false
+  },
+  {
+    "id": "A0N0X",
+    "pid": "A0N",
+    "name": "按国别(地区)分国外专利申请受理量及授权量",
+    "isParent": true
+  },
+  {
+    "id": "A0N0Y",
+    "pid": "A0N",
+    "name": "按国际标准分类的发明、实用新型专利申请受理和申请授权",
+    "isParent": true
+  },
+  {
+    "id": "A0N0Z",
+    "pid": "A0N",
+    "name": "国外主要检索工具收录我国科技论文按学科分布",
+    "isParent": true
+  },
+  {
+    "id": "A0N10",
+    "pid": "A0N",
+    "name": "高技术产品、工业制成品和初级产品的进出口贸易额",
+    "isParent": false
+  },
+  {
+    "id": "A0N11",
+    "pid": "A0N",
+    "name": "公有经济企事业单位专业技术人员数",
+    "isParent": false
+  },
+  {
+    "id": "A0N12",
+    "pid": "A0N",
+    "name": "技术市场成交额",
+    "isParent": false
+  },
+  {
+    "id": "A0N13",
+    "pid": "A0N",
+    "name": "测绘地理信息部门生产完成情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N14",
+    "pid": "A0N",
+    "name": "测绘资料提供情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N15",
+    "pid": "A0N",
+    "name": "地震监测情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N16",
+    "pid": "A0N",
+    "name": "气象业务站点及观测项目情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N17",
+    "pid": "A0N",
+    "name": "产品质量国家监督抽查",
+    "isParent": false
+  },
+  {
+    "id": "A0N18",
+    "pid": "A0N",
+    "name": "产品质量监督检查情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N19",
+    "pid": "A0N",
+    "name": "产品质量情况",
+    "isParent": false
+  },
+  {
+    "id": "A0N1A",
+    "pid": "A0N",
+    "name": "产品质量省级监督抽查",
+    "isParent": false
+  },
+  {
+    "id": "A0N1B",
+    "pid": "A0N",
+    "name": "出入境货物检验检疫",
+    "isParent": false
+  },
+  {
+    "id": "A0N1C",
+    "pid": "A0N",
+    "name": "中国科协系统科技活动情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N1D",
+    "pid": "A0N",
+    "name": "规模以上工业企业产品和工艺创新情况",
+    "isParent": true
+  },
+  {
+    "id": "A0N1E",
+    "pid": "A0N",
+    "name": "规模以上工业企业组织(管理)和营销创新情况",
+    "isParent": true
+  }
+]

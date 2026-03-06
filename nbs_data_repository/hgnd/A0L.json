@@ -1,0 +1,104 @@
+[
+  {
+    "id": "A0L01",
+    "pid": "A0L",
+    "name": "金融机构人民币信贷资金平衡表(资金来源)",
+    "isParent": false
+  },
+  {
+    "id": "A0L02",
+    "pid": "A0L",
+    "name": "金融机构人民币信贷资金平衡表(资金运用)",
+    "isParent": false
+  },
+  {
+    "id": "A0L03",
+    "pid": "A0L",
+    "name": "货币供应量",
+    "isParent": false
+  },
+  {
+    "id": "A0L04",
+    "pid": "A0L",
+    "name": "黄金和外汇储备",
+    "isParent": false
+  },
+  {
+    "id": "A0L05",
+    "pid": "A0L",
+    "name": "货币当局资产负债表",
+    "isParent": false
+  },
+  {
+    "id": "A0L06",
+    "pid": "A0L",
+    "name": "其他存款性公司资产负债表",
+    "isParent": false
+  },
+  {
+    "id": "A0L07",
+    "pid": "A0L",
+    "name": "外资银行资产负债表",
+    "isParent": false
+  },
+  {
+    "id": "A0L08",
+    "pid": "A0L",
+    "name": "社会融资规模及构成",
+    "isParent": false
+  },
+  {
+    "id": "A0L09",
+    "pid": "A0L",
+    "name": "证券市场基本情况",
+    "isParent": false
+  },
+  {
+    "id": "A0L0A",
+    "pid": "A0L",
+    "name": "上市公司数量",
+    "isParent": false
+  },
+  {
+    "id": "A0L0B",
+    "pid": "A0L",
+    "name": "股票发行量和筹资额",
+    "isParent": false
+  },
+  {
+    "id": "A0L0C",
+    "pid": "A0L",
+    "name": "股票交易情况",
+    "isParent": false
+  },
+  {
+    "id": "A0L0D",
+    "pid": "A0L",
+    "name": "保险系统机构、人员数",
+    "isParent": true
+  },
+  {
+    "id": "A0L0E",
+    "pid": "A0L",
+    "name": "保险公司业务经济技术指标",
+    "isParent": true
+  },
+  {
+    "id": "A0L0F",
+    "pid": "A0L",
+    "name": "保险公司资产情况",
+    "isParent": false
+  },
+  {
+    "id": "A0L0G",
+    "pid": "A0L",
+    "name": "保险公司资金运用情况",
+    "isParent": false
+  },
+  {
+    "id": "A0L0H",
+    "pid": "A0L",
+    "name": "原保险保费收入和赔付支出情况",
+    "isParent": false
+  }
+]

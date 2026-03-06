@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A01",
+    "pid": "",
+    "name": "价格指数",
+    "isParent": true
+  },
+  {
+    "id": "A02",
+    "pid": "",
+    "name": "工业",
+    "isParent": true
+  },
+  {
+    "id": "A03",
+    "pid": "",
+    "name": "能源",
+    "isParent": true
+  },
+  {
+    "id": "A04",
+    "pid": "",
+    "name": "固定资产投资(不含农户)",
+    "isParent": true
+  },
+  {
+    "id": "A14",
+    "pid": "",
+    "name": "房地产",
+    "isParent": true
+  },
+  {
+    "id": "A15",
+    "pid": "",
+    "name": "国内贸易",
+    "isParent": true
+  }
+]

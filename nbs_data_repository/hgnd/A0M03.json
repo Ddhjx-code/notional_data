@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A0M0301",
+    "pid": "A0M03",
+    "name": "各级各类非学历教育结业生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0302",
+    "pid": "A0M03",
+    "name": "各级各类非学历教育注册生数",
+    "isParent": false
+  }
+]

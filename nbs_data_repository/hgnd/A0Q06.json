@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0Q0601",
+    "pid": "A0Q06",
+    "name": "群众文化机构",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0602",
+    "pid": "A0Q06",
+    "name": "省、区、直辖市(级)群众文化机构",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0603",
+    "pid": "A0Q06",
+    "name": "地市级群众文化机构",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0604",
+    "pid": "A0Q06",
+    "name": "县市级群众文化机构",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0605",
+    "pid": "A0Q06",
+    "name": "县文化馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0606",
+    "pid": "A0Q06",
+    "name": "乡镇(街道)文化站",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0607",
+    "pid": "A0Q06",
+    "name": "乡镇文化站",
+    "isParent": false
+  }
+]

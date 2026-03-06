@@ -1,0 +1,26 @@
+[
+  {
+    "id": "A0G0E01",
+    "pid": "A0G0E",
+    "name": "客运量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0E02",
+    "pid": "A0G0E",
+    "name": "旅客周转量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0E03",
+    "pid": "A0G0E",
+    "name": "货运量",
+    "isParent": false
+  },
+  {
+    "id": "A0G0E04",
+    "pid": "A0G0E",
+    "name": "货物周转量",
+    "isParent": false
+  }
+]

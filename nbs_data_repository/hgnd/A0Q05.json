@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0Q0501",
+    "pid": "A0Q05",
+    "name": "公共图书馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0502",
+    "pid": "A0Q05",
+    "name": "少儿图书馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0503",
+    "pid": "A0Q05",
+    "name": "中央公共图书馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0504",
+    "pid": "A0Q05",
+    "name": "省、区、直辖市(级)公共图书馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0505",
+    "pid": "A0Q05",
+    "name": "地市级公共图书馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0506",
+    "pid": "A0Q05",
+    "name": "县市级公共图书馆",
+    "isParent": false
+  },
+  {
+    "id": "A0Q0507",
+    "pid": "A0Q05",
+    "name": "县图书馆",
+    "isParent": false
+  }
+]

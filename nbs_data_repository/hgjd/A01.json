@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0101",
+    "pid": "A01",
+    "name": "国内生产总值(现价)",
+    "isParent": false
+  },
+  {
+    "id": "A0102",
+    "pid": "A01",
+    "name": "国内生产总值(不变价)",
+    "isParent": false
+  },
+  {
+    "id": "A0103",
+    "pid": "A01",
+    "name": "国内生产总值指数",
+    "isParent": false
+  },
+  {
+    "id": "A0104",
+    "pid": "A01",
+    "name": "国内生产总值环比增长速度",
+    "isParent": false
+  },
+  {
+    "id": "A0105",
+    "pid": "A01",
+    "name": "三大需求对国内生产总值增长的贡献率",
+    "isParent": false
+  },
+  {
+    "id": "A0106",
+    "pid": "A01",
+    "name": "三次产业贡献率",
+    "isParent": false
+  }
+]

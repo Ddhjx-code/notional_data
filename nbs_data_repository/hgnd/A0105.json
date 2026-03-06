@@ -1,0 +1,104 @@
+[
+  {
+    "id": "A010501",
+    "pid": "A0105",
+    "name": "民族自治地方行政区划",
+    "isParent": false
+  },
+  {
+    "id": "A010502",
+    "pid": "A0105",
+    "name": "民族自治地方人口",
+    "isParent": false
+  },
+  {
+    "id": "A010503",
+    "pid": "A0105",
+    "name": "民族自治地方国内生产总值",
+    "isParent": false
+  },
+  {
+    "id": "A010504",
+    "pid": "A0105",
+    "name": "民族自治地方固定资产投资",
+    "isParent": false
+  },
+  {
+    "id": "A010505",
+    "pid": "A0105",
+    "name": "民族自治地方财政",
+    "isParent": false
+  },
+  {
+    "id": "A010506",
+    "pid": "A0105",
+    "name": "民族自治地方农业",
+    "isParent": false
+  },
+  {
+    "id": "A010507",
+    "pid": "A0105",
+    "name": "民族自治地方工业",
+    "isParent": false
+  },
+  {
+    "id": "A010508",
+    "pid": "A0105",
+    "name": "民族自治地方建筑业",
+    "isParent": false
+  },
+  {
+    "id": "A010509",
+    "pid": "A0105",
+    "name": "民族自治地方邮电运输",
+    "isParent": false
+  },
+  {
+    "id": "A01050A",
+    "pid": "A0105",
+    "name": "民族自治地方国内贸易",
+    "isParent": false
+  },
+  {
+    "id": "A01050B",
+    "pid": "A0105",
+    "name": "民族自治地方对外经济",
+    "isParent": false
+  },
+  {
+    "id": "A01050C",
+    "pid": "A0105",
+    "name": "民族自治地方国际旅游",
+    "isParent": false
+  },
+  {
+    "id": "A01050D",
+    "pid": "A0105",
+    "name": "民族自治地方金融",
+    "isParent": false
+  },
+  {
+    "id": "A01050E",
+    "pid": "A0105",
+    "name": "民族自治地方教育",
+    "isParent": false
+  },
+  {
+    "id": "A01050F",
+    "pid": "A0105",
+    "name": "民族自治地方出版数量",
+    "isParent": false
+  },
+  {
+    "id": "A01050G",
+    "pid": "A0105",
+    "name": "民族自治地方卫生",
+    "isParent": false
+  },
+  {
+    "id": "A01050H",
+    "pid": "A0105",
+    "name": "民族自治地方社会服务",
+    "isParent": false
+  }
+]

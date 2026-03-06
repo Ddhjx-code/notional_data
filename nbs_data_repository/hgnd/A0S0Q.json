@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A0S0Q01",
+    "pid": "A0S0Q",
+    "name": "人民法院审理婚姻家庭、继承一审案件收案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Q02",
+    "pid": "A0S0Q",
+    "name": "人民法院审理婚姻家庭、继承一审案件案件结案件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Q03",
+    "pid": "A0S0Q",
+    "name": "人民法院审理婚姻家庭、继承一审案件案件调解件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Q04",
+    "pid": "A0S0Q",
+    "name": "人民法院审理婚姻家庭、继承一审案件案件判决件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Q05",
+    "pid": "A0S0Q",
+    "name": "人民法院审理婚姻家庭、继承一审案件案件驳回件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Q06",
+    "pid": "A0S0Q",
+    "name": "人民法院审理婚姻家庭、继承一审案件案件撤诉件数",
+    "isParent": false
+  },
+  {
+    "id": "A0S0Q07",
+    "pid": "A0S0Q",
+    "name": "人民法院审理婚姻家庭、继承一审案件其他案件结案件数",
+    "isParent": false
+  }
+]

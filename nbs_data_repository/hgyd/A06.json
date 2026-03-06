@@ -1,0 +1,92 @@
+[
+  {
+    "id": "A0601",
+    "pid": "A06",
+    "name": "房地产开发投资情况",
+    "isParent": false
+  },
+  {
+    "id": "A0602",
+    "pid": "A06",
+    "name": "房地产开发投资实际到位资金",
+    "isParent": false
+  },
+  {
+    "id": "A0603",
+    "pid": "A06",
+    "name": "房地产土地开发与销售情况",
+    "isParent": false
+  },
+  {
+    "id": "A0604",
+    "pid": "A06",
+    "name": "房地产施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A0605",
+    "pid": "A06",
+    "name": "商品住宅施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A0606",
+    "pid": "A06",
+    "name": "办公楼施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A0607",
+    "pid": "A06",
+    "name": "商业营业用房施工、竣工面积",
+    "isParent": false
+  },
+  {
+    "id": "A0608",
+    "pid": "A06",
+    "name": "商品房销售面积",
+    "isParent": false
+  },
+  {
+    "id": "A0609",
+    "pid": "A06",
+    "name": "商品房销售额",
+    "isParent": false
+  },
+  {
+    "id": "A060A",
+    "pid": "A06",
+    "name": "商品住宅销售面积",
+    "isParent": false
+  },
+  {
+    "id": "A060B",
+    "pid": "A06",
+    "name": "商品住宅销售额",
+    "isParent": false
+  },
+  {
+    "id": "A060C",
+    "pid": "A06",
+    "name": "办公楼销售面积",
+    "isParent": false
+  },
+  {
+    "id": "A060D",
+    "pid": "A06",
+    "name": "办公楼销售额",
+    "isParent": false
+  },
+  {
+    "id": "A060E",
+    "pid": "A06",
+    "name": "商业营业用房销售面积",
+    "isParent": false
+  },
+  {
+    "id": "A060F",
+    "pid": "A06",
+    "name": "商业营业用房销售额",
+    "isParent": false
+  }
+]

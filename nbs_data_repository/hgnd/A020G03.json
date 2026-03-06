@@ -1,0 +1,14 @@
+[
+  {
+    "id": "A020G0301",
+    "pid": "A020G03",
+    "name": "资金运用",
+    "isParent": false
+  },
+  {
+    "id": "A020G0302",
+    "pid": "A020G03",
+    "name": "资金来源",
+    "isParent": false
+  }
+]

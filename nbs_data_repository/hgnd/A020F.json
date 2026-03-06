@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A020F01",
+    "pid": "A020F",
+    "name": "非金融交易",
+    "isParent": true
+  },
+  {
+    "id": "A020F02",
+    "pid": "A020F",
+    "name": "非金融企业部门",
+    "isParent": true
+  },
+  {
+    "id": "A020F03",
+    "pid": "A020F",
+    "name": "金融机构部门",
+    "isParent": true
+  },
+  {
+    "id": "A020F04",
+    "pid": "A020F",
+    "name": "广义政府部门",
+    "isParent": true
+  },
+  {
+    "id": "A020F05",
+    "pid": "A020F",
+    "name": "住户部门",
+    "isParent": true
+  },
+  {
+    "id": "A020F06",
+    "pid": "A020F",
+    "name": "国内",
+    "isParent": true
+  },
+  {
+    "id": "A020F07",
+    "pid": "A020F",
+    "name": "国外",
+    "isParent": true
+  }
+]

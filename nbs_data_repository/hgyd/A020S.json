@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A020S01",
+    "pid": "A020S",
+    "name": "国有工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020S02",
+    "pid": "A020S",
+    "name": "集体工业企业主要经济指标（-2018）",
+    "isParent": false
+  },
+  {
+    "id": "A020S03",
+    "pid": "A020S",
+    "name": "股份合作工业企业主要经济指标(-2018)",
+    "isParent": false
+  },
+  {
+    "id": "A020S04",
+    "pid": "A020S",
+    "name": "股份制工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020S05",
+    "pid": "A020S",
+    "name": "外商及港澳台投资工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020S06",
+    "pid": "A020S",
+    "name": "其它工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020S07",
+    "pid": "A020S",
+    "name": "国有控股工业企业主要经济指标",
+    "isParent": false
+  },
+  {
+    "id": "A020S08",
+    "pid": "A020S",
+    "name": "私营工业企业主要经济指标",
+    "isParent": false
+  }
+]

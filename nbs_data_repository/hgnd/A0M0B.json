@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A0M0B01",
+    "pid": "A0M0B",
+    "name": "分学科研究生招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0B02",
+    "pid": "A0M0B",
+    "name": "分学科博士招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0B03",
+    "pid": "A0M0B",
+    "name": "分学科硕士招生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0B04",
+    "pid": "A0M0B",
+    "name": "分学科研究生在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0B05",
+    "pid": "A0M0B",
+    "name": "分学科博士在校学生数",
+    "isParent": false
+  },
+  {
+    "id": "A0M0B06",
+    "pid": "A0M0B",
+    "name": "分学科硕士在校学生数",
+    "isParent": false
+  }
+]
