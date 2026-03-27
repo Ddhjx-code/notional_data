@@ -1,9 +1,18 @@
 # 国家统计局MCP/Agent数据获取工具
 
 ## 项目概述
-本项目是一个基于MCP（Model Context Protocol）协议的国家统计局数据获取服务，为AI Agent提供直接访问国家统计局API的功能。项目支持获取各种统计数据，包含关键词搜索、分类浏览、时间维度查询等功能，遵循国家统计局官方API接口最佳实践。
+本项目是一个基于MCP（Model Context Protocol）协议的国家统计局数据获取服务，为AI Agent提供直接访问国家统计局API的功能。项目**同时支持新版API (V2.0)和旧版API**，支持获取各种统计数据，包含关键词搜索、分类浏览、时间维度查询等功能。
 
-主要特点：
+### 🆕 新版 API V2.0 (2026.03.27更新)
+新版API采用UUID标识符架构，具有以下特点：
+- ✅ **UUID标识**: 使用UUID作为唯一标识符，摒弃旧的层级代码系统
+- ✅ **三步查询**: 树形导航 → 指标元数据 → 批量取值
+- ✅ **时间分片**: 同一指标按5年或统计制度变革周期分割，支持更精细的数据管理
+- ✅ **批量查询**: 支持一次性查询多个指标、多个时间点数据
+- ✅ **缓存优化**: 内置智能缓存机制，提升查询效率
+- ✅ **完整元数据**: 包含统计口径说明、单位信息等关键元数据
+
+### 旧版 API (向后兼容)
 - ✅ 关键词搜索：直接搜索获取指标代码及最新值（推荐用于快速查询）
 - ✅ 树形分类：可浏览和递归获取所有分类/指标体系
 - ✅ 预遍历数据：提供完整的预遍历分类编码体系，可直接读取使用（减少递归调用）
@@ -62,12 +71,129 @@ node dist/index.js --port 8080
 批量获取多个统计指标的数据。
 - 参数：`queries`（必需）- 查询参数数组
 
+## 🆕 新版 API V2.0 使用指南
+
+### 核心概念
+
+新版API引入以下关键概念：
+
+| 标识符 | 说明 |
+|--------|------|
+| **pid** | 父节点ID，用于在目录树中向下展开 |
+| **cid** | 数据集ID，代表一个叶子节点（特定指标+地区+时间段） |
+| **indicatorId** | 具体指标ID，代表数据集中的某一列 |
+| **时间分片** | 同一指标按时间分成多个cid（如2021-2025, 2026-至今） |
+
+### 新版API客户端使用示例
+
+```typescript
+import { NewStatsApiClient, CategoryCode } from './src/api-client';
+
+// 创建客户端实例
+const client = new NewStatsApiClient();
+
+// 方式一：一步到位查询（推荐）
+async function quickQuery() {
+  const result = await client.searchAndGet(
+    'CPI',                    // 关键词
+    '居民消费价格指数',        // 指标名称（可选）
+    '202601MM',               // 起始时间（可选）
+    '202603MM'                // 结束时间（可选）
+  );
+  
+  console.log('数据集ID:', result.cid);
+  console.log('指标信息:', result.indicator);
+  console.log('数据:', result.data);
+}
+
+// 方式二：分步查询（适合复杂场景）
+async function stepByStep() {
+  // 1. 搜索定位数据集
+  const searchResults = await client.search({ 
+    search: 'GDP',
+    pageSize: 10 
+  });
+  
+  // 2. 获取树结构（遍历分类）
+  const treeNodes = await client.getTree({
+    code: CategoryCode.MONTHLY,  // 月度数据
+    pid: ''  // 根节点
+  });
+  
+  // 3. 获取指标列表
+  const indicators = await client.getIndicators({
+    cid: 'your-cid-here'
+  });
+  
+  // 4. 查询数据
+  const data = await client.getData({
+    cid: 'your-cid-here',
+    indicatorIds: ['indicator-id-1', 'indicator-id-2'],
+    das: [{ text: '全国', value: '000000000000' }],
+    dts: ['202601MM-202612MM']
+  });
+}
+
+// 方式三：获取所有叶子节点（慎用，耗时）
+async function getAllLeafs() {
+  const leafs = await client.getAllLeafNodes(CategoryCode.MONTHLY);
+  console.log(`共找到 ${leafs.length} 个数据集`);
+}
+```
+
+### 时间编码格式
+
+新版API使用特定的时间编码格式：
+
+| 类型 | 格式 | 示例 |
+|------|------|------|
+| 月度 | YYYYMM + MM | 202602MM (2026年2月) |
+| 季度 | YYYYQ + SS | 20254SS (2025年第4季度) |
+| 年度 | YYYY + YY | 2025YY (2025年) |
+| 范围 | Start-End | 202601MM-202612MM |
+
+### 分类代码
+
+```typescript
+enum CategoryCode {
+  MONTHLY = '1',            // 月度数据
+  QUARTERLY = '2',          // 季度数据
+  YEARLY = '3',             // 年度数据
+  PROVINCE_QUARTERLY = '5', // 分省季度
+  PROVINCE_YEARLY = '6',    // 分省年度
+  OTHER = '7',              // 其他/普查
+}
+```
+
+### 最佳实践
+
+1. **优先使用搜索接口**: 用 `search()` 快速定位cid，避免全量遍历树
+2. **处理时间分片**: 同一指标可能有多个cid，需按时间拼接数据
+3. **批量请求**: `getData()` 支持多个indicatorIds，一次请求获取多个指标
+4. **关注元数据**: 查看indicator的`i_mark`字段了解统计口径
+5. **利用缓存**: 客户端内置缓存，树结构和指标列表会自动缓存
+
 ## 模块介绍
 - `src/index.ts`: MCP服务器主入口，实现MCP协议规范
-- `src/api-client.ts`: 国家统计局API交互模块，提供完整的数据获取功能，包括搜索、分类、数据查询等
+- `src/api-client.ts`: 国家统计局API交互模块，提供完整的数据获取功能
+  - **NewStatsApiClient**: 新版API V2.0客户端（推荐）
+  - **StatsApiClient**: 旧版API客户端（向后兼容）
+- `src/types.ts`: 完整的类型定义，包含新旧两版API的数据结构
 
 ## 遵循国家统计局API标准
-项目严格实现api_introduce.md中的接口规范，包含：
+
+### 新版 API V2.0
+项目严格实现新版API接口规范：
+- 搜索接口 `/external/query` 用于关键词搜索和快速定位cid
+- 树遍历接口 `/new/queryIndexTreeAsync` 用于浏览分类树和获取cid
+- 指标查询接口 `/new/queryIndicatorsByCid` 用于获取指标列表
+- 数据查询接口 `/getEsDataByCidAndDt` 用于批量获取时间序列数据
+- 内置缓存机制：树结构24小时，指标列表12小时
+- UUID标识符系统和时间分片机制
+- 完整的错误处理和重试逻辑
+
+### 旧版 API (向后兼容)
+项目严格实现旧版API接口规范：
 - 搜索接口 `/search.htm` 用于关键词查找和快速获取最新值
 - 分类接口 `/easyquery.htm` 用于遍历指标分类树
 - 数据接口 `/easyquery.htm` 用于查询历史时间序列

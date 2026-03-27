@@ -1,762 +1,471 @@
-# 国家统计局数据接口使用文档
+# 国家统计局新版数据接口使用文档
 
-> 基础地址：`https://data.stats.gov.cn`  
-> 无需鉴权，所有接口均为公开访问
+> **基础地址**: `https://data.stats.gov.cn/dg/website/publicrelease/web/external`  
+> **鉴权**: 无需鉴权，公开访问  
+> **版本**: V2.0 (2026.03.27更新)  
+> **特点**: 采用 UUID 标识符，支持时间分片，元数据与数据分离，批量查询效率高。
 
 ---
 
 ## 目录
 
-- [接口概览](#接口概览)
 - [核心概念](#核心概念)
-- [接口详情](#接口详情)
-- [编码规则](#编码规则)
+- [接口概览](#接口详情)
+- [接口详解](#接口详解)
+- [编码与ID规律](#编码与id规律)
 - [使用示例](#使用示例)
 - [最佳实践](#最佳实践)
 
 ---
 
-## 接口概览
-
-| 接口 | 地址 | 方法 | 用途 |
-|------|------|------|------|
-| 搜索指标 | `/search.htm` | GET | 关键词搜索，直接获取数据和指标code |
-| 获取指标树 | `/easyquery.htm` | POST | 浏览指标分类体系 |
-| 获取时间维度 | `/easyquery.htm` | GET | 查询可选时间范围 |
-| 查询统计数据 | `/easyquery.htm` | GET | 获取完整统计数据集 |
-
----
-
 ## 核心概念
 
-### 数据库代码
+新版 API 摒弃了旧版的层级代码（如 `A0101`），转而使用 **UUID** 作为唯一标识。数据获取遵循 **“树形导航 -> 指标元数据 -> 批量取值”** 的三步走策略。
 
-| dbcode | cn | 含义 |
-|--------|----|------|
-| `hgjd` | `B01` | 宏观季度数据 |
-| `hgnd` | `C01` | 宏观年度数据 |
+### 1. 关键标识符
 
-### 维度代码
+| 标识符 | 全称 | 含义 | 来源接口 |
+| :--- | :--- | :--- | :--- |
+| **`pid`** | Parent ID | **父节点 ID**。用于在目录树中向下展开。初始请求时为空或根节点 ID。 | `queryIndexTreeAsync` 返回节点的 `_id` |
+| **`cid`** | Catalog ID | **数据集 ID**。代表一个**叶子节点**（Leaf Node）。<br>通常对应：**特定指标 + 特定地区 + 特定时间分段**。<br>*注意：同一业务指标因时间分段不同会有多个 `cid`。* | `queryIndexTreeAsync` 返回中 `isLeaf: true` 节点的 `_id` |
+| **`indicatorId`** | Indicator ID | **具体指标 ID**。代表数据集中的某一列（如“同比增长”、“累计值”）。 | `queryIndicatorsByCid` 返回列表中的 `_id` |
+| **`du`** | Unit ID | **单位 ID**。指向数据单位的唯一标识（如 `%`, `亿元`）。 | `queryIndicatorsByCid` 返回 |
 
-| wdcode | 含义 |
-|--------|------|
-| `zb` | 指标维度 |
-| `sj` | 时间维度 |
+### 2. 时间分片机制 (Time Slicing)
 
-### 时间编码
+这是新版 API 最显著的特征。**同一个业务指标（如 CPI）会被拆分成多个 `cid`**，通常按 5 年或统计制度变革周期分割。
 
-```
-季度：
-  2025A → 2025年第一季度
-  2025B → 2025年第二季度
-  2025C → 2025年第三季度
-  2025D → 2025年第四季度
+*   **现象**: 搜索 "CPI" 可能会得到多个 `cid`：
+    *   `cid_A`: 2016-2020
+    *   `cid_B`: 2021-2025
+    *   `cid_C`: 2026-至今
+*   **影响**: 获取长期历史数据时，必须**分别请求**这些 `cid`，然后在本地按时间拼接。
 
-快捷范围（季度数据用）：
-  LAST6  → 最近6个季度
-  LAST12 → 最近12个季度
-  LAST18 → 最近18个季度
+### 3. 时间编码格式
 
-年度：
-  2025 → 2025年
-  2024 → 2024年
-```
+在 `getEsDataByCidAndDt` 接口中使用：
 
-### 指标编码
-
-```
-A01       → 一级分类（国民经济核算）
-A0101     → 二级分类
-A010101   → 叶子指标（国内生产总值_当季值）
-A010102   → 叶子指标（国内生产总值_累计值）
-
-规律：
-  位数越多层级越深
-  末尾奇数 = 当季值/当期值
-  末尾偶数 = 累计值
-```
+*   **月度**: `YYYYMM` (如 `202602`)，后缀 `MM` (如 `202602MM`)
+*   **季度**: `YYYYQ` (如 `20254` 表示第四季度)，后缀 `SS` (如 `202504SS`，注意这里 Q4 可能编码为 04)
+*   **年度**: `YYYY` (如 `2025`)，后缀 `YY` (如 `2025YY`)
+*   **范围**: `Start-End` (如 `202501MM-202602MM`)
 
 ---
 
-## 接口详情
+## 接口概览
 
-### 1. 搜索指标
+| 步骤 | 接口路径 | 方法 | 用途 | 关键入参 |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. 遍历目录** | `/new/queryIndexTreeAsync` | GET | 获取分类树，找到目标数据集 (`cid`) | `pid`, `code` |
+| **2. 获取指标** | `/new/queryIndicatorsByCid` | GET | 获取某数据集下的所有指标列表 (`indicatorId`) | `cid` |
+| **3. 查询数据** | `/getEsDataByCidAndDt` | POST | 批量获取具体数值 | `cid`, `indicatorIds`, `dts`, `das` |
+| *(可选)* | `/external/query` | GET | 关键词搜索，快速定位 `cid` | `search`, `pagenum` |
 
-```
-GET /search.htm
+---
+
+## 接口详解
+
+### 1. 遍历目录树 (Get Tree)
+
+用于从根节点开始，层层下钻，直到找到 `isLeaf: true` 的节点。
+
+```http
+GET /new/queryIndexTreeAsync?pid={parent_id}&code={category_code}
 ```
 
 **参数**
 
 | 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
-| `s` | string | ✅ | 搜索关键词（需 URL 编码） |
-| `m` | string | ✅ | 固定值 `searchdata` |
-| `db` | string | ❌ | 数据库筛选，空=全部，可选`年度数据`/`季度数据` |
-| `p` | number | ❌ | 页码，从 `0` 开始 |
+| :--- | :--- | :--- | :--- |
+| `pid` | string | ❌ | 父节点 ID。首次请求可为空字符串 `""` 或根节点 ID。 |
+| `code` | string | ✅ | 顶级分类代码。常见值：<br>`1`: 月度数据<br>`2`: 季度数据<br>`3`: 年度数据<br>`5`: 分省季度<br>`6`: 分省年度<br>`7`: 其他/普查 |
 
-**示例**
-
-```
-GET /search.htm?s=%E4%BA%BA%E5%9D%87%E5%8F%AF%E6%94%AF%E9%85%8D%E6%94%B6%E5%85%A5&m=searchdata&db=&p=0
-```
-
-**响应**
+**响应关键字段**
 
 ```json
 {
-  "pagecount": 200,
-  "pagecurrent": 0,
-  "result": [
+  "data": [
     {
-      "data": "43377",
-      "db": "年度数据",
-      "reg": "全国",
-      "sj": "2025年",
-      "zb": "居民人均可支配收入(元)",
-      "report": "cn=C01&zb=A0A01&sj=2025"
+      "_id": "fc982599...",       // <-- 这就是下一层的 pid 或最终的 cid
+      "name": "价格指数",
+      "isLeaf": false,            // false: 继续用 _id 做 pid 请求; true: _id 即为 cid
+      "treeinfo_globalid": "...", // 全局路径 ID，调试用
+      "sdate": "2021",            // 起始时间 (仅叶子节点有效)
+      "edate": "2025"             // 结束时间 (仅叶子节点有效)
     }
-  ]
+  ],
+  "success": true
 }
-```
-
-**report 字段解析（重要）**
-
-```
-report = "cn=C01&zb=A0A01&sj=2025"
-
-cn=C01    → 报表类型（C01=年度, B01=季度）
-zb=A0A01  → 指标 code，可直接用于 QueryData
-sj=2025   → 时间 code
-```
-
-> ✅ 搜索接口是获取指标 code 最快的方式，无需逐层遍历指标树
-
----
-
-### 2. 获取指标分类树
-
-```
-POST /easyquery.htm
-Content-Type: application/x-www-form-urlencoded
-```
-
-**参数**
-
-| 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
-| `m` | string | ✅ | 固定值 `getTree` |
-| `id` | string | ✅ | 父节点ID，根节点传 `zb` |
-| `dbcode` | string | ✅ | 数据库代码，如 `hgjd` |
-| `wdcode` | string | ✅ | 固定值 `zb` |
-
-**示例**
-
-```
-POST /easyquery.htm
-Body: id=zb&dbcode=hgjd&wdcode=zb&m=getTree
-```
-
-**响应**
-
-```json
-[
-  {
-    "id": "A01",
-    "pid": "",
-    "name": "国民经济核算",
-    "isParent": true,
-    "dbcode": "hgjd",
-    "wdcode": "zb"
-  },
-  {
-    "id": "A0803",
-    "pid": "A08",
-    "name": "规模以上文化及相关产业企业利润总额",
-    "isParent": false,
-    "dbcode": "hgjd",
-    "wdcode": "zb"
-  }
-]
 ```
 
 **字段说明**
 
 | 字段 | 说明 |
 |------|------|
-| `id` | 节点ID，下钻时作为 `id` 参数传入 |
-| `pid` | 父节点ID |
-| `name` | 分类/指标名称 |
-| `isParent` | `true`=有子节点可继续下钻，`false`=叶子指标可查数据 |
-
-**树形结构示意**
-
-```
-getTree(id=zb)
-├── A01 国民经济核算 (isParent=true)
-│     └── getTree(id=A01)
-│           └── A0101 (isParent=true)
-│                 └── getTree(id=A0101)
-│                       ├── A010101 国内生产总值_当季值 ✅
-│                       └── A010102 国内生产总值_累计值 ✅
-└── A08 文化 (isParent=true)
-      └── getTree(id=A08)
-            ├── A0801 营业收入 (isParent=true)
-            └── A0803 利润总额 (isParent=false) ✅
-```
-### 3. 获取时间维度
-
-```
-GET /easyquery.htm?m=getOtherWds
-```
-
-**参数**
-
-| 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
-| `m` | string | ✅ | 固定值 `getOtherWds` |
-| `dbcode` | string | ✅ | 数据库代码 |
-| `rowcode` | string | ✅ | 固定值 `zb` |
-| `colcode` | string | ✅ | 固定值 `sj` |
-| `wds` | string | ✅ | 已选维度，初始传 `[]` |
-| `k1` | number | ✅ | 当前时间戳，防缓存 |
-
-**示例**
-
-```
-GET /easyquery.htm?m=getOtherWds&dbcode=hgjd&rowcode=zb&colcode=sj&wds=%5B%5D&k1=1749123456789
-```
-
-**响应**
-
-```json
-{
-  "returncode": 200,
-  "returndata": [
-    {
-      "wdcode": "sj",
-      "wdname": "时间",
-      "issj": true,
-      "selcode": "last6",
-      "nodes": [
-        { "code": "LAST6",  "name": "最近6季度" },
-        { "code": "LAST12", "name": "最近12季度" },
-        { "code": "LAST18", "name": "最近18季度" }
-      ]
-    }
-  ]
-}
-```
+| `_id` | 节点唯一标识。若 `isLeaf=false`，则作为下一次请求的 `pid`；若 `isLeaf=true`，则作为 `cid`。 |
+| `isLeaf` | `true`=叶子节点（可查数据），`false`=目录节点（需继续下钻）。 |
+| `sdate/edate` | 该数据集覆盖的时间范围，用于判断是否包含所需年份。 |
 
 ---
 
-### 4. 查询统计数据
+### 2. 获取指标列表 (Get Indicators)
 
-```
-GET /easyquery.htm?m=QueryData
+拿到 `cid` 后，查询该数据集包含哪些具体指标。
+
+```http
+GET /new/queryIndicatorsByCid?cid={catalog_id}&dt=&name=
 ```
 
 **参数**
 
 | 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
-| `m` | string | ✅ | 固定值 `QueryData` |
-| `dbcode` | string | ✅ | 数据库代码 |
-| `rowcode` | string | ✅ | 固定值 `zb` |
-| `colcode` | string | ✅ | 固定值 `sj` |
-| `wds` | string | ✅ | 固定维度筛选，JSON数组字符串 |
-| `dfwds` | string | ✅ | 默认维度筛选（时间），JSON数组字符串 |
-| `k1` | number | ✅ | 当前时间戳 |
-| `h` | number | ❌ | 固定值 `1` |
+| :--- | :--- | :--- | :--- |
+| `cid` | string | ✅ | 数据集 ID (来自步骤 1 的叶子节点 `_id`) |
+| `dt` | string | ❌ | 时间过滤，通常留空 |
+| `name` | string | ❌ | 指标名称过滤，通常留空 |
 
-**wds / dfwds 格式说明**
-
-```json
-// 筛选特定指标
-wds = [{"wdcode":"zb","valuecode":"A010101"}]
-
-// 最近6季度
-dfwds = [{"wdcode":"sj","valuecode":"LAST6"}]
-
-// 指定具体季度
-dfwds = [{"wdcode":"sj","valuecode":"2025D"}]
-
-// 不筛选
-wds = []
-dfwds = []
-```
-
-**示例**
-
-```
-GET /easyquery.htm?m=QueryData&dbcode=hgjd&rowcode=zb&colcode=sj&wds=%5B%5D&dfwds=%5B%7B%22wdcode%22%3A%22sj%22%2C%22valuecode%22%3A%22LAST6%22%7D%5D&k1=1749123456789&h=1
-```
-
-**响应**
+**响应关键字段**
 
 ```json
 {
-  "returncode": 200,
-  "returndata": {
-    "hasdatacount": 66,
-    "datanodes": [
+  "data": {
+    "list": [
       {
-        "code": "zb.A010101_sj.2025D",
-        "data": {
-          "data": 387911.3,
-          "strdata": "387911.3",
-          "hasdata": true,
-          "dotcount": 1
-        },
-        "wds": [
-          { "wdcode": "zb", "valuecode": "A010101" },
-          { "wdcode": "sj", "valuecode": "2025D" }
-        ]
-      }
-    ],
-    "wdnodes": [
-      {
-        "wdcode": "zb",
-        "wdname": "指标",
-        "nodes": [
-          {
-            "code": "A010101",
-            "name": "国内生产总值_当季值",
-            "unit": "亿元",
-            "dotcount": 1
-          }
-        ]
-      },
-      {
-        "wdcode": "sj",
-        "wdname": "时间",
-        "nodes": [
-          { "code": "2025D", "name": "2025年第四季度" },
-          { "code": "2025C", "name": "2025年第三季度" }
-        ]
+        "_id": "6d249959...",       // <-- 这就是 indicatorId
+        "i_showname": "规上工业增加值同比增长 (%) ",
+        "i_mark": "统计口径说明...", // 重要：包含计算方法、基期等
+        "du": "414774...",          // 单位 ID
+        "dp": "11",                 // 精度
+        "order": 1
       }
     ]
   }
 }
 ```
 
-**datanode code 格式**
-
-```
-"zb.A010101_sj.2025D"
-  │   │         │
-  │   │         └── 时间 code
-  │   └──────────── 指标 code
-  └──────────────── 行维度（固定格式）
-```
+**字段说明**
 
 | 字段 | 说明 |
 |------|------|
-| `datanodes[].data.data` | 数值（number） |
-| `datanodes[].data.strdata` | 数值（string） |
-| `datanodes[].data.hasdata` | 是否有数据 |
-| `datanodes[].data.dotcount` | 小数位数 |
-| `wdnodes` | 维度元数据，含指标名称、单位 |
+| `_id` | 指标唯一 ID，后续查询数据时必须传入。 |
+| `i_showname` | 指标显示名称，含单位。 |
+| `i_mark` | **统计口径说明**。非常重要，解释了数据的计算方法和适用范围。 |
+| `du` | 单位 ID，需结合其他接口或常识解析（如 `%`）。 |
+
+---
+
+### 3. 查询具体数据 (Get Data)
+
+**核心接口**。支持批量查询多个指标、多个时间点的数据。
+
+```http
+POST /getEsDataByCidAndDt
+Content-Type: application/json
+```
+
+**请求体 (Body)**
+
+```json
+{
+  "cid": "e2d9463aceae483eb122794e53180bf9", 
+  "indicatorIds": [
+    "6d249959166b4b07aad922e2aa51097d", 
+    "f991aa39485440158f761a71e39b03a1"
+  ],
+  "das": [
+    {
+      "text": "全国",
+      "value": "000000000000" 
+    }
+  ],
+  "dts": ["202501MM-202602MM"], 
+  "showType": "1",
+  "rootId": "fc982599aa684be7969d7b90b1bd0e84" 
+}
+```
+
+**参数说明**
+
+| 字段 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| `cid` | string | 数据集 ID |
+| `indicatorIds` | array | 指标 ID 数组 (来自步骤 2) |
+| `das` | array | 地区维度。`value`: `000000000000` 代表全国。如果是分省数据，需传入具体省份代码。 |
+| `dts` | array | 时间范围数组。格式 `Start-End`。 |
+| `rootId` | string | 根节点 ID。通常固定为月度数据的根 ID，可通过第一次树请求获取。 |
+
+**响应结构**
+
+```json
+{
+  "data": [
+    {
+      "code": "202602MM", 
+      "name": "2026年2月",
+      "values": [
+        {
+          "_id": "6d249959...", 
+          "i_showname": "规上工业增加值同比增长 (%) ",
+          "value": "5.8", 
+          "da_name": "全国",
+          "du_name": "%" 
+        },
+        {
+          "_id": "f991aa39...",
+          "value": "6.1"
+        }
+      ]
+    },
+    {
+      "code": "202601MM",
+      "name": "2026年1月",
+      "values": [ ... ]
+    }
+  ],
+  "success": true
+}
+```
+
+**注意事项**
+*   如果某个月份数据未发布，`values` 可能为空数组 `[]`。
+*   返回数据按时间倒序或正序排列，需根据 `code` 自行排序。
+
+---
+
+## 编码与ID规律
+
+由于 ID 均为 UUID，无法通过算法推导，必须通过遍历获取。但存在以下业务规律：
+
+### 1. `cid` 与时间的关系
+*   同一类指标（如 CPI），通常会按 `5年` 或 `10年` 切割成不同的 `cid`。
+*   检查 `queryIndexTreeAsync` 返回的 `sdate` 和 `edate` 字段，可以判断该 `cid` 覆盖的时间范围。
+
+### 2. `indicatorId` 的稳定性
+*   在同一个 `cid` 内，`indicatorId` 是稳定的。
+*   **跨 `cid` 不保证稳定**：2021-2025 的 "GDP" 指标 ID 可能与 2026- 的 "GDP" 指标 ID 不同。**建议每个 `cid` 都重新调用 `queryIndicatorsByCid` 获取映射。**
+
+### 3. 地区代码 (`da`)
+*   `000000000000`: 全国
+*   分省数据的 `cid` 通常位于“分省年度/季度数据”目录下。
+
+### 4. 根节点 ID (`rootId`)
+*   月度数据根节点通常为: `fc982599aa684be7969d7b90b1bd0e84`
+*   可通过 `GET /new/queryIndexTreeAsync?pid=` (空) 获取第一级节点确认。
 
 ---
 
 ## 使用示例
 
-### 示例一：搜索指标直接获取最新值
+### 示例一：搜索定位并获取最新 CPI 数据
 
-> 场景：查询居民人均可支配收入最新数据
+> 场景：快速获取最近几个月的全国居民消费价格指数 (CPI)
 
-**Step 1：关键词搜索**
-
-```bash
-curl "https://data.stats.gov.cn/search.htm?\
-s=%E4%BA%BA%E5%9D%87%E5%8F%AF%E6%94%AF%E9%85%8D%E6%94%B6%E5%85%A5\
-&m=searchdata&db=年度数据&p=0"
-```
-
-**Step 2：解析结果**
-
-```
-result[0].zb     = "居民人均可支配收入(元)"
-result[0].data   = "43377"        ← 直接拿到最新值
-result[0].sj     = "2025年"
-result[0].report = "cn=C01&zb=A0A01&sj=2025"
-                              ↑
-                         后续查询用这个 code
-```
-
-> ✅ 简单查询直接用搜索接口，无需再调 QueryData
-
----
-
-### 示例二：查询 GDP 近6季度走势
-
-> 场景：获取 GDP 当季值近6季度历史数据
-
-**Step 1：搜索拿到指标 code**
+**Step 1: 关键词搜索定位 `cid`**
 
 ```bash
-curl "https://data.stats.gov.cn/search.htm?\
-s=GDP&m=searchdata&db=季度数据&p=0"
-
-# 从 report 解析得：zb=A010101，dbcode 对应 hgjd
+curl "https://data.stats.gov.cn/dg/website/publicrelease/web/external/query?search=CPI&pagenum=1&pageSize=5"
 ```
 
-**Step 2：查询历史数据**
+*解析*: 在返回结果中寻找 `type_text` 为 "月度数据" 且 `show_name` 包含 "居民消费价格" 的项。假设找到最新时间段 (2026-) 的 `cid` 为 `5c745282...`。
+
+**Step 2: 获取指标 ID**
 
 ```bash
-curl "https://data.stats.gov.cn/easyquery.htm?\
-m=QueryData\
-&dbcode=hgjd\
-&rowcode=zb\
-&colcode=sj\
-&wds=%5B%7B%22wdcode%22%3A%22zb%22%2C%22valuecode%22%3A%22A010101%22%7D%5D\
-&dfwds=%5B%7B%22wdcode%22%3A%22sj%22%2C%22valuecode%22%3A%22LAST6%22%7D%5D\
-&k1=1749123456789\
-&h=1"
+curl "https://data.stats.gov.cn/dg/website/publicrelease/web/external/new/queryIndicatorsByCid?cid=5c7452825c7c4dcba391db5ca7f335c5"
 ```
 
-wds 解码后：
-```json
-[{"wdcode":"zb","valuecode":"A010101"}]
-```
+*解析*: 找到 `i_showname` 为 "居民消费价格指数 (上年同月=100) " 的项，记录其 `_id`，假设为 `ind_cpi_total` (`53180dfb...`)。
 
-dfwds 解码后：
-```json
-[{"wdcode":"sj","valuecode":"LAST6"}]
-```
+**Step 3: 查询数据**
 
-**Step 3：解析响应**
-
-```javascript
-const nodes = data.returndata.datanodes;
-const result = nodes
-  .filter(n => n.data.hasdata)
-  .map(n => ({
-    indicator: n.wds.find(w => w.wdcode === 'zb').valuecode,
-    time:      n.wds.find(w => w.wdcode === 'sj').valuecode,
-    value:     n.data.data
-  }));
-
-// result:
-// [
-//   { indicator: 'A010101', time: '2025D', value: 387911.3 },
-//   { indicator: 'A010101', time: '2025C', value: 354106.2 },
-//   ...
-// ]
+```bash
+curl -X POST "https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt" \
+-H "Content-Type: application/json" \
+-d '{
+  "cid": "5c7452825c7c4dcba391db5ca7f335c5",
+  "indicatorIds": ["53180dfb9c14411ba4b762307c85920c"],
+  "das": [{"text": "全国", "value": "000000000000"}],
+  "dts": ["202601MM-202603MM"],
+  "rootId": "fc982599aa684be7969d7b90b1bd0e84"
+}'
 ```
 
 ---
 
-### 示例三：遍历指标树获取某分类全部叶子指标
+### 示例二：遍历树获取所有月度数据 CID (Python)
 
-> 场景：获取"文化"分类下所有可查指标
+> 场景：构建本地索引，获取所有可用的月度数据集 ID
 
-```javascript
-async function getLeafNodes(id, dbcode) {
-  const res = await fetch('https://data.stats.gov.cn/easyquery.htm', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: `id=${id}&dbcode=${dbcode}&wdcode=zb&m=getTree`
-  });
-  const nodes = await res.json();
+```python
+import requests
+import time
+import json
 
-  const leaves = [];
-  for (const node of nodes) {
-    if (!node.isParent) {
-      leaves.push(node); // 叶子节点，可查数据
-    } else {
-      const children = await getLeafNodes(node.id, dbcode);
-      leaves.push(...children);
-    }
-  }
-  return leaves;
-}
+BASE_URL = "https://data.stats.gov.cn/dg/website/publicrelease/web/external"
 
-// 获取文化分类下所有指标
-const leaves = await getLeafNodes('A08', 'hgjd');
-console.log(leaves.map(n => `${n.id}: ${n.name}`));
+def get_tree(pid="", code="1"):
+    """递归获取树结构，收集所有叶子节点 (cid)"""
+    url = f"{BASE_URL}/new/queryIndexTreeAsync"
+    params = {"pid": pid, "code": code}
+    try:
+        resp = requests.get(url, params=params, timeout=10)
+        nodes = resp.json().get('data', [])
+    except Exception as e:
+        print(f"Error fetching tree for pid={pid}: {e}")
+        return []
+
+    cids = []
+    for node in nodes:
+        if node.get('isLeaf'):
+            cids.append({
+                "name": node['name'],
+                "cid": node['_id'],
+                "sdate": node.get('sdate'),
+                "edate": node.get('edate')
+            })
+        else:
+            # 递归子节点，添加延时避免封禁
+            time.sleep(0.5)
+            sub_cids = get_tree(pid=node['_id'], code=code)
+            cids.extend(sub_cids)
+    return cids
+
+# 执行遍历 (慎用，耗时较长)
+# all_cids = get_tree(code="1")
+# with open('nbs_cids_monthly.json', 'w', encoding='utf-8') as f:
+#     json.dump(all_cids, f, ensure_ascii=False, indent=2)
 ```
+
 ---
 
 ## 最佳实践
 
-### 1. 选择正确的调用路径
+### 1. 优先使用搜索接口定位 `cid`
 
-根据场景选择最短路径，避免不必要的请求：
-
-```
-场景一：已知关键词，只需最新值
-  → 直接用 search.htm
-  → 一次请求搞定，result[].data 就是最新值
-
-场景二：已知关键词，需要历史时间序列
-  → search.htm 拿 zb code
-  → easyquery.htm?m=QueryData 查历史数据
-  → 共两次请求
-
-场景三：需要某分类下所有指标
-  → easyquery.htm?m=getTree 递归下钻
-  → 再批量 QueryData
-  → 适合数据采集/全量同步场景
-```
-
----
-
-### 2. 优先用搜索接口获取 code
+全量遍历树非常耗时（可能有数千个节点）。如果已知关键词（如 "GDP", "CPI", "人口"），先用 `/external/query` 搜索，从结果中提取相关的 `cid` 或线索，再精准查询。
 
 ```
 ❌ 低效方式：
-   getTree(zb) → getTree(A01) → getTree(A0101) → 找到 A010101
-   需要多次请求才能定位指标
+   从根节点开始递归遍历整棵树，寻找 "GDP"
 
 ✅ 高效方式：
    search.htm?s=GDP
-   → report 字段直接给你 zb=A010101
-   → 一次请求定位指标 code
+   → 从结果中提取 cid 或相关线索
+   → 直接调用 queryIndicatorsByCid
 ```
 
----
+### 2. 处理“时间分片”
 
-### 3. k1 时间戳处理
+**不要假设一个 `cid` 能查到所有历史数据。**
+*   **策略**: 当发现数据缺失（如 `values` 为空）或需要更长历史时，检查相邻的 `cid`（通过树结构查找同级节点，或通过搜索查看是否有其他年份范围的同类指标）。
+*   **合并**: 在客户端按时间戳合并不同 `cid` 返回的数据。
 
-所有 GET 请求都需要带 `k1` 参数，用当前毫秒时间戳即可：
+### 3. 缓存元数据
 
-```javascript
-const k1 = Date.now();
+*   **树结构 (`queryIndexTreeAsync`)**: 变化极慢，建议本地缓存 24 小时以上。
+*   **指标列表 (`queryIndicatorsByCid`)**: 变化较慢，建议按 `cid` 缓存。
+*   **数据 (`getEsDataByCidAndDt`)**: 每月更新，建议设置较短缓存或按需请求。
 
-const url = `https://data.stats.gov.cn/easyquery.htm`
-  + `?m=QueryData&dbcode=hgjd&rowcode=zb&colcode=sj`
-  + `&wds=[]&dfwds=[]`
-  + `&k1=${k1}&h=1`;
-```
+### 4. 批量请求减少 IO
 
----
+`getEsDataByCidAndDt` 支持 `indicatorIds` 数组。
+*   ❌ **错误**: 循环调用接口，每次查 1 个指标。
+*   ✅ **正确**: 一次性传入该 `cid` 下所有需要的指标 ID（如 CPI 的总指数、食品、居住等 10 个子类），一次请求拿回所有数据。
 
-### 4. wds / dfwds 参数编码
+### 5. 关注 `i_mark` (统计口径)
 
-这两个参数是 JSON 数组，需要 URL 编码后传入：
+在 `queryIndicatorsByCid` 返回的 `i_mark` 字段中，包含了至关重要的统计说明（如“按不变价计算”、“基期为 2020 年”等）。展示数据时务必附带此说明，否则可能导致误读。
 
-```javascript
-const wds = JSON.stringify([
-  { wdcode: 'zb', valuecode: 'A010101' }
-]);
-
-const dfwds = JSON.stringify([
-  { wdcode: 'sj', valuecode: 'LAST6' }
-]);
-
-const url = `https://data.stats.gov.cn/easyquery.htm`
-  + `?m=QueryData&dbcode=hgjd&rowcode=zb&colcode=sj`
-  + `&wds=${encodeURIComponent(wds)}`
-  + `&dfwds=${encodeURIComponent(dfwds)}`
-  + `&k1=${Date.now()}&h=1`;
-```
-
----
-
-### 5. 处理无数据的情况
-
-部分时间节点可能没有数据，解析时需过滤：
+### 6. 完整封装示例 (JavaScript/Node.js)
 
 ```javascript
-const validData = datanodes.filter(n => n.data.hasdata === true);
-
-// 不要直接用 n.data.data，hasdata=false 时值无意义
-```
-
----
-
-### 6. 从 report 字段解析 cn → dbcode 映射
-
-搜索结果的 report 给的是 cn 代码，QueryData 需要 dbcode，需要转换：
-
-```javascript
-function cnToDbcode(cn) {
-  const map = {
-    'B01': 'hgjd',  // 季度
-    'C01': 'hgnd',  // 年度
-  };
-  return map[cn] ?? 'hgjd';
-}
-
-// 用法
-const report = 'cn=C01&zb=A0A01&sj=2025';
-const params = Object.fromEntries(
-  report.split('&').map(p => p.split('='))
-);
-// params = { cn: 'C01', zb: 'A0A01', sj: '2025' }
-
-const dbcode = cnToDbcode(params.cn); // 'hgnd'
-const zbCode = params.zb;             // 'A0A01'
-```
-
----
-
-### 7. 指标树递归时控制并发
-
-指标树层级较深，递归请求时避免同时发起过多请求：
-
-```javascript
-async function getLeafNodes(id, dbcode, delay = 200) {
-  // 加延迟，避免请求过于频繁
-  await new Promise(r => setTimeout(r, delay));
-
-  const res = await fetch('https://data.stats.gov.cn/easyquery.htm', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: `id=${id}&dbcode=${dbcode}&wdcode=zb&m=getTree`
-  });
-  const nodes = await res.json();
-
-  const leaves = [];
-  // 串行而非并行，避免触发限流
-  for (const node of nodes) {
-    if (!node.isParent) {
-      leaves.push(node);
-    } else {
-      const children = await getLeafNodes(node.id, dbcode, delay);
-      leaves.push(...children);
-    }
-  }
-  return leaves;
-}
-```
-
----
-
-### 8. 本地缓存指标树
-
-指标分类体系变动频率极低，建议本地缓存，避免重复请求：
-
-```javascript
-// 建议缓存策略
-const CACHE_TTL = 24 * 60 * 60 * 1000; // 24小时
-
-const cache = new Map();
-
-async function getTreeCached(id, dbcode) {
-  const key = `${dbcode}_${id}`;
-  const cached = cache.get(key);
-
-  if (cached && Date.now() - cached.ts < CACHE_TTL) {
-    return cached.data;
-  }
-
-  const data = await fetchTree(id, dbcode);
-  cache.set(key, { data, ts: Date.now() });
-  return data;
-}
-```
-
----
-
-### 9. 完整封装示例
-
-```javascript
-class NbsClient {
+class NbsNewClient {
   constructor() {
-    this.base = 'https://data.stats.gov.cn';
-    this.cnMap = { B01: 'hgjd', C01: 'hgnd' };
+    this.base = 'https://data.stats.gov.cn/dg/website/publicrelease/web/external';
+    this.rootId = 'fc982599aa684be7969d7b90b1bd0e84'; // 月度数据根节点
   }
 
-  // 搜索指标，返回格式化结果
-  async search(keyword, db = '', page = 0) {
-    const url = `${this.base}/search.htm`
-      + `?s=${encodeURIComponent(keyword)}`
-      + `&m=searchdata&db=${encodeURIComponent(db)}&p=${page}`;
-
+  // 1. 搜索定位 CID
+  async searchCid(keyword) {
+    const url = `${this.base}/query?search=${encodeURIComponent(keyword)}&pagenum=1&pageSize=10`;
     const res = await fetch(url);
     const json = await res.json();
-
-    return json.result.map(item => {
-      const reportParams = Object.fromEntries(
-        item.report.split('&').map(p => p.split('='))
-      );
-      return {
-        name:    item.zb,
-        value:   item.data,
-        time:    item.sj,
-        db:      item.db,
-        zbCode:  reportParams.zb,
-        cnCode:  reportParams.cn,
-        dbcode:  this.cnMap[reportParams.cn] ?? 'hgjd',
-        sjCode:  reportParams.sj,
-      };
-    });
+    
+    // 简单筛选：找第一个匹配的叶子节点或相关提示
+    // 实际生产中可能需要更复杂的逻辑来确认正确的 cid
+    return json.data?.data?.map(item => ({
+      name: item.show_name,
+      cid: item.cid || this.extractCidFromGlobalId(item.treeinfo_globalid),
+      type: item.type_text
+    })) || [];
   }
 
-  // 查询时间序列数据
-  async queryTimeSeries(zbCode, dbcode, timeRange = 'LAST6') {
-    const wds   = JSON.stringify([{ wdcode: 'zb', valuecode: zbCode }]);
-    const dfwds = JSON.stringify([{ wdcode: 'sj', valuecode: timeRange }]);
+  // 辅助：从 globalId 提取 cid (最后一段)
+  extractCidFromGlobalId(globalId) {
+    if (!globalId) return null;
+    const parts = globalId.split('.');
+    return parts[parts.length - 1];
+  }
 
-    const url = `${this.base}/easyquery.htm`
-      + `?m=QueryData&dbcode=${dbcode}&rowcode=zb&colcode=sj`
-      + `&wds=${encodeURIComponent(wds)}`
-      + `&dfwds=${encodeURIComponent(dfwds)}`
-      + `&k1=${Date.now()}&h=1`;
-
-    const res  = await fetch(url);
+  // 2. 获取指标列表
+  async getIndicators(cid) {
+    const url = `${this.base}/new/queryIndicatorsByCid?cid=${cid}`;
+    const res = await fetch(url);
     const json = await res.json();
+    return json.data?.list || [];
+  }
 
-    if (json.returncode !== 200) {
-      throw new Error(`查询失败: ${json.returncode}`);
-    }
+  // 3. 查询数据
+  async getData(cid, indicatorIds, startTime, endTime, regionCode = "000000000000") {
+    const payload = {
+      cid: cid,
+      indicatorIds: indicatorIds,
+      das: [{ text: "全国", value: regionCode }],
+      dts: [`${startTime}-${endTime}`],
+      showType: "1",
+      rootId: this.rootId
+    };
 
-    // 拿单位信息
-    const zbMeta = json.returndata.wdnodes
-      .find(w => w.wdcode === 'zb')?.nodes ?? [];
-    const unitMap = Object.fromEntries(
-      zbMeta.map(n => [n.code, n.unit])
-    );
-
-    // 拿时间名称
-    const sjMeta = json.returndata.wdnodes
-      .find(w => w.wdcode === 'sj')?.nodes ?? [];
-    const timeMap = Object.fromEntries(
-      sjMeta.map(n => [n.code, n.name])
-    );
-
-    return json.returndata.datanodes
-      .filter(n => n.data.hasdata)
-      .map(n => {
-        const zbCode = n.wds.find(w => w.wdcode === 'zb').valuecode;
-        const sjCode = n.wds.find(w => w.wdcode === 'sj').valuecode;
-        return {
-          zbCode,
-          sjCode,
-          timeName: timeMap[sjCode],
-          value:    n.data.data,
-          unit:     unitMap[zbCode] ?? '',
-        };
-      })
-      .sort((a, b) => b.sjCode.localeCompare(a.sjCode));
+    const res = await fetch(`${this.base}/getEsDataByCidAndDt`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const json = await res.json();
+    
+    if (!json.success) throw new Error(json.message);
+    return json.data;
   }
 }
 
 // 使用示例
-const client = new NbsClient();
+const client = new NbsNewClient();
 
-// 查询人均可支配收入
-const results = await client.search('人均可支配收入', '年度数据');
-console.log(results[0]);
-// {
-//   name:   "居民人均可支配收入(元)",
-//   value:  "43377",
-//   time:   "2025年",
-//   zbCode: "A0A01",
-//   dbcode: "hgnd",
-// }
+async function main() {
+  // 1. 搜索 CPI
+  const results = await client.searchCid("居民消费价格");
+  console.log("Found CIDs:", results);
+  
+  // 假设取第一个结果 (需人工确认是否为最新时间段)
+  const targetCid = results[0].cid; 
+  
+  // 2. 获取指标
+  const indicators = await client.getIndicators(targetCid);
+  const cpiIndicator = indicators.find(i => i.i_showname.includes("居民消费价格指数 (上年同月=100)"));
+  
+  if (cpiIndicator) {
+    // 3. 获取数据
+    const data = await client.getData(
+      targetCid, 
+      [cpiIndicator._id], 
+      "202601MM", 
+      "202603MM"
+    );
+    console.log("CPI Data:", data);
+  }
+}
 
-// 查 GDP 近6季度
-const series = await client.queryTimeSeries('A010101', 'hgjd', 'LAST6');
-console.log(series);
-// [
-//   { sjCode: '2025D', timeName: '2025年第四季度', value: 387911.3, unit: '亿元' },
-//   { sjCode: '2025C', timeName: '2025年第三季度', value: 354106.2, unit: '亿元' },
-//   ...
-// ]
+main();
 ```
 
 ---
@@ -765,9 +474,8 @@ console.log(series);
 
 | 需求 | 接口 | 关键参数 |
 |------|------|---------|
-| 关键词找指标+最新值 | `GET /search.htm` | `s`, `m=searchdata` |
-| 拿指标 code | `GET /search.htm` | 解析 `result[].report` 的 `zb` 字段 |
-| 浏览分类体系 | `POST /easyquery.htm` | `m=getTree`, `id` |
-| 查历史时间序列 | `GET /easyquery.htm` | `m=QueryData`, `wds`, `dfwds` |
-| 查可选时间范围 | `GET /easyquery.htm` | `m=getOtherWds` |
-
+| 关键词找数据集 | `GET /query` | `search`, `pagenum` |
+| 浏览分类体系 | `GET /new/queryIndexTreeAsync` | `pid`, `code` |
+| 拿指标 ID | `GET /new/queryIndicatorsByCid` | `cid` |
+| 查历史时间序列 | `POST /getEsDataByCidAndDt` | `cid`, `indicatorIds`, `dts` |
+| 获取根节点 ID | `GET /new/queryIndexTreeAsync?pid=` | `pid` (空) |

@@ -328,3 +328,367 @@ export class StatsApiClient {
     return results;
   }
 }
+
+// ============= 新版 API 客户端 (V2.0) =============
+
+import {
+  NEW_API_BASE_URL,
+  TreeResponse,
+  TreeNode,
+  IndicatorsResponse,
+  Indicator,
+  DataResponse,
+  DataQueryParams,
+  SearchResponse,
+  SearchItem,
+  TreeQueryParams,
+  IndicatorQueryParams,
+  SearchQueryParams,
+  CategoryCode,
+  NewApiClientConfig,
+  DataPoint,
+} from './types';
+
+/**
+ * 简单的内存缓存实现
+ */
+class SimpleCache<T> {
+  private cache = new Map<string, { data: T; expireAt: number }>();
+  
+  get(key: string): T | null {
+    const item = this.cache.get(key);
+    if (!item) return null;
+    if (Date.now() > item.expireAt) {
+      this.cache.delete(key);
+      return null;
+    }
+    return item.data;
+  }
+  
+  set(key: string, data: T, ttl: number): void {
+    this.cache.set(key, {
+      data,
+      expireAt: Date.now() + ttl,
+    });
+  }
+  
+  clear(): void {
+    this.cache.clear();
+  }
+}
+
+/**
+ * 新版国家统计局API客户端 (V2.0)
+ * 基于UUID标识符的新架构
+ */
+export class NewStatsApiClient {
+  private baseUrl: string;
+  private timeout: number;
+  private rootId: string;
+  
+  // 缓存实例
+  private treeCache: SimpleCache<TreeNode[]>;
+  private indicatorsCache: SimpleCache<Indicator[]>;
+  
+  // 默认配置
+  private readonly DEFAULT_TREE_TTL = 24 * 60 * 60 * 1000; // 24小时
+  private readonly DEFAULT_INDICATORS_TTL = 12 * 60 * 60 * 1000; // 12小时
+  
+  constructor(config?: NewApiClientConfig) {
+    this.baseUrl = config?.baseUrl || NEW_API_BASE_URL;
+    this.timeout = config?.timeout || 30000;
+    this.rootId = config?.rootId || 'fc982599aa684be7969d7b90b1bd0e84'; // 月度数据根节点
+    
+    // 初始化缓存
+    this.treeCache = new SimpleCache();
+    this.indicatorsCache = new SimpleCache();
+  }
+  
+  /**
+   * 搜索数据集
+   * 用于快速定位 cid
+   */
+  async search(params: SearchQueryParams): Promise<SearchItem[]> {
+    const url = new URL(`${this.baseUrl}/query`);
+    url.searchParams.set('search', params.search);
+    url.searchParams.set('pagenum', (params.pagenum || 1).toString());
+    url.searchParams.set('pageSize', (params.pageSize || 10).toString());
+    
+    console.error(`Search Request: ${url.toString()}`);
+    
+    try {
+      const response = await axios.get<SearchResponse>(url.toString(), {
+        timeout: this.timeout,
+      });
+      
+      return response.data.data?.data || [];
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`Search request failed: ${error.response?.data || error.message}`);
+      }
+      throw error;
+    }
+  }
+  
+  /**
+   * 获取树结构
+   * 用于遍历目录树,获取叶子节点(cid)
+   */
+  async getTree(params: TreeQueryParams): Promise<TreeNode[]> {
+    // 检查缓存
+    const cacheKey = `tree_${params.code}_${params.pid || 'root'}`;
+    const cached = this.treeCache.get(cacheKey);
+    if (cached) {
+      console.error(`Tree cache hit for ${cacheKey}`);
+      return cached;
+    }
+    
+    const url = new URL(`${this.baseUrl}/new/queryIndexTreeAsync`);
+    if (params.pid) {
+      url.searchParams.set('pid', params.pid);
+    }
+    url.searchParams.set('code', params.code);
+    
+    console.error(`Tree Request: ${url.toString()}`);
+    
+    try {
+      const response = await axios.get<TreeResponse>(url.toString(), {
+        timeout: this.timeout,
+      });
+      
+      const nodes = response.data.data || [];
+      
+      // 缓存结果
+      this.treeCache.set(cacheKey, nodes, this.DEFAULT_TREE_TTL);
+      
+      return nodes;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`Tree request failed: ${error.response?.data || error.message}`);
+      }
+      throw error;
+    }
+  }
+  
+  /**
+   * 递归获取所有叶子节点(cid)
+   * 注意:此方法耗时较长,慎用
+   */
+  async getAllLeafNodes(code: CategoryCode): Promise<TreeNode[]> {
+    const allLeaves: TreeNode[] = [];
+    
+    const getRecursively = async (pid?: string) => {
+      try {
+        // 添加延迟避免请求过于频繁
+        await new Promise(resolve => setTimeout(resolve, 300));
+        
+        const nodes = await this.getTree({ pid, code });
+        
+        for (const node of nodes) {
+          if (node.isLeaf) {
+            allLeaves.push(node);
+          } else {
+            await getRecursively(node._id);
+          }
+        }
+      } catch (error) {
+        console.error(`Error in recursive tree traversal for pid=${pid}:`, error);
+        throw error;
+      }
+    };
+    
+    await getRecursively();
+    return allLeaves;
+  }
+  
+  /**
+   * 获取指标列表
+   * 根据 cid 获取所有可用指标
+   */
+  async getIndicators(params: IndicatorQueryParams): Promise<Indicator[]> {
+    // 检查缓存
+    const cacheKey = `indicators_${params.cid}`;
+    const cached = this.indicatorsCache.get(cacheKey);
+    if (cached) {
+      console.error(`Indicators cache hit for ${cacheKey}`);
+      return cached;
+    }
+    
+    const url = new URL(`${this.baseUrl}/new/queryIndicatorsByCid`);
+    url.searchParams.set('cid', params.cid);
+    if (params.dt) {
+      url.searchParams.set('dt', params.dt);
+    }
+    if (params.name) {
+      url.searchParams.set('name', params.name);
+    }
+    
+    console.error(`Indicators Request: ${url.toString()}`);
+    
+    try {
+      const response = await axios.get<IndicatorsResponse>(url.toString(), {
+        timeout: this.timeout,
+      });
+      
+      const indicators = response.data.data?.list || [];
+      
+      // 缓存结果
+      this.indicatorsCache.set(cacheKey, indicators, this.DEFAULT_INDICATORS_TTL);
+      
+      return indicators;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`Indicators request failed: ${error.response?.data || error.message}`);
+      }
+      throw error;
+    }
+  }
+  
+  /**
+   * 查询数据
+   * 批量获取多个指标、多个时间点的数据
+   */
+  async getData(params: DataQueryParams): Promise<DataPoint[]> {
+    const payload = {
+      cid: params.cid,
+      indicatorIds: params.indicatorIds,
+      das: params.das,
+      dts: params.dts,
+      showType: params.showType || '1',
+      rootId: params.rootId || this.rootId,
+    };
+    
+    console.error(`Data Request: ${this.baseUrl}/getEsDataByCidAndDt`);
+    console.error(`Payload:`, JSON.stringify(payload, null, 2));
+    
+    try {
+      const response = await axios.post<DataResponse>(
+        `${this.baseUrl}/getEsDataByCidAndDt`,
+        payload,
+        {
+          timeout: this.timeout,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+      
+      if (!response.data.success) {
+        throw new Error('Data query failed: API returned success=false');
+      }
+      
+      return response.data.data || [];
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(`Data request failed: ${error.response?.data || error.message}`);
+      }
+      throw error;
+    }
+  }
+  
+  /**
+   * 辅助方法: 搜索并获取数据
+   * 一步到位:搜索关键词 -> 获取cid -> 获取指标 -> 查询数据
+   */
+  async searchAndGet(
+    keyword: string,
+    indicatorName?: string,
+    startTime?: string,
+    endTime?: string
+  ): Promise<{
+    cid: string;
+    indicator: Indicator;
+    data: DataPoint[];
+  }> {
+    // 1. 搜索定位cid
+    const searchResults = await this.search({ search: keyword, pageSize: 10 });
+    
+    if (!searchResults || searchResults.length === 0) {
+      throw new Error(`No results found for keyword: ${keyword}`);
+    }
+    
+    // 优先选择最新的数据集(通过edate判断)
+    const target = searchResults.reduce((latest, current) => {
+      if (!latest.edate) return current;
+      if (!current.edate) return latest;
+      return current.edate > latest.edate ? current : latest;
+    });
+    
+    // 从 globalid 提取 cid (如果搜索结果没有直接提供cid)
+    const cid = target.cid || this.extractCidFromGlobalId(target.treeinfo_globalid);
+    
+    if (!cid) {
+      throw new Error('Failed to extract cid from search result');
+    }
+    
+    // 2. 获取指标列表
+    const indicators = await this.getIndicators({ cid });
+    
+    if (!indicators || indicators.length === 0) {
+      throw new Error(`No indicators found for cid: ${cid}`);
+    }
+    
+    // 筛选目标指标
+    let targetIndicator: Indicator | undefined;
+    if (indicatorName) {
+      targetIndicator = indicators.find(ind => 
+        ind.i_showname.includes(indicatorName)
+      );
+    } else {
+      targetIndicator = indicators[0]; // 默认取第一个
+    }
+    
+    if (!targetIndicator) {
+      throw new Error(`Indicator not found: ${indicatorName}`);
+    }
+    
+    // 3. 查询数据
+    const timeRange = startTime && endTime 
+      ? `${startTime}-${endTime}` 
+      : `${target.sdate || '202001'}MM-${target.edate || '202612'}MM`;
+    
+    const data = await this.getData({
+      cid,
+      indicatorIds: [targetIndicator._id],
+      das: [{ text: '全国', value: '000000000000' }],
+      dts: [timeRange],
+    });
+    
+    return {
+      cid,
+      indicator: targetIndicator,
+      data,
+    };
+  }
+  
+  /**
+   * 辅助方法: 从 globalid 提取 cid (最后一段)
+   */
+  private extractCidFromGlobalId(globalId?: string): string | null {
+    if (!globalId) return null;
+    const parts = globalId.split('.');
+    return parts[parts.length - 1] || null;
+  }
+  
+  /**
+   * 清除所有缓存
+   */
+  clearCache(): void {
+    this.treeCache.clear();
+    this.indicatorsCache.clear();
+  }
+  
+  /**
+   * 设置根节点ID
+   */
+  setRootId(rootId: string): void {
+    this.rootId = rootId;
+  }
+  
+  /**
+   * 获取当前根节点ID
+   */
+  getRootId(): string {
+    return this.rootId;
+  }
+}
