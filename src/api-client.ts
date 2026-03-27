@@ -47,7 +47,7 @@ export interface StatsSearchResult {
 }
 
 // 搜索结果解析
-export interface SearchResponse {
+export interface ParsedSearchResult {
   name: string;  // 指标名称
   value: string;  // 最新值
   time: string;   // 时间
@@ -119,7 +119,7 @@ export class StatsApiClient {
   /**
    * 解析搜索结果
    */
-  parseSearchResult(result: StatsSearchResult): SearchResponse[] {
+  parseSearchResult(result: StatsSearchResult): ParsedSearchResult[] {
     return result.result.map(item => {
       // 解析 report 字段获取参数
       const reportParams = Object.fromEntries(
@@ -339,7 +339,7 @@ import {
   Indicator,
   DataResponse,
   DataQueryParams,
-  SearchResponse,
+  SearchResponse as NewSearchResponse,
   SearchItem,
   TreeQueryParams,
   IndicatorQueryParams,
@@ -417,7 +417,7 @@ export class NewStatsApiClient {
     console.error(`Search Request: ${url.toString()}`);
     
     try {
-      const response = await axios.get<SearchResponse>(url.toString(), {
+      const response = await axios.get<NewSearchResponse>(url.toString(), {
         timeout: this.timeout,
       });
       
